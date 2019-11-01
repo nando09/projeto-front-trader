@@ -1,0 +1,45 @@
+<div class="loginPage">
+
+  <!--Start container-->
+
+  <div class="divEspaco">
+  </div>
+  <div class="loginForm">
+
+    <div class="imgForm">
+      <img src="../../assets/images/logo-trader.png" alt="">
+      <p>ENTRAR</p>
+    </div>
+
+    <!--            Start form-->
+    <div class="formulario">
+
+      <div class="form-group">
+        <label for="inputEmail">e-mail</label>
+        <input class="form-control" type="email" id="inputEmail" required placeholder="Seu email">
+        <span class="invalid-feedback" role="alert">
+                <strong>{{email_error}}</strong>
+            </span>
+      </div>
+
+      <div class="form-group">
+        <label for="inputSenha">senha</label>
+        <input class="form-control" type="password" required id="inputSenha" placeholder="Sua senha">
+        <span class="invalid-feedback" role="alert">
+                <strong>{{password_error}}</strong>
+            </span>
+      </div>
+
+      <button class="btn btn-primary btnLoginForm">ENTRAR</button>
+
+      <a href=""><small id="email" class="form-text text-muted">Recuperar Senha</small></a>
+
+
+    </div>
+    <!--            End form-->
+
+  </div>
+  <div class="divEspaco">
+  </div>
+
+</div>

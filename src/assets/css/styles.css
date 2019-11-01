@@ -1,0 +1,4039 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.dashboardBanca p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Bahnschrift Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift Regular'), url('../fonts/Bahnschrift.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Microsoft Yi Baiti';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Microsoft Yi Baiti'), url('../fonts/microsoft-yi-baiti.ttf') format('ttf');
+}
+
+
+
+.index, .odds, .proximos, .hoje{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.0), rgba(0, 67, 142, 0.9)), url("../images/background.png") no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
+/*Start side menu*/
+.sideMenuLeft{
+  width: 5vw;
+  background-image: url("../images/menuLateral.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100vh;
+  float: left;
+}
+
+/*.sideMenuLeft ul, li, a{*/
+/*  color: #fff;*/
+/*  list-style-type: none;*/
+/*  vertical-align: middle;*/
+/*  align-items: center;*/
+/*}*/
+
+.sideMenuLeft li{
+  text-align: center;
+}
+
+.sideMenuLeft i{
+  font-size: 26px;
+  line-height: 70px;
+  color: #fff !important;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+.sideMenuLeft img{
+  width: 70px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.sideMenuRight{
+  background-color: #fff;
+  height: 93%;
+  float: left;
+  text-align: center;
+  width: 150px !important;
+  margin-left: 77px;
+  margin-top: 51px;
+  position: absolute;
+  z-index: 150 !important;
+}
+
+.sideMenuRight i{
+  float: left;
+  padding-top: 8px;
+  margin-left: -7px;
+}
+
+.sideMenuRight ul {
+  margin-top: 90px;
+}
+
+.sideMenuRightButton{
+  color: #000;
+  background-color: #F6F6F6;
+  height: 32px;
+  /*height: 70px;*/
+  width: 120px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.sideMenuRightButton:hover{
+  background-color: #0061AC;
+  width: 140px;
+  /*height: 70px;*/
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.sideMenuRightButton:hover p{
+  color: white !important;
+}
+
+
+
+.redIcon{
+  color: red;
+}
+
+.menuSelected:hover{
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50px 0 0 50px;
+
+}
+
+.menuSelected:hover i{
+  color: yellow !important;
+}
+/*End side menu*/
+
+.circle:hover{
+  border:2px solid white;
+  border-radius:50%;
+  background:rgba(0,0,0,0);
+  color:white;
+  width:40px;
+  height:40px;
+  text-align:center;
+  line-height:100px;
+  padding-bottom: 30px !important;
+}
+
+
+
+/*Start top menu*/
+.verticalLine {
+  height: 20px;
+  border-left: 5px solid darkblue;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.topMenu{
+  height: 50px;
+  width: available;
+  display: flex;
+  margin: 0 0 50px 0;
+  background-color: #fff;
+  padding: 0;
+  -webkit-box-shadow: 0 0 6px -6px #222 !important;
+  -moz-box-shadow: 0 0 6px -6px #222 !important;
+  box-shadow: 0 0 6px -6px #222 !important;
+}
+
+.topMenu img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.topMenuLeft h3{
+  align-self: center;
+  letter-spacing: 2px;
+}
+
+.topMenuRight{
+  border-radius: 25px 0 0 25px;
+  background:linear-gradient( rgba(44, 86, 154, 0.6) 100%, rgba(44, 86, 154, 0.6)100%),url("../images/topMenu.png");
+  /*background-image: url("../images/topMenu.png");*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.topMenuRight p {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 5px;
+  background-color: rgba(50,50,50,0.6);
+  border-radius: 10px;
+  align-self: center;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.topMenuRight i {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topMenuUser{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topMenuUser p{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: rgba(50,50,50,0.0);
+}
+
+.userImage{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../images/userProfile.png');
+}
+/*End top menu*/
+
+
+
+
+/*Start content*/
+.filterSession{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.filterSession p{
+  float: left;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.filterButton{
+  height: 20px;
+  width: 128px;
+  margin-left: 10px;
+  padding-top: 0;
+  font-size: 14px;
+  background-color: #F6F6F6;
+  color: #A7A7A7;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  border-color: #D5D3D3;
+}
+
+.dropdown{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  letter-spacing: 2px;
+}
+
+.overflow{
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contentSession{
+  background-color: #fff;
+  width: 90%;
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.contentColumnLeft{
+  margin-left: 100px;
+}
+
+div.contentColumnLeftRowFirstTh {
+  text-align: center;
+  vertical-align: middle;
+  height: 41px !important;
+}
+
+.divTable.contentColumnLeftRowFirstTh .divTableBody .divTableCell {
+  font-size: 13px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.divTable.contentColumnLeftRowFirstTh .divTableCell:nth-child(even) {
+  background: #EBEBEB;
+}
+
+.contentColumnLeftRowFirstTh .tableFootStyle {
+  font-size: 14px;
+}
+
+div.contentColumnLeftRowSecondTh {
+  text-align: left;
+  width: 100px;
+}
+
+.contentColumnLeftRowSecondTd {
+  padding: 3px 10px;
+  height: 20px;
+  background-color: #6CBA8C;
+}
+
+.contentColumnLeftRowThirdTd {
+  padding: 3px 10px;
+  height: 20px;
+  background-color: #6CBA8C;
+}
+
+div.contentColumnLeftRowFourthTh {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.divTable.contentColumnLeftRowFourthTh .divTableCell, .divTable.contentColumnLeftRowFourthTh .divTableHead {
+  padding: 5px 2px;
+  height: 40px;
+  width: 36px;
+  background-color: #F6F6F6;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.divTable.contentColumnLeftRowFourthTh .divTableBody .divTableCell {
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.contentColumnLeftTopTableTd {
+  border: 1px solid #fff;
+  vertical-align: middle;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 100;
+  color: #A7A7A7;
+}
+
+.contentColumnLeftRow, .rowTable{
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contentColumnLeftTopTable {
+  text-align: center;
+  vertical-align: middle;
+  width: 73px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #E1E1E1;
+  border: 1px solid #fff;
+  height: 40px;
+}
+
+.contentColumnLeftRow{
+  font-weight: bold;
+  margin-right: 0;
+}
+
+.contentColumnLeft i{
+  color: red;
+}
+
+.contentColumnLeft h5{
+  margin-left: 22px;
+  margin-right: 22px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.contentColumnLeftTop{
+  display: flex;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-align: center !important;
+  margin-right: 10px;
+}
+
+.contentColumnLeftTop h5{
+  text-align: center !important;
+}
+
+
+.contentColumnLeft{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.contentColumnRight{
+  margin-left: 100px;
+}
+
+.contentColumnRight{
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.contentColumnRight i{
+  color: #000;
+}
+
+.contentColumnRight h5{
+  margin-left: 22px;
+  margin-right: 22px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+.clubName{
+  background-color: #FBFBFB;
+  vertical-align: middle;
+  color: #A7A7A7;
+  font-weight: 600;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 11px;
+}
+
+.scoreboard{
+  padding-left: 5px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  vertical-align: middle;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.encerrados1 .scoreboard, .encerrados2 .scoreboard, .encerrados3 .scoreboard{
+  padding-right: 3px;
+}
+
+
+.tableCell2{
+  background-color: #5395C9 !important;
+}
+.tableCell4{
+  background-color: #404040 !important;
+}
+.tableCell6{
+  background-color: #E27489 !important;
+}
+
+.tableCell2, .tableCell4, .tableCell6, .tableCell7, .scoreboard, p{
+  color: #fff !important;
+}
+
+.tableCell7{
+  border: 1px solid #fff;
+  border-radius: 7px 0 0 7px;
+  font-size: 14px !important;
+  padding: 5px 7px;
+  height: 40px;
+  width: 36px;
+  background-color: #6CBA8C;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+}
+
+.tableCell8{
+  color: #000;
+  font-size: 8px !important;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px 7px;
+  height: 40px;
+  width: 36px;
+  background-color: #F6F6F6;
+  color: #ACACAC;
+  border: 1px solid #fff;
+  border-radius: 7px 0 0 7px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+}
+
+.tableCell9{
+  padding: 5px 7px;
+  height: 40px;
+  width: 64px !important;
+  background-color: #6CBA8C !important;
+  color: #fff;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+.rowTable{
+  margin: 20px 0;
+}
+/*End content*/
+
+
+
+
+
+
+
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#inputData{
+  height: 23px;
+  width: 78px;
+  margin-left: 10px;
+  padding-top: 0;
+  font-size: 14px;
+  background-color: #F6F6F6;
+  color: #A7A7A7;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  border-color: #D5D3D3;
+}
+
+#inputProbabilidade{
+  height: 23px;
+  width: 142px;
+  margin-left: 10px;
+  padding-top: 0;
+  font-size: 14px;
+  background-color: #F6F6F6;
+  color: #A7A7A7;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  border-color: #D5D3D3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Queries*/
+@media (min-width: 1411px) {
+  .topMenuLeft {
+    padding-left: 50px !important;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .topMenuLeft {
+    padding-left: 50px !important;
+  }
+}
+
+@media (max-width: 1380px){
+  .topMenu{
+    /*width: 95vw;*/
+  }
+  .filterSession{
+    /*width: 90vw;*/
+    margin-left: 18px;
+  }
+  .contentSession{
+    /*width: 85vw;*/
+    padding: 0 0;
+    margin-left: 50px;
+  }
+
+  .topMenuRight p{
+    font-size: 10px;
+  }
+  .sideNavbar{
+    z-index: 3;
+  }
+}
+
+@media (max-width: 1319px){
+  .dashboardContent{
+    margin: 35px 15px !important;
+  }
+}
+
+@media (max-width: 1199px){
+  .dashboardTopMenuRight li.active a{
+    margin-top: 8px !important;
+  }
+
+  .dashboardTopMenuRight li.active {
+    background: url(../images/componente1.png) center center no-repeat;
+    /* background: url(../images/menu_item_background4.PNG) center center no-repeat; */
+    background-size: cover;
+    padding: 17px 0;
+    height: 72% !important;
+    text-align: center;
+    margin-top: 28px !important;
+    z-index: 1;
+  }
+  .dashboardTopMenuRight li {
+    background: url(../images/componente1.png) center center no-repeat;
+    /* background: url(../images/menu_item_background4.PNG) center center no-repeat; */
+    background-size: cover;
+    padding: 17px 0;
+    height: 72% !important;
+    text-align: center;
+    margin-top: 22px !important;
+  }
+
+  .proximos .contentSession .contentColumnRight:first-child{
+    overflow: hidden !important;
+  }
+  .contentcolumnlefttop h5{
+    margin: 0 auto !important;
+  }
+  .topMenuLeftDashboard h3{
+    font-size: 15px !important;
+    margin-top: 52px !important;
+  }
+  .contentDashboardBanca .contentMenu{
+    padding: 20px 5px 0 37px !important;
+  }
+  .metas{
+    margin: 50px 0 10px 2px !important;
+  }
+  .contentDashboardConquistas .contentMenu{
+    padding: 20px 5px 0 37px !important;
+  }
+
+  .dashboardTopMenuRight li:first-child.active a {
+    margin-left: -22px !important;
+    margin-top: 5px !important;
+    max-width: 136px;
+    font-size: 12px !important;
+    padding-right: 60px;
+  }
+
+  .dashboardTopMenuRight li:first-child a {
+    margin-left: -47px !important;
+    margin-top: 5px !important;
+    max-width: 136px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+@media (max-width: 991px){
+  .dashboardTopMenuRight li:first-child.active a {
+    margin-left: -18px !important;
+    margin-top: 2px !important;
+    max-width: 136px;
+    font-size: 11px !important;
+    padding-right: 65px;
+  }
+
+  .dashboardTopMenuRight li:first-child a {
+    margin-left: -18px !important;
+    margin-top: 2px !important;
+    max-width: 136px;
+    font-size: 11px !important;
+    padding-right: 47px;
+  }
+
+  .dashboardTopMenuRight li .menuItem {
+    font-size: 13px;
+    margin-top: 3px !important;
+  }
+
+  .dashboardTopMenuRight li.active a {
+    font-size: 13px;
+    font-family: "Bahnschrift", sans-serif !important;
+    color: #203C56;
+    margin-top: 3px !important;
+    position: absolute;
+  }
+
+  .topMenuLeft h3 {
+    font-size: 12px;
+  }
+
+  .dashboardTopMenuRight li.active {
+    height: 55% !important;
+    margin-top: 40px !important;
+  }
+  .dashboardTopMenuRight li {
+    height: 51% !important;
+    margin-top: 34px !important;
+  }
+
+  .video img {
+    width: 90%;
+    height: auto !important;
+    margin: 20px 35px 20px 82px;
+    align-self: center;
+  }
+
+  .videoInfos{
+    margin: 5px 0 10px 43px;
+    max-width: 93%;
+  }
+
+  .videoTitle h3 {
+    margin-left: 56px;
+  }
+
+  .videoDescription{
+    max-width: 90%;
+    margin-left: 50px;
+  }
+
+  .overflow{
+    overflow: hidden !important;
+  }
+
+  .contentSession{
+    overflow: auto;
+    max-height: 100vh !important;
+  }
+
+  .description{
+    width: 100% !important;
+  }
+
+  .discussion{
+    width: 100% !important;
+  }
+
+  .videoTime{
+    margin-left: 76% !important;
+    margin-top: -22px !important;
+  }
+
+  .videoInfos{
+    padding: 0 10px 0 10px !important;
+    margin-bottom: 10px;
+  }
+
+  .imgTempoReal2{
+    margin-left: 5px;
+  }
+
+  .tempoRealLeft, .imgTempoReal2{
+    padding-left: 10px !important;
+  }
+
+  .oddsComparadasProbabilidades{
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+
+  .tableOddsComparadasGols, .tableOddsAmbasMarcam{
+    /*padding-left: 35px !important;*/
+  }
+
+  .tabelaEntradas{
+    margin-left: 35px !important;
+  }
+  .topMenuLeftDashboard h3 {
+    margin: 43px 0 0 0 !important;
+    font-size: 12px !important;
+    width: 55px;
+  }
+  .topMenuLeftDashboard{
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 950px){
+  .topMenuUser p {
+    font-size: 12px;
+  }
+  .topMenuRight p {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 850px){
+  .contentDashboardBanca .contentMenu{
+    padding: 20px 5px 0 50px !important;
+  }
+
+  .metas{
+    margin: 50px 0 10px -7px !important;
+  }
+
+  .contentDashboardConquistas .contentMenu{
+    padding: 20px 5px 0 50px !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .topMenuUser p{
+    margin: 0;
+    width: 60px;
+  }
+}
+
+
+@media screen and (max-height: 540px) {
+  .loginPage{
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dashboardTopMenuRight{
+    display: none !important;
+  }
+
+  .topMenuLeft h3{
+    font-size: 12px !important;
+  }
+
+  .dashboardTopMenuRight li.active {
+    height: 55% !important;
+    margin-top: 40px !important;
+  }
+  .dashboardTopMenuRight li {
+    height: 51% !important;
+    margin-top: 34px !important;
+  }
+
+  .academia .topMenuLeft{
+    padding-left: 50px;
+  }
+
+  .metas{
+    margin: 50px 0 10px 2px !important;
+  }
+
+}
+
+@media screen and (max-width: 699px) {
+  .topMenuUser p{
+    margin: 0;
+    width: 60px;
+  }
+}
+
+
+
+@media screen and (max-width: 620px) {
+  .topMenuRight img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contentSession{
+    margin-left: 25px !important;
+  }
+  .topMenuLeftDashboard{
+    justify-content: space-evenly !important;
+  }
+
+  .userImageDashboard {
+    width: 35% !important;
+  }
+
+  .col-xs-12 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    position: static;
+  }
+
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .sideMenuLeft{
+    width: 100% !important;
+    height: 60px !important;
+    position: fixed;
+  }
+
+  .sideNavbar{
+    height: 60px;
+    min-width: -webkit-max-content;
+  }
+
+  .sidenavPrincipal{
+    display: inline-flex !important;
+    width: 84% !important;
+    float: right !important;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /*.menuSelected{*/
+    /*font-size: 20px;*/
+  /*}*/
+
+  .menu{
+    padding-left: 5vw !important;
+  }
+  .overflow{
+    overflow: hidden !important;
+  }
+
+  .contentSession{
+    height: 570px;
+  }
+
+  /*.menuSelected i{*/
+  /*  font-size: 22px;*/
+  /*}*/
+
+  .userImage{
+    padding-right: 32px;
+  }
+
+  .video{
+    margin-right: 25px;
+  }
+
+  .videoInfos{
+    margin-right: 20px;
+    margin-left: 12px;
+  }
+
+  .videoDescription{
+    margin-left: 10px;
+    max-width: 94%;
+  }
+
+  .menuSelected:hover{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50px 50px 0 0;
+  }
+
+  .topMenuRight p{
+    font-size: 9px;
+  }
+
+  .topMenuLeft{
+    padding: 0 0 0 5px !important;
+  }
+
+  .topMenuLeft h3 {
+    font-size: 10px !important;
+  }
+
+  .sideMenuRight{
+    display: none;
+  }
+
+  .filterSession .dropdown p, .filterSession .dropdown select{
+    font-size: 10px;
+  }
+  .contentDashboardBanca .contentMenu{
+    padding: 20px !important;
+  }
+
+  .contentDashboardConquistas .contentMenu{
+    padding: 20px !important;
+  }
+
+  .dashboardConquistas .col-sm-11 {
+    flex: 0 0 100% !important;
+    max-width: 100%;
+  }
+
+  .dashboardConquistas {
+    overflow: hidden;
+  }
+
+  .dashboardBanca .col-sm-11 {
+    flex: 0 0 100% !important;
+    max-width: 100%;
+  }
+
+  .dashboardBanca {
+    overflow: hidden;
+  }
+
+  .contentMain {
+    margin-bottom: 50px !important;
+  }
+
+  .betfairAccount {
+    margin-left: 0;
+  }
+
+  .metas {
+    text-align: center;
+  }
+
+  .col-sm-11 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .colunaTituloConquistas{
+    max-width: 70% !important;
+  }
+
+  .dashboardContent .row {
+    /*float: right;*/
+  }
+  .colunaTituloConquistas img {
+    float: right;
+  }
+}
+
+
+
+
+
+/*Academia*/
+
+.videoDescription .row{
+  justify-content: center;
+
+}
+
+.description{
+  width: 55%;
+  margin: 11px;
+}
+
+
+.discussion{
+  width: 40%;
+  margin: 11px;
+}
+
+.videoSession{
+  background-color: #000 !important;
+  width: 100%;
+  height: 60%;
+}
+
+.videoTitle{
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 9px;
+  margin-bottom: 20px;
+}
+
+.videoTime{
+  width: 100px;
+  background-color: #F8D703;
+  height: 28px;
+  border-radius: 5px;
+  padding-top: 6px;
+  margin-top: -3px;
+  margin-left: 30%;
+}
+
+.videoTime p{
+  color: black !important;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.videoDescription{
+  width: 100%;
+  height: auto;
+}
+
+.description{
+  background-color: #fff;
+  height: 300px;
+  padding: 15px
+}
+
+.description p{
+  color: #000 !important;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 25px 50px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.discussion{
+  background-color: #fff;
+  height: 300px;
+  float: right;
+  padding: 15px;
+}
+
+.discussion p{
+  color: black !important;
+  font-size: 11px;
+  font-weight: lighter;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.discussion h4{
+  margin-bottom: 18px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #4E4E4E;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.video img{
+  width: 95%;
+  height: auto !important;
+  margin: 20px 20px 20px 40px;
+  align-self: center;
+}
+
+.video{
+  /*background-image: url("../images/academy.jpg") !important;*/
+  width: 100% !important;
+  display: flex;
+  float: left;
+  justify-content: center;
+}
+
+.videoInfos{
+  width: 100%;
+  display: block;
+  float: right;
+  padding-right: 10px !important;
+}
+
+.btn-outline-light{
+  margin: 20px 0 !important;
+  color: gray;
+  border-color: gray;
+  float: left;
+  width: 95%;
+}
+.btnAula{
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #4B4B4B;
+}
+
+.btnAula i{
+  margin: 0 5px 0 5px;
+}
+
+.btnConcluirAvancar{
+  color: limegreen;
+  background-color: #555;
+  height: 40px;
+  width: 260px;
+  font-size: 12px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 700;
+}
+
+.btnConcluirAvancar i{
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.btnConcluirAvancar:hover{
+  color: limegreen;
+  background-color: #222;
+  font-weight: bold;
+}
+
+.stars img{
+  color: #F8D703 !important;
+}
+
+.fa-star{
+  color: #F8D703;
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+.anotationField{
+  border: 5px solid #444 !important;
+  width: 100%;
+  height: 200px;
+}
+
+.anotation p{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 14px;
+  color: #4B4B4B !important;
+}
+
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/*Login*/
+
+/*.divEspaco{*/
+/*  height: 10%;*/
+/*}*/
+
+
+.loginPage{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 67, 142, 0.9)), url("../images/background.png") no-repeat center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgForm{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 67, 142, 0.9)), url("../images/background.png") no-repeat center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 200px !important;
+}
+
+/*.loginPage{*/
+/*    -webkit-filter: blur(15px);*/
+/*    -moz-filter: blur(15px);*/
+/*    -o-filter: blur(15px);*/
+/*    -ms-filter: blur(15px);*/
+/*    filter: blur(15px);*/
+/*}*/
+
+
+.loginForm{
+  height: auto;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.imgForm img{
+  width: 200px;
+  height: auto;
+  margin: 20px 75px;
+}
+
+.imgForm p{
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.formulario{
+  color: #fff;
+  background-color: rgba(0, 31, 58, 0.7);
+  font-weight: lighter;
+  text-align: -webkit-center;
+}
+
+.formulario input{
+  width: 70%;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.formulario button{
+  width: 80%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.formulario small{
+  padding-bottom: 20px;
+  color: #707070!important;
+  font-family: Microsoft Yi Baiti, sans-serif;
+  font-size: 18px;
+}
+
+.formulario a{
+  text-decoration: none;
+}
+
+.formulario label{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-family: Microsoft Yi Baiti, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#inputEmail, #inputSenha, #inputConfirmarSenha, #inputName{
+  background-color: rgba(0,0,0,0.5) !important;
+  border-color: rgba(0,0,0,0.5) !important;
+}
+
+.btnLoginForm{
+  background-color: #0061AC;
+  border-color: #0061AC;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btnLoginForm:hover {
+  background-color: #0041AC;
+  border-color: #0041AC;
+}
+
+.comentario1 {
+  margin-left: 50px;
+}
+
+.comentario1 p, .comentario2 p{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 12px;
+  font-weight: 300;
+  color: #707070 !important;
+}
+
+.comentario1 h5, .comentario2 h5{
+  color: #4E4E4E;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.comentario2 {
+  margin-left: 80px;
+}
+
+.videoInfo1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divAvaliacao {
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.divAvaliacao p{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 11px;
+  color: #4B4B4B !important;
+  margin-bottom: 5px;
+}
+
+.academia .container-fluid{
+  background-color: #ddd ;
+}
+
+.academia .sideMenuRight{
+  position: fixed;
+}
+
+.dashboardBanca .topMenu {
+  background-color: #1D3A54;
+  height: 74px;
+}
+
+.contentMenu {
+  /*background-color: yellow;*/
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.contentMain {
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+
+
+.dashboardBanca {
+  background-image: none;
+}
+
+.topMenuLeftDashboard {
+  color: white;
+}
+
+.topMenuLeftDashboard h3 {
+  margin: 46px 0 0 0;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.userImageDashboard {
+  display: inline-block;
+  margin: 20px 0 -83px -19px;
+  width: 42%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/ID01_A17_Ellipse_108_pattern@2x.png");
+}
+
+.betfairAccount {
+  margin: 70px 0 15px 0;
+  background-color: #FFDE00;
+  border-radius: 10px;
+  color: black;
+  height: 105px;
+  width: 100%;
+}
+
+.betfairAccount p:first-child {
+  font-weight: 300;
+  font-size: 10px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: black !important;
+  padding: 10px 0 0 15px;
+}
+
+.betfairAccount p {
+  font-weight: bold;
+  font-size: 13px;
+  color: black !important;
+  padding: 0 0 0 16px;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.betfairAccount i {
+  font-size: 16px;
+  color: black !important;
+  float: right;
+
+  padding: 0 25px 0 0;
+}
+
+.betfairAccount hr {
+  height: 1px;
+  background-color: black !important;
+  width: 85%;
+}
+
+.dashboardContent {
+  /*background-image: url("../images/bg.jpg");*/
+  background-color: #1d3a54;
+  margin: 35px;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+}
+
+.dashboardContent p {
+  color: white;
+}
+
+
+.dashboardBanca .contentMenu {
+  padding: 20px 15px 20px 20px;
+}
+
+.dashboardBanca .metas{
+  text-align: center;
+}
+
+
+.bancas1, .lucroTotal, .prejuizoTotal {
+  text-align: left;
+  background-color: rgba(0,0,0,0.2);
+  margin: 15px;
+}
+
+.metas {
+  margin: 50px 10px 10px 10px;
+}
+
+.metas p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+  color: #CCCCCC !important;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+}
+
+.metas h2 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.metasAzul h2, .metasAzul h3{
+  color: #7FC1F5;
+  font-family: montserrat, sans-serif;
+}
+
+.metasVerde h2, .metasVerde h3 , .metasVerde p{
+  color: #66BE87;
+  font-family: montserrat, sans-serif;
+}
+
+
+.metasVermelho h2, .metasVermelho h3, .metasVermelho p{
+  color: #DC473C;
+  font-family: montserrat, sans-serif;
+}
+
+.metasLaranja h2, .metasLaranja h3 .metasLaranja p{
+  color: #DC8630;
+  font-family: montserrat, sans-serif;
+}
+
+.metas h3, .lucroTotal p, .prejuizoTotal p {
+  font-size: 16px;
+  float: left;
+  font-weight: lighter;
+}
+
+.bancas1 p, .lucroTotal p, .prejuizoTotal p, .bancas2 p {
+  font-size: 8px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+
+.bancas1 h2, .lucroTotal h2, .prejuizoTotal h2, .bancas2 h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.bancas1 h3, .lucroTotal h3, .prejuizoTotal h3, .bancas2 h3 {
+  font-size: 14px;
+  float: left;
+  font-weight: lighter;
+}
+
+.bancas1, .lucroTotal, .prejuizoTotal, .bancas2 {
+  width: 200px;
+  text-align: center;
+}
+
+.lucroTotal, .prejuizoTotal {
+  height: 35px;
+  margin-top: 25px;
+}
+
+.bancaAtual, .bancaInicial {
+  text-align: left;
+  background-color: rgba(0,0,0,0.2);
+  height: 60px;
+  margin-top: 25px;
+  width: 250px;
+  text-align: center;
+}
+
+.bancaAtual p, .bancaInicial p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+
+.bancaAtual h2, .bancaInicial h2 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.bancaAtual h3, .bancaInicial h3 {
+  font-size: 18px;
+  float: left;
+  font-weight: lighter;
+}
+
+.bancas2 {
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  margin: 15px;
+  color: white;
+}
+
+.bancas2 p {
+  color: white !important;
+}
+
+.blocoComparacoes {
+  width: 250px;
+  height: 150px;
+  margin: 15px 0;
+}
+
+.greens, .reds, .entradas, .entradasDia {
+  width: 115px;
+  padding: 0;
+  height: 65px;
+  display: block;
+  float: right;
+  margin: 5px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.greens p, .reds p, .entradas p, .entradasDia p {
+  font-size: 8px;
+}
+
+.listaJogos {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.listaJogos th {
+  background-color: #ccc;
+  font-size: 12px;
+}
+
+.listaJogos td {
+  font-size: 11px;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.listaJogos table thead th:first-child {
+  width: 55%;
+}
+
+.listaJogos table thead th:nth-child(2) {
+  width: 20%;
+
+}
+
+.listaJogos table thead th:nth-child(3) {
+  width: 20%;
+
+}
+
+.listaJogos table thead th:nth-child(4) {
+  width: 5%;
+}
+
+.listaJogos table thead th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.dashboardContent .row {
+  text-align: -webkit-center;
+}
+
+
+.dashboardTopMenuRight {
+  color: black;
+}
+
+.box {
+  width: 50%;
+  float: left;
+  height: 50px; /*Altura da linha*/
+}
+
+.linha-vertical {
+  border-left: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.linha-vertical2 {
+  border-left: 1px solid #7FC1F5;
+  box-sizing: border-box;
+}
+
+.greens .teste p, .reds .teste p, .entradas .teste p, .entradasDia .teste p {
+  height: 15px;
+  width: 100% !important;
+  font-weight: 100;
+  padding-top: 4px;
+}
+
+.width50 {
+  width: 50%;
+  height: 100%;
+}
+
+.width50 p:first-child, .width502 p:first-child {
+  font-size: 24px;
+  margin: 5px 0;
+  font-weight: 100;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.width50 p:nth-child(2), .width502 p:nth-child(2) {
+  font-size: 8px;
+  font-weight: 100;
+}
+
+.titleComparacoes {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: 2px 0;
+}
+
+.contentComparacoes {
+  width: 100%;
+  height: 100%;
+  margin-top: -54px;
+}
+
+
+.dashboardBanca .navbar {
+  width: 100%;
+}
+
+
+.dashboardBanca .navbar .nav-link:active {
+  background-color: #fff;
+  color: black;
+  padding: 9px;
+  border-radius: 100px 100px 00px 00px;
+  /* border-radius: 5em 13em 5em / 14.5em 29em; */
+  width: 200px;
+  height: 32px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dashboardBanca .navbar .nav-link {
+  background-color: #203c56;
+  color: white;
+  padding: 9px;
+  border-radius: 100px 100px 00px 00px;
+  /* border-radius: 5em 13em 5em / 14.5em 29em; */
+  width: 200px;
+  height: 32px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dashboardBanca .navbar .nav-link:hover {
+  background-color: #505556;
+  color: white;
+  padding: 9px;
+  border-radius: 100px 100px 00px 00px;
+  /* border-radius: 5em 13em 5em / 14.5em 29em; */
+  width: 200px;
+  height: 32px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.timesLogo {
+  width: 34px;
+  height: auto;
+}
+
+.contentTempoReal {
+  padding: 25px;
+}
+
+.bar1 {
+  width: 100%;
+  margin: 10px 0 5px 0;
+}
+
+.bar2 {
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+
+.imgTempoReal {
+  width: 100%;
+  height: auto;
+}
+
+.tabelaEntradas {
+  width: 87%;
+  height: 340px;
+  margin: 25px;
+}
+
+.tabelaEntradas td {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.tabelaEntradas td tr:last-child {
+  height: 100%;
+}
+
+.tabelaEntradas tr:nth-child(even) {
+  background-color: rgba(0,21,40, 0.8) !important;
+}
+
+.tabelaEntradas td:nth-child(even) {
+  border-color: rgba(0,21,40, 0.8) !important;
+}
+
+.tabelaEntradas td:nth-child(odd) {
+  border-color: rgba(0,31,58, 0.8) !important;
+}
+
+.tabelaEntradas tr:nth-child(odd) {
+  background-color: rgba(0,31,58, 0.8) !important;
+}
+
+.tabelaEntradas tr:last-child {
+  height: 135px !important;
+}
+
+.tabelaEntradasTitle {
+  color: white;
+}
+
+.bdcInfo1 {
+  background-color: rgba(	220, 71, 60, 0.7);
+  width: 16%;
+  height: 40px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.bdcInfo2 {
+  width: 25%;
+  height: 40px;
+  background-color: rgba(0,0,0,0.4);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.bdcInfo3 {
+  width: 16%;
+  height: 40px;
+  margin: 0 3px;
+  background-color: rgba(0,0,0,0.7);
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.bdcInfo4 {
+  width: 25%;
+  height: 40px;
+  background-color: rgba(0,0,0,0.4);
+  font-weight: 300;
+  font-size: 11px;
+}
+
+.bdcInfo5 {
+  width: 16%;
+  height: 40px;
+  background-color: rgba(	102, 190, 135, 0.7);
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.bdcInfo6 {
+  background-color: rgba(0,0,0,0.4);
+  width: 41%;
+  height: 40px;
+  font-size: 11px;
+}
+
+.bdcInfo7 {
+  width: 18%;
+  height: 40px;
+  background-color: rgba(	102, 190, 135, 0.7);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bdcInfo8 {
+  width: 41%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #F7B233;
+  text-align: center;
+}
+
+.bdcInfo8 i{
+  font-size: 22px;
+}
+
+.bdcInfo8 img{
+  width: 35%;
+  height: auto;
+}
+
+.bar1{
+  justify-content: space-between;
+  text-align: center;
+}
+
+.bar2{
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tempoRealRight {
+  float: right;
+}
+
+.tempoRealLeft {
+  float: left;
+}
+
+.imgTempoReal2 img {
+  width: 97%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tempoRealTitle {
+  justify-content: space-around;
+  margin: 10px 0;
+  font-size: 12px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tempoRealTitle p, .tempoRealTitle h1 {
+  margin-top: 9px;
+}
+
+.tempoRealTitle h1 {
+  font-size: 26px;
+  color: white;
+  margin-top: 0;
+}
+
+.bdcInfo1 p,.bdcInfo2 p,.bdcInfo3 p,.bdcInfo4 p,.bdcInfo5 p,.bdcInfo6 p,.bdcInfo7 p{
+  margin: 13px 0;
+}
+
+.bdcInfo1 p{
+  font-size: 13px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 300;
+}
+
+.bdcInfo5 p{
+  font-size: 13px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 300;
+}
+
+.bdcInfo7 p{
+  font-size: 14px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 300;
+}
+
+.dropleft1{
+  position: static;
+  float: right;
+  margin-right: -25px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.dropleft2{
+  position: static;
+  float: right !important;
+  padding-top: 25px;
+  margin-right: -41px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.dropleft3{
+  position: static;
+  float: right !important;
+  padding-top: 60px;
+  margin-right: -41px;
+}
+
+.dropleft1 .dropdown-toggle::after {
+  display: none;
+}
+
+.dropleft2 .dropdown-toggle::after {
+  display: none;
+}
+
+.dropleft3 .dropdown-toggle::after {
+  display: none;
+}
+
+.dropleft1 button {
+  float: right;
+  height: 25px;
+  background-color: #49AAEB;
+  width: 41px;
+  font-size: 8px;
+  padding-left: 8px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.dropleft2 button {
+  float: right;
+  height: 25px;
+  background-color: #DC90B1;
+  width: 41px;
+  font-size: 8px;
+  padding-left: 8px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.dropleft3 button {
+  float: right;
+  height: 38px;
+  background-color: #FFDE00;
+  color: black;
+  width: 41px;
+  padding-left: 8px;
+  z-index: 1;
+}
+
+.faixaAzul{
+  height: 355px;
+  width: 20px;
+  background-color: #49AAEB;
+  float: left;
+}
+
+.faixaRosa{
+  height: 355px;
+  width: 20px;
+  background-color: #DC90B1;
+  float: left;
+}
+
+.faixaAmarela{
+  height: 345px;
+  width: 20px;
+  background-color: #FFDE00;
+  float: left;
+}
+
+/*.dropleft1:hover {*/
+/*    background-color: blue;*/
+/*}*/
+
+/*.dropleft2:hover {*/
+/*    background-color: pink;*/
+/*}*/
+
+/*.dropleft3:hover {*/
+/*    background-color: yellow;*/
+/*}*/
+
+.dropleftDropdown1 {
+  background-color: #333;
+  width: 220px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+}
+
+.dropleftDropdown1 input {
+  width: 70%;
+  border-radius: 20px;
+  height: 30px;
+  margin: 5px auto;
+}
+
+.dropleftDropdown1 button, .dropleftDropdown2 button {
+  width: 80%;
+  border-radius: 20px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #FBBF00;
+  border-color: #707070;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 11px;
+  font-weight: 600;
+  color: black;
+}
+
+.dropleftDropdown1 button:hover {
+  border-color: #000;
+}
+
+.dropleftDropdown1 label{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dropleftDropdown2 {
+  background-color: #333;
+  width: 220px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+}
+
+.dropleftDropdown2 input {
+  width: 70%;
+  border-radius: 20px;
+  height: 30px;
+  margin: 5px auto;
+}
+
+
+
+.dropleftDropdown3 {
+  background-color: #333;
+  width: 220px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+}
+
+.linhaHorizontal{
+  border: 1px solid #222;
+  width: 85%;
+}
+
+.bdcNaoCadastrado .topMenu {
+  margin: 0;
+}
+
+.tableOddsComparadasGols {
+  text-align: center;
+}
+
+.rowCenter p {
+  text-align: center;
+  font-weight: lighter;
+  margin: 10px auto;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+.tableOddsComparadasGols td:first-child, .tableOddsComparadasGols td:nth-child(4),  .tableOddsComparadasGols td:nth-child(5), .tableOddsComparadasGols th:first-child, .tableOddsComparadasGols th:nth-child(3){
+  background-color: #192833;
+}
+
+.tableOddsComparadasGols td:nth-child(2),  .tableOddsComparadasGols td:nth-child(3), .tableOddsComparadasGols th:nth-child(2){
+  background-color: #002541;
+}
+
+
+
+.tableOddsComparadasGols td, .tableOddsComparadasGols thead th {
+  border: 0 solid #7FC1F5;
+}
+
+.tableOddsComparadasGols tr:first-child {
+  border-bottom: 2px solid #7FC1F5;
+}
+
+.tableOddsComparadasGols tr {
+  border-top: 2px solid #7FC1F5;
+}
+
+.tableOddsComparadasGols tr:first-child {
+  border-top: none;
+}
+
+.tableOddsAmbasMarcam{
+  text-align: center;
+}
+
+.tableOddsAmbasMarcam thead th {
+  border-bottom: 2px solid #7FC1F5 !important;
+}
+
+.tableOddsAmbasMarcam th:nth-child(1), .tableOddsAmbasMarcam td:nth-child(1), .tableOddsAmbasMarcam td:nth-child(2){
+  background-color: #002541;
+}
+
+.tableOddsAmbasMarcam th:nth-child(2), .tableOddsAmbasMarcam td:nth-child(3), .tableOddsAmbasMarcam td:nth-child(4){
+  background-color: #192833;
+}
+
+.contentSession::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contentSession::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.topMenuRight img {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+
+}
+
+.sideMenuRightButton p{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 13px;
+  color: #6A6A6A !important;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-top: 8px;
+}
+
+.topMenuLeft h3 {
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.topMenuRight p {
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.topMenuUser p {
+  font-size: 13px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 700;
+}
+
+
+.col-sm-1 {
+  -ms-flex: 0 0 5%;
+  flex: 0 0 5%;
+  max-width: 5%;
+}
+
+.col-sm-11 {
+  -ms-flex: 0 0 95%;
+  flex: 0 0 95%;
+  max-width: 95%;
+  position: static;
+}
+
+
+
+
+
+.encerrados3 .clubName{
+  color: #6A6A6A;
+}
+
+.encerrados3 .tableCell8{
+  background-color: #DADADA;
+  color: #000;
+}
+
+
+
+
+.encerrados2 .tableCell8{
+  font-size: 10px !important;
+  background-color: #DDDDDD;
+  color: #000;
+}
+
+.encerrados2 .contentColumnLeftRowSecondTd .clubName{
+  color: #2E8A50 !important;
+}
+
+.encerrados2 .contentColumnLeftRowThirdTd .clubName{
+  color: #DC473C !important;
+}
+
+.encerrados1 .clubName{
+  color: #000;
+  background-color: #E8E8E8;
+}
+
+.encerrados1 .tablecell7{
+  font-size: 17px !important;
+}
+
+
+.videoTitle h3{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4E4E4E;
+  float: left;
+  margin-left: 40px;
+}
+
+
+/*.academia .sideMenuRightButton{*/
+/*     color: #000;*/
+/*     background-color: #F6F6F6;*/
+/*     height: 50px;*/
+/*     width: 120px;*/
+/*     margin-top: 25px;*/
+/*     margin-left: auto;*/
+/*     margin-right: auto;*/
+/*     border-radius: 5px;*/
+/*}*/
+
+/*.academia .sideMenuRightButton p:nth-child(3):hover{*/
+/*    color: white !important;*/
+/*}*/
+
+
+/*.academia .sideMenuRightButton:hover{*/
+/*    color: #000 !important;*/
+/*    background-color: #0061AC;*/
+/*    height: 50px;*/
+/*    width: 120px;*/
+/*    margin-top: 25px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.academia .sideMenuRightButton p:nth-child(2){*/
+/*    font-size: 7px;*/
+/*    float: left;*/
+/*    margin-left: 5px;*/
+/*    font-family: "Bahnschrift", sans-serif !important;*/
+/*    color: #AAAAAA !important;*/
+/*    font-weight: 600;*/
+/*    margin-top: 0 !important;*/
+/*}*/
+
+/*.academia .sideMenuRightButton p:nth-child(3){*/
+/*    font-family: "Bahnschrift", sans-serif !important;*/
+/*    font-size: 10px;*/
+/*    color: #6A6A6A !important;*/
+/*    font-weight: 600;*/
+/*    margin-right: 25px;*/
+/*    text-align: start;*/
+/*    margin-left: 26px;*/
+/*    padding-top: 20px;*/
+/*    margin-top: 0 !important;*/
+/*}*/
+
+.sideMenuRightText{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 10px !important;
+  color: #6A6A6A !important;
+  font-weight: 600 !important;
+  margin-right: 25px;
+  text-align: start;
+  margin-left: 26px;
+  padding-top: 5px !important;
+  margin-top: 0 !important;
+}
+
+.academia .sideMenuRight .sideMenuRightAcademia i {
+  float: left;
+  padding-top: 16px;
+  margin-left: -7px;
+}
+
+.academia .sideMenuRight i {
+  float: left;
+  padding-top: 8px;
+  margin-left: -7px;
+}
+
+.sideMenuRightDropdown{
+  background-color: #F6F6F6 !important;
+  border-color: #F6F6F6 !important;
+  height: 50px;
+  width: 120px;
+  margin-top: 25px;
+  margin-left: -20px;
+  margin-right: 16px;
+  border-radius: 5px;
+  white-space: normal;
+}
+
+.sideMenuRightDropdown p:first-child{
+  color: #000 !important;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 8px;
+  color: #6A6A6A !important;
+  font-weight: 600;
+}
+
+.sideMenuRightDropdown p:nth-child(2){
+  color: #000 !important;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 10px;
+  color: #6A6A6A !important;
+  font-weight: 600;
+}
+
+.sideMenuRightDropdown .iconNav{
+  color: #000 !important;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 10px;
+  color: #6A6A6A !important;
+  font-weight: 600;
+}
+
+.dot{
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border: 2px solid #0061AC;
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.contentDashboardBanca .dot{
+  margin-right: 10px !important;
+}
+
+.dot p{
+  padding-top: 13px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4E4E4E !important;
+}
+
+.aulasConcluidas{
+  padding: 10px;
+}
+
+.aulasConcluidasText{
+  padding-top: 8px;
+}
+
+.aulasConcluidasText p:first-child{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  font-size: 12px;
+  color: #707070 !important;
+}
+
+.aulasConcluidasText p:last-child{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 600;
+  font-size: 16px;
+  color: #707070 !important;
+}
+
+.bdcNaoCadastrado{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 67, 142, 0.9)), url("../images/background.png");
+  /*background-position: center; !* Center the image *!*/
+  /*background-repeat: no-repeat; !* Do not repeat the image *!*/
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100vh !important;
+}
+
+.dropleftDropdown1 .row .row{
+  margin-top: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+.dropleftDropdown1 .row .row img{
+  height: 22px;
+}
+
+.dropleftDropdown1 .row .row p{
+  margin-top: 6px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.dropleftDropdown2 .row .row{
+  margin-top: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+.dropleftDropdown2 .row .row img{
+  height: 22px;
+}
+
+.dropleftDropdown2 .row .row p{
+  margin-top: 6px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.proximaEntradaDados{
+  width: 100%;
+  color: #fff;
+}
+
+.dropleftDropdown3 .row .row{
+  margin-top: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+.dropleftDropdown3 .row .row p{
+  margin-top: 6px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.proximaEntradaDados p:nth-child(1){
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.proximaEntradaDados p:nth-child(2){
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.square {
+  height: 20px;
+  border:1px solid #7FC1F5;
+  border-bottom:none;
+  width: 40%;
+}
+
+.square2 {
+  height: 20px;
+  border:1px solid #7FC1F5;
+  border-top:none;
+  width: 40%;
+}
+
+.rowSquare{
+  margin-left: 17%;
+}
+
+.tableOddsComparadasProbabilidades{
+  text-align: center;
+  margin: 0 !important;
+}
+
+.tableOddsComparadasProbabilidades tr:nth-child(1) td{
+  background-color: rgb(0, 67, 95) !important;
+  border-color: rgb(0, 67, 95);
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tableOddsComparadasProbabilidades tr:nth-child(2){
+  background-color: rgba(0, 37, 65, 1) !important;
+  border-color: rgba(0, 37, 65, 1);
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.oddsComparadasProbabilidades{
+  background: linear-gradient(180deg, rgb(0, 67, 95) 50%, rgba(0, 37, 65, 1) 50%);
+}
+
+.oddsComparadasProbabilidades .row p{
+  margin: 5px auto;
+  font-weight: 300;
+}
+
+
+#background {
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  background-color: red;
+  z-index: 1;
+}
+
+#content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+
+.tableOddsComparadasGols td:nth-child(2), .tableOddsComparadasGols td:nth-child(3), .tableOddsComparadasGols td:nth-child(4), .tableOddsComparadasGols td:nth-child(5) {
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tableOddsComparadasGols th:nth-child(2), .tableOddsComparadasGols th:nth-child(3) {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.tableOddsAmbasMarcam th:nth-child(1), .tableOddsAmbasMarcam th:nth-child(2){
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.tableOddsAmbasMarcam td:nth-child(1), .tableOddsAmbasMarcam td:nth-child(2), .tableOddsAmbasMarcam td:nth-child(3), .tableOddsAmbasMarcam td:nth-child(4){
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.dashboardData{
+  font-size: 10px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif !important;
+  margin-top: 10px;
+  color: #929292 !important;
+}
+
+
+.bancaAtual .metasAzul h2{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.meta1 h2, .meta1 h3{
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.blurImage{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardNaoCadastrado{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 25% !important;
+}
+
+.cardNaoCadastrado2{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 5% !important;
+}
+
+.cardNaoCadastrado3{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 25% !important;
+}
+
+.cardNaoCadastrado4{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 0% !important;
+}
+
+
+
+
+
+
+
+.ctMetasHoje{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 67, 142, 0.9)), url(../images/NoPath___Copia__8__A8_Path_175_pattern.png) no-repeat center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width: 100%;
+  height: 100vh;
+}
+
+
+.sideDashboardCTCard{
+  height: 42px;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.sideDashboardCTCard img{
+  width: 22px;
+  height: auto;
+  float: left;
+  margin: 10px;
+}
+
+.sideDashboardCTCard p:nth-child(2){
+  font-size: 11px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #929292 !important;
+  margin-bottom: 2px;
+  padding-top: 10px !important;
+}
+
+.sideDashboardCTCard p:nth-child(3){
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #000 !important;
+}
+
+.dashboardCTAoVivo, .dashboardCTASeguir{
+  margin-bottom: 10px;
+}
+
+.dashboardCTAoVivoTitle, .dashboardCTASeguirTitle{
+  margin-bottom: 15px;
+  color: #404040;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.dashboardCTAoVivoTitle i{
+  color: red;
+  margin: 0 15px 0 30px;
+}
+
+.dashboardCTASeguirTitle i{
+  color: #8F8F8F;
+  margin: 0 15px 0 30px;
+  font-size: 18px;
+}
+
+.CTContentTitle{
+  color: #6A6A6A;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 200;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.metasHojeTable{
+  background-color: rgba(0,0,0,0.5);
+  margin: 20px;
+  padding: 20px;
+}
+
+.metasHojeTitle, .alavancagemTitle{
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.metasHojeTitle p:first-child, .alavancagemTitle p:first-child{
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #fff;
+  margin: 35px auto 15px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.alavancagemTitle p:first-child{
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #fff;
+  margin: 35px auto 15px auto;
+}
+
+.alavancagemTable1{
+  background-color: rgba(0,0,0,0.5);
+  margin: 20px;
+  padding: 20px;
+}
+
+.alavancagemTable2{
+  background-color: rgba(0,0,0,0.5);
+  margin: 20px;
+  padding: 20px;
+}
+
+.metasHojeTable .row h3,.metasHojeTable .row h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.metasHojeTable .row h3{
+  font-size: 14px;
+}
+
+.metasHojeTable .row h2{
+  font-size: 22px;
+  /*margin: 0 20px 0 10px;*/
+}
+
+.metasHojeTable .row:first-child h2, .metasHojeTable .row:first-child h3{
+  color: #7FC1F5;
+}
+
+.metasHojeTable .row:nth-child(2) h2, .metasHojeTable .row:nth-child(2) h3{
+  color: #66BE87;
+}
+
+.metasHojeTable .row:nth-child(3) h2, .metasHojeTable .row:nth-child(3) h3{
+  color: #DC473C;
+}
+
+.metasHojeText1{
+  font-size: 11px;
+  font-weight: 300;
+  margin: 8px 0 0 20px;
+  letter-spacing: 2px;
+}
+
+.metasHojeText2{
+  font-size: 10px;
+  font-weight: 300;
+  margin: 8px 0 0 0;
+}
+
+.alavancagemTable1Div1{
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+
+
+.alavancagemTable1Div1 h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7FC1F5;
+  margin-left: 5px;
+  margin-bottom: -16px;
+}
+
+.alavancagemTable1Div1 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #7FC1F5;
+  text-align: center;
+}
+
+.alavancagemTable1Div1 p{
+  font-size: 9px;
+  text-align: center;
+}
+
+.alavancagemTable1Div2{
+  background-image: url("/static/images/Componente 5 – 1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.alavancagemTable1Div2 p{
+  font-size: 17px !important;
+  font-weight: 300;
+  margin: 0 0 0 -30px !important;
+}
+
+
+.alavancagemTable2Div1{
+  width: 50%;
+  align-self: center;
+}
+
+.alavancagemTable2Div1 h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #66BE87;
+  margin-left: 5px;
+  margin-bottom: -16px;
+}
+
+.alavancagemTable2Div1 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #66BE87;
+  text-align: center;
+}
+
+.alavancagemTable2Div1 p{
+  font-size: 9px;
+  text-align: center;
+}
+
+
+
+.alavancagemTable2Div2Row1{
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.alavancagemTable2Div2Row1 h3{
+  color: #7FC1F5;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alavancagemTable2Div2Row1 h2{
+  color: #7FC1F5;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alavancagemTable2Div2Row1 p{
+  font-size: 9px;
+  text-align: center;
+}
+
+.alavancagemTable2Div2Row2{
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.alavancagemTable2Div2Row2 h3{
+  color: #66BE87;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alavancagemTable2Div2Row2 h2{
+  color: #66BE87;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alavancagemTable2Div2Row2 p{
+  font-size: 9px;
+  text-align: center;
+}
+
+.alavancagemTable2Div2Row3{
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.alavancagemTable2Div2Row3 h3{
+  color: #DC8630;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alavancagemTable2Div2Row3 h2{
+  color: #DC8630;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alavancagemTable2Div2Row3 p{
+  font-size: 9px;
+  text-align: center;
+}
+
+.btnPartidasHoje{
+  margin: 0 auto 15px auto;
+  background-color: #0061AC;
+  font-weight: 700;
+  font-size: 11px;
+  font-family: "Bahnschrift", sans-serif !important;
+  width: 120px;
+}
+
+.contentMenuDB{
+  padding: 20px 0 20px 35px !important;
+}
+
+.dashboardCarreira .dashboardContent{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 67, 142, 1)), url("../images/background_db_carreira.png") no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+.coluna2divisaoRow{
+  background-color: rgba(0,0,0,0.2);
+  height: 30px;
+  margin: 10px 0;
+}
+
+.coluna2divisaoRow div:first-child{
+  width: 25%;
+  align-self: center;
+}
+
+.coluna2divisaoRow div:first-child p{
+  font-weight: 600;
+  font-size: 9px;
+  font-family: "Bahnschrift", sans-serif !important;
+  margin-left: 20px;
+}
+
+.coluna2divisaoRow div:nth-child(2){
+  width: 75%;
+  align-self: center;
+  text-align: left;
+}
+
+.coluna2divisaoRow div:nth-child(2) p{
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.coluna2divisao{
+  padding: 10px !important;
+}
+
+.coluna2divisaoTitulo, .coluna2rankingTitulo, .coluna2pontuacaoTitulo{
+  font-size: 27px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+}
+
+.coluna2divisaoSubTitulo, .coluna2rankingSubTitulo, .coluna2pontuacaoSubTitulo{
+  font-size: 13px;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.coluna2ranking{
+  padding: 10px !important;
+}
+
+.colunaPontuacao{
+  padding: 10px !important;
+}
+
+.divisaoCard{
+  background-color: rgba(0,0,0,0.2);
+  height: 101px;
+  margin: 15px auto;
+}
+
+.divisaoCard img{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(102, 190, 135, 0.4));
+  width: 120px;
+  height: auto;
+  float: left;
+}
+
+.divisaoCardContent{
+  position: absolute;
+  margin: 5% 25% 5% 10%;
+}
+.divisaoCardContent hr{
+  border: 2px solid #66BE87;
+  width: 100%;
+  margin: 5px auto;
+}
+
+.divisaoCard1 p{
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.divisaoCard2 p{
+  font-size: 17px !important;
+  font-weight: 200;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+.divisaoCard3 p{
+  font-size: 11px !important;
+  font-weight: 100;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+.rankingCard{
+  background-color: rgba(0,0,0,0.2);
+  height: 101px;
+  margin: 15px auto;
+}
+
+.rankingCard img{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(102, 190, 135, 0.4));
+  width: 120px;
+  height: auto;
+  float: left;
+}
+
+.rankingCardContent{
+  position: absolute;
+  margin: 5% 25% 5% 10%;
+}
+
+.rankingCardContent hr{
+  border: 2px solid #FFDE00;
+  width: 100%;
+  margin: 5px auto;
+}
+
+.rankingCard1 p{
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.rankingCard2 p{
+  font-size: 14px !important;
+  font-weight: 200;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+.rankingCard3 p{
+  font-size: 9px !important;
+  font-weight: 100;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+.pontuacaoCard{
+  background-color: rgba(0,0,0,0.2);
+  height: 101px;
+  margin: 15px auto;
+}
+
+.pontuacaoCardImg{
+  background-color: red !important;
+  z-index: 3;
+}
+
+
+.pontuacaoCard img{
+  /*background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(102, 190, 135, 0.4));*/
+  width: 120px;
+  height: auto;
+  float: left;
+}
+
+.pontuacaoCardContent{
+  position: absolute;
+  margin: 5% 25% 5% 10%;
+}
+
+.pontuacaoCardContent hr{
+  border: 2px solid #7FC1F5;
+  width: 100%;
+  margin: 5px auto;
+}
+
+.pontuacaoCard1 p{
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pontuacaoCard2 p{
+  font-size: 14px !important;
+  font-weight: 200;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+.pontuacaoCard3 p{
+  font-size: 9px !important;
+  font-weight: 100;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+.rankingRow{
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.rankingRow div:first-child{
+  width: 15%;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+  font-size: 28px;
+  color: #fff;
+}
+
+.rankingRow div:nth-child(2){
+  width: 55%;
+}
+
+.rankingRow div:nth-child(2) img{
+  width: 30px;
+  float: left;
+  height: auto;
+}
+
+.rankingRow div:nth-child(2) p{
+  margin-top: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Bahnschrift", sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.rankingRow div:nth-child(3){
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  width: 30%;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+.rankingRow div:nth-child(3) p{
+  margin: 14px 0;
+}
+
+.tabelaCarreiraPontuacao{
+  background-color: rgba(0,0,0,0.2);
+  max-height: 500px !important;
+  overflow: auto !important;
+}
+
+.tabelaCarreiraPontuacao td:nth-child(even) {
+  border-color: rgba(0,0,0,0.2);
+}
+
+.tabelaCarreiraPontuacao td:nth-child(odd) {
+  border-color: rgba(0,0,0,0.2);
+}
+
+.tabelaCarreiraPontuacao td:first-child{
+  font-size: 9px;
+  font-weight: 600;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #fff;
+}
+
+.tabelaCarreiraPontuacao td:nth-child(2), .tabelaCarreiraPontuacao td:nth-child(3){
+  font-size: 14px;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.colunaPontuacao div:nth-child(3)::-webkit-scrollbar {
+  width: 10px;
+}
+
+.colunaPontuacao div:nth-child(3)::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(94, 127, 152, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.dashboardTopMenuRight ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+.dashboardTopMenuRight li {
+  background: url(../images/componente2.png) center center no-repeat;
+  /*background: url(../images/menu_item_background3.PNG) center center no-repeat;*/
+  background-size: cover;
+  padding: 23px 0;
+  width: 34%;
+  text-align: center;
+  margin-top: 11px;
+  margin-left: -77px;
+}
+
+.dashboardTopMenuRight li.active {
+  background: url(../images/componente1.png) center center no-repeat;
+  /*background: url(../images/menu_item_background4.PNG) center center no-repeat;*/
+  background-size: cover;
+  padding: 17px 0;
+  height: 90%;
+  text-align: center;
+  margin-top: 17px;
+  z-index: 1;
+}
+
+
+
+
+
+
+/*.dashboardTopMenuRight li {*/
+/*  background: url(../images/componente2.png) center center no-repeat;*/
+/*  !*background: url(../images/menu_item_background3.PNG) center center no-repeat;*!*/
+/*  background-size: cover;*/
+/*  padding: 20px 0;*/
+/*  width: 28%;*/
+/*  text-align: center;*/
+/*  margin-top: 23px;*/
+/*}*/
+
+/*.dashboardTopMenuRight li:active {*/
+/*  background: url(../images/componente2.png) center center no-repeat;*/
+/*  !*background: url(../images/menu_item_background4.PNG) center center no-repeat;*!*/
+/*  background-size: cover;*/
+/*  padding: 15px 0px;*/
+/*  width: 25%;*/
+/*  text-align: center;*/
+/*  margin-top: 28px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboardTopMenuRight li.active a{
+  font-size: 15px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #203C56;
+  margin-top: 13px;
+  position: absolute;
+}
+
+.dashboardTopMenuRight li:first-child.active a {
+  font-size: 15px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #203C56;
+  /*margin-top: 25px !important;*/
+  margin-left: 42px;
+  margin-top: 10px;
+}
+
+.dashboardTopMenuRight li .menuItem {
+  font-size: 15px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color:#fff;
+  text-decoration: none !important;
+  margin-left: -25px;
+  margin-top: 13px;
+  position: absolute;
+}
+
+.dashboardTopMenuRight li .menuItem:active {
+  font-size: 15px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color:#203C56;
+  text-decoration: none !important;
+  position: fixed;
+  margin-left: -25px;
+  margin-top: 13px;
+}
+
+.dashboardTopMenuRight li a:link{
+  text-decoration: none !important;
+}
+
+.dashboardTopMenuRight li .menuItem:hover {
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
+.topNavDiv{
+  /*background-color: red;*/
+}
+
+.topNavImage{
+  /*position: absolute;*/
+}
+
+.topNavText{
+  position: absolute;
+  font-size: 32px;
+  left: 107px;
+  top: 46px;
+  z-index: 2;
+  /*color: red;*/
+}
+
+#navbarNav{
+  display: inline-flex;
+}
+
+#navbarNav img{
+  margin-right: -150px;
+  margin-left: -30px;
+  margin-top: 11px;
+  height: auto;
+  width: 332px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divisaoImageCard{
+  height: 100%;
+  float: left;
+  width: 120px;
+  background: linear-gradient(to right, rgba(102, 190, 135, 0.4), rgba(102, 190, 135, 0.4)), url("../images/divisaoCard.png") no-repeat center;
+  background-size: cover;
+}
+
+.rankingImageCard{
+  height: 100%;
+  float: left;
+  width: 120px;
+  background: linear-gradient(to left, rgba(155, 122, 0, 0.9), rgba(255, 222, 0, 0.4)), url("../images/rankingCard.png") no-repeat center;
+  background-size: cover;
+}
+
+.pontuacaoImageCard{
+  height: 100%;
+  float: left;
+  width: 120px;
+  background: linear-gradient(to left, rgba(27, 93, 145, 0.7), rgba(127, 193, 245, 0.6)),  url("../images/pontosCard.png") no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboardConquistas p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dashboardConquistas{
+  margin-top: -16px !important;
+}
+
+.dashboardConquistas .topMenu {
+  background-color: #1D3A54;
+  height: 74px;
+}
+
+.dashboardConquistas {
+  background-image: none;
+}
+
+.dashboardConquistas .dashboardContent{
+  padding: 0px;
+}
+
+.dashboardConquistas .contentMenu {
+  padding: 20px 15px 20px 20px;
+}
+
+.dashboardConquistas .metas{
+  text-align: center;
+}
+
+
+.dashboardConquistas .navbar {
+  width: 100%;
+}
+
+
+.dashboardConquistas .navbar .nav-link:active {
+  background-color: #fff;
+  color: black;
+  padding: 9px;
+  border-radius: 100px 100px 00px 00px;
+  /* border-radius: 5em 13em 5em / 14.5em 29em; */
+  width: 200px;
+  height: 32px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dashboardConquistas .navbar .nav-link {
+  background-color: #203c56;
+  color: white;
+  padding: 9px;
+  border-radius: 100px 100px 00px 00px;
+  /* border-radius: 5em 13em 5em / 14.5em 29em; */
+  width: 200px;
+  height: 32px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dashboardConquistas .navbar .nav-link:hover {
+  background-color: #505556;
+  color: white;
+  padding: 9px;
+  border-radius: 100px 100px 00px 00px;
+  /* border-radius: 5em 13em 5em / 14.5em 29em; */
+  width: 200px;
+  height: 32px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.contentDashboardConquistas .dot{
+  margin-right: 10px !important;
+}
+
+
+
+
+
+
+
+.dashboardConquistas .dashboardContent{
+  background-color: #fff;
+  border: 2px solid #ccc;
+  /*background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.0), rgba(0, 67, 142, 0.9)), url("../images/background.png") no-repeat right;*/
+  /*background-size: cover;*/
+}
+
+
+.dashboardConquistasBackground{
+  /*background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.0), rgba(0, 67, 142, 0.9)), url("../images/conquistas_background.png") no-repeat right;*/
+}
+
+
+.colunaTituloConquistas{
+  /*background-image: url("../images/conquistas_background.png");*/
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.0), rgba(0, 67, 142, 0.9)), url("../images/conquistas_background.png") no-repeat right;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px !important;
+  margin: 0 auto !important;
+}
+
+.colunaCardsConquistas hr{
+  border: 5px solid #FFDE00;
+}
+
+
+.imageCardTitle{
+  width: 100%;
+  margin: 0 auto;
+  place-content: center;
+}
+
+.imageCardTitle p:first-child{
+  width: 75%;
+  margin: 0 auto;
+  place-content: center;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.imageCardTitle p:nth-child(2){
+  width: 75%;
+  margin: 0 auto;
+  place-content: center;
+  font-family: Microsoft Yi Baiti, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.cardPontuacao{
+  height: 20px;
+  width: 40px;
+  background-color: #FFDE00;
+}
+
+.cardPontuacao p{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 10px;
+  color: #000 !important;
+  margin-top: 5px;
+}
+
+.teste{
+  height: 160px;
+  width: auto;
+  padding: 10px !important;
+  /*-webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);*/
+  /*-moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);*/
+  /*box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);*/
+}
+
+.conquistaImageCard1{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard1.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard2{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard2.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard3{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard3.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard4{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard4.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard6{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard6.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard5{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard5.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard7{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard7.png");
+  background-color: rgba(0,0,0,0.8);
+}
+
+.conquistaImageCard8{
+  width: 100%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/conquistaCard8.png");
+}
+
+.conquistaContentCard{
+  width: 100%;
+  height: 35%;
+}
+
+.conquistaContentCard .cardText1{
+  border-left: 3px solid #F8D703;
+  width: 32%;
+  background-color: #182B3D;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 10px;
+}
+
+.conquistaContentCard .cardText1 p{
+  align-self: center;
+  margin-top: 18px;
+}
+
+.conquistaContentCard .cardText2{
+  width: 68%;
+  background-color: #203C56;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 9px;
+  font-weight: 300;
+}
+
+.conquistaContentCard .cardText2 p{
+  align-self: center;
+  margin-top: 15px;
+}
+
+.colunaTituloConquistas img{
+  color: #FFDE00;
+  height: 50px;
+  margin: 20px 10px 10px 96px;
+}
+
+.colunaTituloConquistas .row:first-child{
+  font-size: 77px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #FFDE00 !important;
+  font-weight: 700;
+  width: 100px;
+  margin: 20px 10px 10px 96px;
+}
+
+.colunaTituloConquistas .row:first-child p {
+  font-size: 77px;
+  font-family: "Bahnschrift", sans-serif !important;
+  color: #FFDE00 !important;
+  font-weight: 700;
+}
+
+.colunaTituloConquistas .row:nth-child(3) {
+  margin: 20px 10px 20px 96px;
+}
+
+.colunaTituloConquistas .row:nth-child(2) p {
+  font-size: 14px;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 300;
+  width: 100px;
+  margin: 20px 10px 20px 96px;
+}
+
+.colunaTituloConquistas .row:nth-child(4) p {
+  width: 100px;
+  margin: 20px 10px 10px 96px;
+  font-size: 11px;
+  justify-content: end;
+  text-align: end;
+  font-family: "Bahnschrift", sans-serif !important;
+  font-weight: 300;
+}
+
+
+.sideMenuRightAcademia .sideMenuRightButton {
+  color: #000;
+  background-color: #F6F6F6;
+  height: 50px;
+  width: 120px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.sideMenuRightAcademia .sideMenuRightButton:hover {
+  color: #000;
+  height: 50px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  text-decoration: none !important;
+  background-color: #0061AC;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.sideMenuRightAcademia .sideMenuRightButton p:hover {
+  color: #fff !important;
+}
+
+
+.sideMenuRightAcademia .sideMenuRightButton p{
+  text-decoration: none !important;
+  text-align: center;
+  padding-top: 0 !important;
+}
+
+.sideMenuRightAcademia .sideMenuRightButton .iconNav i{
+  float: left;
+  padding-top: 16px;
+  margin-left: -7px;
+}
+
+.sideMenuRightAcademia .sideMenuRightButton .iconNav p{
+  text-decoration: none;
+}
+
+
+
+.sideMenuRightAcademia .sideMenuRightButton:hover p{
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+
+
+.academia .sideMenuRight p{
+  color: #6A6A6A;
+}
+
+.sideItemAcademia .sideMenuRightButton{
+  height: 50px;
+}
+
+.sideItemAcademia .sideMenuRightText{
+  margin: 0 0 0 20px;
+}
+
+
+
+
+.dropdown-menu{
+  width: 120px;
+  background-color: #F6F6F6;
+  height: 142px;
+  margin: 0 auto;
+}
+
+.dropdown-menu .row{
+  justify-content: center;
+}
+
+.dropdown-menu .row p{
+  font-family: "Bahnschrift", sans-serif !important;
+  font-size: 11px;
+  color: #6B6B6B !important;
+  margin: 10px 0 0 5px;
+}
+
+.dropdown-menu .row i{
+  color: #0061AC;
+}
+
+.sideMenuRightAcademia .dashboardTopMenuRight li .menuItem:first-child{
+  font-size: 12px !important;
+}
+
+.academia .topMenu{
+  margin: 0;
+}
+
+
+.dropleftDropdown1Content, .dropleftDropdown2Content{
+  background-color: #444;
+  color: #fff;
+  height: 355px;
+}
+
+.dropleftDropdown3Content{
+  background-color: #444;
+  color: #fff;
+  height: 345px;
+}
+
+.topMenuData{
+  float: right !important;
+  position: absolute;
+  margin-top: 22px;
+  margin-right: 5px;
+  right: 0;
+}
+
+.topMenuData p{
+  font-size: 10px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif !important;
+}
+
+#proximasPartidas, #partidasEncerradas, #partidasAoVivo{
+  position: fixed;
+  width: 152px;
+  margin-left: 227px;
+  height: 93%;
+  margin-top: 51px;
+  z-index: 1;
+}
+
+.sideMenuLeft ul, li, a:hover {
+  text-decoration: none;
+}

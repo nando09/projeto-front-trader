@@ -1,0 +1,211 @@
+
+<div class="row">
+    <div class="sideMenuLeft">
+        <a href="index.html">
+          <img src="../../assets/images/logo-trader.png" alt="Logo Trader Club">
+        </a>
+
+        <ul>
+          <li class="menuSelected" id="dashboardIcon">
+            <a href="dashboard-ct.html">
+              <i class="fas fa-trophy"></i>
+            </a>
+          </li>
+
+          <li class="menuSelected" (mouseenter)="toggleMenu('#academia')" (mouseleave)="toggleMenu('#academia')">
+            <a href="academia.html">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+          </li>
+
+          <li class="menuSelected" (mouseover)="toggleMenu('#jogos')" (mouseout)="toggleMenu('#jogos')">
+            <a href="listagem-jogos-proximos.html">
+              <i class="far fa-futbol"></i>
+            </a>
+          </li>
+
+          <li class="menuSelected" (mouseover)="toggleMenu('#lista')" (mouseout)="toggleMenu('#lista')">
+            <a href="bdc-ao-vivo.html">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+        </ul>
+    </div>
+
+
+
+    <div class="menu d-none" id="academiaMenu">
+        <ul>
+          <li class="aulasConcluidas">
+            <div class="dot">
+              <p>50%</p>
+            </div>
+            <div class="aulasConcluidasText">
+              <p>53 de 106 aulas</p>
+              <p>concluídas</p>
+            </div>
+          </li>
+
+          <li>
+            <a href="" class="side-nav-link">
+              <div class="sideMenuRightButton">
+                <div class="iconNav">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p>Módulo 1</p>
+                <p>INTRODUÇÃO</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="side-nav-link">
+              <div class="sideMenuRightButton">
+                <div class="iconNav">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p>Módulo 2</p>
+                <p>FUNDAMENTOS BÁSICOS</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="side-nav-link">
+              <div class="sideMenuRightButton">
+                <div class="iconNav">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p>Módulo 3</p>
+                <p>FUNDAMENTOS BÁSICOS</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="side-nav-item">
+            <a href="" class="side-nav-link">
+              <div class="sideMenuRightButton">
+                <div class="iconNav redIcon">
+                </div>
+                <p>Módulo</p>
+                <p>TÉCNICAS INICIANTES</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="menu d-none" id="jogosMenu">
+        <ul>
+          <li>
+            <a href="">
+              <div class="sideMenuRightButton">
+                <div class="iconNav">
+                  <i class="fas fa-backward"></i>
+                </div>
+                <p>ENCERRADOS</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="listagem-jogos-hoje.html">
+              <div class="sideMenuRightButton">
+                <div class="iconNav redIcon">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p>HOJE</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="listagem-jogos-proximos.html">
+              <div class="sideMenuRightButton">
+                <div class="iconNav">
+                  <i class="fas fa-forward"></i>
+                </div>
+                <p>PRÓXIMOS</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="listagem-jogos-odds.html">
+              <div class="sideMenuRightButton">
+                <div class="iconNav redIcon">
+                  <i class="fas fa-fire-alt"></i>
+                </div>
+                <p>ODDS DE VALOR</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="menu d-none" id="listaMenu">
+
+    <ul>
+
+      <li>
+        <a class="side-nav-link" >
+          <div class="sideMenuRightButton" id="encerradosCard">
+            <div class="iconNav">
+              <i class="fas fa-backward"></i>
+            </div>
+            <p>ENCERRADOS</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="side-nav-link" >
+          <div class="sideMenuRightButton" id="aoVivoCard">
+            <div class="iconNav redIcon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <p>AO VIVO</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="side-nav-link" >
+          <div class="sideMenuRightButton" id="aSeguirCard">
+            <div class="iconNav">
+              <i class="fas fa-play"></i>
+            </div>
+            <p>A SEGUIR</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="side-nav-link" >
+          <div class="sideMenuRightButton" id="proximosCard">
+            <div class="iconNav">
+              <i class="fas fa-forward"></i>
+            </div>
+            <p>PRÓXIMOS</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="bdc-nao-cadastrado.html">
+          <div class="sideMenuRightButton">
+            <div class="iconNav redIcon">
+              <i class="fas fa-fire-alt"></i>
+            </div>
+            <p>ODDS DE VALOR</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+</div>
+
+    <div class="col">
+    <ng-content></ng-content>
+    </div>
+</div>
