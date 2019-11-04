@@ -1,146 +1,145 @@
 //
-// $(".sidenavPrincipal").mouseover(function() {
-//   $(".sideMenuRight").removeClass("d-none");
+// document.getElementsByClassName(".sidenavPrincipal").mouseover(function() {
+//   document.getElementsByClassName(".sideMenuRight").removeClass("d-none");
 // });
 //
-// $(".sideMenuRight").mouseover(function() {
-//   $(".sideMenuRight").removeClass("d-none");
+// document.getElementsByClassName(".sideMenuRight").mouseover(function() {
+//   document.getElementsByClassName(".sideMenuRight").removeClass("d-none");
 // });
 //
-// $(".sidenavPrincipal").mouseout(function() {
-//   $(".sideMenuRight").addClass("d-none");
+// document.getElementsByClassName(".sidenavPrincipal").mouseout(function() {
+//   document.getElementsByClassName(".sideMenuRight").addClass("d-none");
 // });
 //
-// $(".sideMenuRight").mouseout(function() {
-//   $(".sideMenuRight").addClass("d-none");
+// document.getElementsByClassName(".sideMenuRight").mouseout(function() {
+//   document.getElementsByClassName(".sideMenuRight").addClass("d-none");
 // });
 
 
 
-$("#jogosIcon").mouseover(function() {
-  alert('teste');
-    $(".sideMenuJogos").removeClass("d-none");
+document.getElementById('#jogosIcon').mouseover(function() {
+    document.getElementsByClassName(".sideMenuJogos").removeClass("d-none");
 });
 
-$("#jogosIcon").mouseout(function() {
-    $(".sideMenuJogos").addClass("d-none");
+document.getElementById('jogosIcon').mouseout(function() {
+    document.getElementsByClassName(".sideMenuJogos").addClass("d-none");
 });
 
-$(".sideMenuJogos").mouseover(function() {
-    $(".sideMenuJogos").removeClass("d-none");
+document.getElementsByClassName("sideMenuJogos").mouseover(function() {
+    document.getElementsByClassName("sideMenuJogos").removeClass("d-none");
 });
 
-$(".sideMenuJogos").mouseout(function() {
-    $(".sideMenuJogos").addClass("d-none");
+document.getElementsByClassName("sideMenuJogos").mouseout(function() {
+    document.getElementsByClassName("sideMenuJogos").addClass("d-none");
 });
 
 
 
-$("#listaJogosIcon").mouseover(function() {
+document.getElementById("#listaJogosIcon").mouseover(function() {
   alert('test');
-    $(".matchesListDisplay").removeClass("d-none");
+    document.getElementsByClassName(".matchesListDisplay").removeClass("d-none");
 });
 
-$("#listaJogosIcon").mouseout(function() {
-    $(".sideMenuListaJogos").addClass("d-none");
+document.getElementById("#listaJogosIcon").mouseout(function() {
+    document.getElementsByClassName(".sideMenuListaJogos").addClass("d-none");
 });
 
-$(".sideMenuListaJogos").mouseover(function() {
-    $(".sideMenuListaJogos").removeClass("d-none");
+document.getElementsByClassName(".sideMenuListaJogos").mouseover(function() {
+    document.getElementsByClassName(".sideMenuListaJogos").removeClass("d-none");
 });
 
-$(".sideMenuListaJogos").mouseout(function() {
-    $(".sideMenuListaJogos").addClass("d-none");
-});
-
-
-$("#academiaIcon").mouseover(function() {
-    $(".sideMenuRightAcademia").removeClass("d-none");
-});
-
-$("#academiaIcon").mouseout(function() {
-    $(".sideMenuRightAcademia").addClass("d-none");
-});
-
-$(".sideMenuRightAcademia").mouseover(function() {
-    $(".sideMenuRightAcademia").removeClass("d-none");
-});
-
-$(".sideMenuRightAcademia").mouseout(function() {
-    $(".sideMenuRightAcademia").addClass("d-none");
+document.getElementsByClassName(".sideMenuListaJogos").mouseout(function() {
+    document.getElementsByClassName(".sideMenuListaJogos").addClass("d-none");
 });
 
 
-
-$("#dashboardIcon").mouseover(function() {
-    $(".sideMenuRightDashboard").removeClass("d-none");
+document.getElementById("#academiaIcon").mouseover(function() {
+    document.getElementsByClassName(".sideMenuRightAcademia").removeClass("d-none");
 });
 
-$("#dashboardIcon").mouseout(function() {
-    $(".sideMenuRightDashboard").addClass("d-none");
+document.getElementById("#academiaIcon").mouseout(function() {
+    document.getElementsByClassName(".sideMenuRightAcademia").addClass("d-none");
 });
 
-$(".sideMenuRightDashboard").mouseover(function() {
-    $(".sideMenuRightDashboard").removeClass("d-none");
+document.getElementsByClassName(".sideMenuRightAcademia").mouseover(function() {
+    document.getElementsByClassName(".sideMenuRightAcademia").removeClass("d-none");
 });
 
-$(".sideMenuRightDashboard").mouseout(function() {
-    $(".sideMenuRightDashboard").addClass("d-none");
+document.getElementsByClassName(".sideMenuRightAcademia").mouseout(function() {
+    document.getElementsByClassName(".sideMenuRightAcademia").addClass("d-none");
 });
 
 
 
-
-$("#encerradosCard").mouseover(function() {
-    $(".encerrados2").removeClass("d-none");
-});
-$("#encerradosCard").mouseout(function() {
-    $(".encerrados2").addClass("d-none");
-});
-$(".encerrados2").mouseover(function() {
-    $(".encerrados2").removeClass("d-none");
-});
-$(".encerrados2").mouseout(function() {
-    $(".encerrados2").addClass("d-none");
+document.getElementById("#dashboardIcon").mouseover(function() {
+    document.getElementsByClassName(".sideMenuRightDashboard").removeClass("d-none");
 });
 
-$("#aoVivoCard").mouseover(function() {
-    $(".encerrados1").removeClass("d-none");
-});
-$("#aoVivoCard").mouseout(function() {
-    $(".encerrados1").addClass("d-none");
-});
-$(".encerrados1").mouseover(function() {
-    $(".encerrados1").removeClass("d-none");
-});
-$(".encerrados1").mouseout(function() {
-    $(".encerrados1").addClass("d-none");
+document.getElementById("#dashboardIcon").mouseout(function() {
+    document.getElementsByClassName(".sideMenuRightDashboard").addClass("d-none");
 });
 
-$("#aSeguirCard").mouseover(function() {
-    $(".proximasPartidas").removeClass("d-none");
-});
-$("#aSeguirCard").mouseout(function() {
-    $(".proximasPartidas").addClass("d-none");
-});
-$(".proximasPartidas").mouseover(function() {
-    $(".proximasPartidas").removeClass("d-none");
-});
-$(".proximasPartidas").mouseout(function() {
-    $(".proximasPartidas").addClass("d-none");
+document.getElementsByClassName(".sideMenuRightDashboard").mouseover(function() {
+    document.getElementsByClassName(".sideMenuRightDashboard").removeClass("d-none");
 });
 
-$("#proximosCard").mouseover(function() {
-    $(".proximasPartidas").removeClass("d-none");
+document.getElementsByClassName(".sideMenuRightDashboard").mouseout(function() {
+    document.getElementsByClassName(".sideMenuRightDashboard").addClass("d-none");
 });
-$("#proximosCard").mouseout(function() {
-    $(".proximasPartidas").addClass("d-none");
+
+
+
+
+document.getElementById("#encerradosCard").mouseover(function() {
+    document.getElementsByClassName(".encerrados2").removeClass("d-none");
 });
-$(".proximasPartidas").mouseover(function() {
-    $(".proximasPartidas").removeClass("d-none");
+document.getElementById("#encerradosCard").mouseout(function() {
+    document.getElementsByClassName(".encerrados2").addClass("d-none");
 });
-$(".proximasPartidas").mouseout(function() {
-    $(".proximasPartidas").addClass("d-none");
+document.getElementsByClassName(".encerrados2").mouseover(function() {
+    document.getElementsByClassName(".encerrados2").removeClass("d-none");
+});
+document.getElementsByClassName(".encerrados2").mouseout(function() {
+    document.getElementsByClassName(".encerrados2").addClass("d-none");
+});
+
+document.getElementById("#aoVivoCard").mouseover(function() {
+    document.getElementsByClassName(".encerrados1").removeClass("d-none");
+});
+document.getElementById("#aoVivoCard").mouseout(function() {
+    document.getElementsByClassName(".encerrados1").addClass("d-none");
+});
+document.getElementsByClassName(".encerrados1").mouseover(function() {
+    document.getElementsByClassName(".encerrados1").removeClass("d-none");
+});
+document.getElementsByClassName(".encerrados1").mouseout(function() {
+    document.getElementsByClassName(".encerrados1").addClass("d-none");
+});
+
+document.getElementById("#aSeguirCard").mouseover(function() {
+    document.getElementsByClassName(".proximasPartidas").removeClass("d-none");
+});
+document.getElementById("#aSeguirCard").mouseout(function() {
+    document.getElementsByClassName(".proximasPartidas").addClass("d-none");
+});
+document.getElementsByClassName(".proximasPartidas").mouseover(function() {
+    document.getElementsByClassName(".proximasPartidas").removeClass("d-none");
+});
+document.getElementsByClassName(".proximasPartidas").mouseout(function() {
+    document.getElementsByClassName(".proximasPartidas").addClass("d-none");
+});
+
+document.getElementById("#proximosCard").mouseover(function() {
+    document.getElementsByClassName(".proximasPartidas").removeClass("d-none");
+});
+document.getElementById("#proximosCard").mouseout(function() {
+    document.getElementsByClassName(".proximasPartidas").addClass("d-none");
+});
+document.getElementsByClassName(".proximasPartidas").mouseover(function() {
+    document.getElementsByClassName(".proximasPartidas").removeClass("d-none");
+});
+document.getElementsByClassName(".proximasPartidas").mouseout(function() {
+    document.getElementsByClassName(".proximasPartidas").addClass("d-none");
 });
 
 

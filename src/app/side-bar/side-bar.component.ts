@@ -14,4 +14,7 @@ export class SideBarComponent implements OnInit {
   ngOnInit() {
   }
   toggleMenu(id) { $(id + 'Menu').toggleClass('d-none'); }
+  togglePartidasAoVivo(id) { $(id).toggleClass('d-none'); }
+
+
 }

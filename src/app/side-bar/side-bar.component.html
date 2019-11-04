@@ -5,27 +5,27 @@
           <img src="../../assets/images/logo-trader.png" alt="Logo Trader Club">
         </a>
 
-        <ul>
+        <ul class="sideList">
           <li class="menuSelected" id="dashboardIcon">
-            <a href="dashboard-ct.html">
+            <a href="dashboard/ct">
               <i class="fas fa-trophy"></i>
             </a>
           </li>
 
-          <li class="menuSelected" (mouseenter)="toggleMenu('#academia')" (mouseleave)="toggleMenu('#academia')">
-            <a href="academia.html">
+          <li class="menuSelected" id="academiaIcon" (mouseenter)="toggleMenu('#academia')" (mouseleave)="toggleMenu('#academia')">
+            <a href="academia">
               <i class="fas fa-graduation-cap"></i>
             </a>
           </li>
 
-          <li class="menuSelected" (mouseover)="toggleMenu('#jogos')" (mouseout)="toggleMenu('#jogos')">
-            <a href="listagem-jogos-proximos.html">
+          <li class="menuSelected" id="listaJogosIcon" (mouseover)="toggleMenu('#jogos')" (mouseout)="toggleMenu('#jogos')">
+            <a href="partidas/proximas">
               <i class="far fa-futbol"></i>
             </a>
           </li>
 
-          <li class="menuSelected" (mouseover)="toggleMenu('#lista')" (mouseout)="toggleMenu('#lista')">
-            <a href="bdc-ao-vivo.html">
+          <li class="menuSelected" id="jogosIcon" (mouseover)="toggleMenu('#lista')" (mouseout)="toggleMenu('#lista')">
+            <a href="bdc/ao-vivo">
               <i class="fas fa-user"></i>
             </a>
           </li>
@@ -35,6 +35,7 @@
 
 
     <div class="menu d-none" id="academiaMenu">
+<!--      d-none-->
         <ul>
           <li class="aulasConcluidas">
             <div class="dot">
@@ -48,58 +49,60 @@
 
           <li>
             <a href="" class="side-nav-link">
-              <div class="sideMenuRightButton">
+              <div style="height: 38px" class="sideMenuRightButton">
                 <div class="iconNav">
-                  <i class="fas fa-check"></i>
+                  <i style="margin-top: 0.8em;" class="fas fa-check"></i>
                 </div>
-                <p>Módulo 1</p>
-                <p>INTRODUÇÃO</p>
+                <div>
+                  <p style="margin-top: -2.0em; font-size: 10px; margin-bottom: 0.5em">Módulo 1</p>
+                  <p style="margin-top: 0em;">INTRODUÇÃO</p>
+                </div>
               </div>
             </a>
           </li>
 
           <li>
             <a href="" class="side-nav-link">
-              <div class="sideMenuRightButton">
+              <div class="sideMenuRightButton" style="height: 3.6em;">
                 <div class="iconNav">
-                  <i class="fas fa-check"></i>
+                  <i style="margin-top: 1.2em;" class="fas fa-check"></i>
                 </div>
-                <p>Módulo 2</p>
-                <p>FUNDAMENTOS BÁSICOS</p>
+                <p style="margin-top: -2.6em; font-size: 10px; margin-bottom: 0.5em">Módulo 2</p>
+                <p style="margin-top: 0em;">FUNDAMENTOS BÁSICOS</p>
               </div>
             </a>
           </li>
 
           <li>
             <a href="" class="side-nav-link">
-              <div class="sideMenuRightButton">
+              <div class="sideMenuRightButton" style="height: 3.6em;">
                 <div class="iconNav">
-                  <i class="fas fa-check"></i>
+                  <i style="margin-top: 1.2em;" class="fas fa-check"></i>
                 </div>
-                <p>Módulo 3</p>
-                <p>FUNDAMENTOS BÁSICOS</p>
+                <p style="margin-top: -2.6em; font-size: 10px; margin-bottom: 0.5em">Módulo 3</p>
+                <p style="margin-top: 0em;">FUNDAMENTOS BÁSICOS</p>
               </div>
             </a>
           </li>
 
           <li class="side-nav-item">
             <a href="" class="side-nav-link">
-              <div class="sideMenuRightButton">
+              <div class="sideMenuRightButton" style="height: 3.6em; margin-top: 2em">
                 <div class="iconNav redIcon">
                 </div>
-                <p>Módulo</p>
-                <p>TÉCNICAS INICIANTES</p>
+                <p style="margin-top: -2.6em; font-size: 10px; margin-bottom: 0.5em; padding-top: 0.5em; margin-left: 0">Módulo</p>
+                <p style="margin-top: 0.5em; margin-left: 0">TÉCNICAS INICIANTES</p>
               </div>
             </a>
           </li>
         </ul>
     </div>
 
-    <div class="menu d-none" id="jogosMenu">
+    <div class="menu" id="jogosMenu">
         <ul>
           <li>
-            <a href="">
-              <div class="sideMenuRightButton">
+            <a>
+              <div class="sideMenuRightButton" (mouseup)="togglePartidasAoVivo('#partidasAoVivo')">
                 <div class="iconNav">
                   <i class="fas fa-backward"></i>
                 </div>
@@ -144,6 +147,8 @@
     </div>
 
     <div class="menu d-none" id="listaMenu">
+
+
 
     <ul>
 
@@ -205,7 +210,937 @@
 
 </div>
 
-    <div class="col">
+
+
+
+
+
+  <div id="partidasAoVivo" class="encerrados1 d-none" style="background-image: none !important;">
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">
+          <div class="contentColumnRight">
+            <div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell tableCell7">81'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell scoreboard">2</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="partidasEncerradas" class="encerrados2 d-none" style="background-image: none !important; background-color: #f5f5f5;">
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">
+          <div class="contentColumnRight">
+            <div>
+
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">FIM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
+                      <div class="divTableCell scoreboard">3</div>
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
+                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="proximasPartidas" class="proximasPartidas d-none" style="background-image: none !important; background-color: #f5f5f5;">
+
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">
+          <div class="contentColumnRight">
+            <div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contentColumnLeftRow">
+                <div class="divTable contentColumnLeftRowFirstTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow" >
+                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divTable contentColumnLeftRowSecondTh">
+                  <div class="divTableBody">
+                    <div class="divTableRow contentColumnLeftRowSecondTd">
+                      <div class="divTableCell clubName">BARCELONA</div>
+                    </div>
+                    <div class="divTableRow contentColumnLeftRowThirdTd">
+                      <div class="divTableCell clubName">REAL MADRID</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="contentAcademia">
     <ng-content></ng-content>
     </div>
 </div>

@@ -32,7 +32,8 @@
 
 /*Start side menu*/
 .sideMenuLeft{
-  width: 5vw;
+  width: 4.7em;
+  position: fixed;
   background-image: url("../images/menuLateral.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -94,8 +95,8 @@
   background-color: #F6F6F6;
   height: 32px;
   /*height: 70px;*/
-  width: 120px;
-  margin-top: 25px;
+  width: 130px;
+  /*margin-top: 25px;*/
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
@@ -621,7 +622,7 @@ div.contentColumnLeftRowFourthTh {
 
 @media screen and (max-width: 1410px) {
   .topMenuLeft {
-    padding-left: 50px !important;
+    padding-left: 30px !important;
   }
 }
 
@@ -951,6 +952,7 @@ div.contentColumnLeftRowFourthTh {
     width: 100% !important;
     height: 60px !important;
     position: fixed;
+    z-index: 1;
   }
 
   .sideNavbar{
@@ -966,13 +968,22 @@ div.contentColumnLeftRowFourthTh {
     margin-top: 10px;
   }
 
+  .contentAcademia{
+    margin: 4.3em 0 0 0!important;
+    width: 100% !important;
+  }
+
   /*.menuSelected{*/
     /*font-size: 20px;*/
   /*}*/
 
   .menu{
     padding-left: 5vw !important;
+    position: fixed;
+    margin-top: 4.3em !important;
+    margin-left: 0 !important;
   }
+
   .overflow{
     overflow: hidden !important;
   }
@@ -981,9 +992,9 @@ div.contentColumnLeftRowFourthTh {
     height: 570px;
   }
 
-  /*.menuSelected i{*/
-  /*  font-size: 22px;*/
-  /*}*/
+  .fa-trophy, .fa-futbol, .fa-user, .fa-graduation-cap{
+    /*margin-top: 0.7em !important;*/
+  }
 
   .userImage{
     padding-right: 32px;
@@ -1081,10 +1092,15 @@ div.contentColumnLeftRowFourthTh {
   .colunaTituloConquistas img {
     float: right;
   }
+
+  .sideList{
+    width: 84%;
+    justify-content: space-around;
+    display: inline-flex;
+    float: right;
+    margin-top: 0.7em;
+  }
 }
-
-
-
 
 
 /*Academia*/
@@ -2306,11 +2322,12 @@ div.contentColumnLeftRowFourthTh {
 
 .sideMenuRightButton p{
   font-family: "Bahnschrift", sans-serif !important;
-  font-size: 13px;
+  font-size: 12px;
   color: #6A6A6A !important;
   font-weight: 600;
-  margin-top: 10px;
-  padding-top: 8px;
+  margin-left: 2em;
+  margin-top: -1em;
+  text-align: -webkit-center;
 }
 
 .topMenuLeft h3 {
@@ -2395,54 +2412,6 @@ div.contentColumnLeftRowFourthTh {
 }
 
 
-/*.academia .sideMenuRightButton{*/
-/*     color: #000;*/
-/*     background-color: #F6F6F6;*/
-/*     height: 50px;*/
-/*     width: 120px;*/
-/*     margin-top: 25px;*/
-/*     margin-left: auto;*/
-/*     margin-right: auto;*/
-/*     border-radius: 5px;*/
-/*}*/
-
-/*.academia .sideMenuRightButton p:nth-child(3):hover{*/
-/*    color: white !important;*/
-/*}*/
-
-
-/*.academia .sideMenuRightButton:hover{*/
-/*    color: #000 !important;*/
-/*    background-color: #0061AC;*/
-/*    height: 50px;*/
-/*    width: 120px;*/
-/*    margin-top: 25px;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*.academia .sideMenuRightButton p:nth-child(2){*/
-/*    font-size: 7px;*/
-/*    float: left;*/
-/*    margin-left: 5px;*/
-/*    font-family: "Bahnschrift", sans-serif !important;*/
-/*    color: #AAAAAA !important;*/
-/*    font-weight: 600;*/
-/*    margin-top: 0 !important;*/
-/*}*/
-
-/*.academia .sideMenuRightButton p:nth-child(3){*/
-/*    font-family: "Bahnschrift", sans-serif !important;*/
-/*    font-size: 10px;*/
-/*    color: #6A6A6A !important;*/
-/*    font-weight: 600;*/
-/*    margin-right: 25px;*/
-/*    text-align: start;*/
-/*    margin-left: 26px;*/
-/*    padding-top: 20px;*/
-/*    margin-top: 0 !important;*/
-/*}*/
 
 .sideMenuRightText{
   font-family: "Bahnschrift", sans-serif !important;
@@ -2519,15 +2488,16 @@ div.contentColumnLeftRowFourthTh {
 }
 
 .dot p{
-  padding-top: 13px;
+  padding-top: 14px;
   font-family: "Bahnschrift", sans-serif !important;
   font-weight: 500;
   font-size: 15px;
   color: #4E4E4E !important;
+  margin-left: 0.4em;
 }
 
 .aulasConcluidas{
-  padding: 10px;
+  padding: 0;
 }
 
 .aulasConcluidasText{
@@ -2538,14 +2508,14 @@ div.contentColumnLeftRowFourthTh {
   font-family: "Bahnschrift", sans-serif !important;
   font-weight: 600;
   font-size: 12px;
-  color: #707070 !important;
+  color: #aaa !important;
 }
 
 .aulasConcluidasText p:last-child{
   font-family: "Bahnschrift", sans-serif !important;
   font-weight: 600;
   font-size: 16px;
-  color: #707070 !important;
+  color: #aaa !important;
 }
 
 .bdcNaoCadastrado{
@@ -4032,8 +4002,30 @@ div.contentColumnLeftRowFourthTh {
   height: 93%;
   margin-top: 51px;
   z-index: 1;
+  background-color: white;
 }
 
 .sideMenuLeft ul, li, a:hover {
   text-decoration: none;
+}
+
+.fa-play, .fa-circle, .fa-backward, .fa-forward, .fa-fire-alt,.fa-play-circle {
+ padding-top: 0.5em !important;
+}
+
+#academiaMenu, #jogosMenu, #listaMenu{
+  z-index: 1;
+  background-color: white;
+  height: 42em;
+  margin-top: 3.6em;
+  position: fixed;
+  margin-left: 4.7em;
+}
+
+
+.contentAcademia{
+  position: absolute;
+  width: 88% !important;
+  margin-left: 4.7em;
+  min-width: fit-content;
 }
