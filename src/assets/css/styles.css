@@ -379,6 +379,7 @@ div.contentColumnLeftRowFourthTh {
 .contentColumnLeftRow{
   font-weight: bold;
   margin-right: 0;
+  inline-size: max-content;
 }
 
 .contentColumnLeft i{
@@ -637,7 +638,7 @@ div.contentColumnLeftRowFourthTh {
   .contentSession{
     /*width: 85vw;*/
     padding: 0 0;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
   }
 
   .topMenuRight p{
@@ -690,13 +691,13 @@ div.contentColumnLeftRowFourthTh {
     margin-top: 52px !important;
   }
   .contentDashboardBanca .contentMenu{
-    padding: 20px 5px 0 37px !important;
+    padding: 20px 5px 0 10px !important;
   }
   .metas{
     margin: 50px 0 10px 2px !important;
   }
   .contentDashboardConquistas .contentMenu{
-    padding: 20px 5px 0 37px !important;
+    padding: 20px 5px 0 20px !important;
   }
 
   .dashboardTopMenuRight li:first-child.active a {
@@ -708,7 +709,7 @@ div.contentColumnLeftRowFourthTh {
   }
 
   .dashboardTopMenuRight li:first-child a {
-    margin-left: -47px !important;
+    margin-left: -70px !important;
     margin-top: 5px !important;
     max-width: 136px;
     font-size: 12px;
@@ -720,16 +721,16 @@ div.contentColumnLeftRowFourthTh {
 
 @media (max-width: 991px){
   .dashboardTopMenuRight li:first-child.active a {
-    margin-left: -18px !important;
-    margin-top: 2px !important;
+    margin-left: -45px !important;
+    margin-top: -1px !important;
     max-width: 136px;
     font-size: 11px !important;
     padding-right: 65px;
   }
 
   .dashboardTopMenuRight li:first-child a {
-    margin-left: -18px !important;
-    margin-top: 2px !important;
+    margin-left: -45px !important;
+    margin-top: -1px !important;
     max-width: 136px;
     font-size: 11px !important;
     padding-right: 47px;
@@ -841,16 +842,16 @@ div.contentColumnLeftRowFourthTh {
 
 @media (max-width: 950px){
   .topMenuUser p {
-    font-size: 12px;
+    font-size: 10px !important;
   }
   .topMenuRight p {
-    margin-right: 8px;
+    margin-right: 5px;
   }
 }
 
 @media (max-width: 850px){
   .contentDashboardBanca .contentMenu{
-    padding: 20px 5px 0 50px !important;
+    padding: 20px 5px 0 15px !important;
   }
 
   .metas{
@@ -858,7 +859,7 @@ div.contentColumnLeftRowFourthTh {
   }
 
   .contentDashboardConquistas .contentMenu{
-    padding: 20px 5px 0 50px !important;
+    padding: 20px 5px 0 10px !important;
   }
 }
 
@@ -868,6 +869,19 @@ div.contentColumnLeftRowFourthTh {
     width: 60px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .index .contentPage, .proximos .contentPage{
+    max-width: fit-content;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .odds .contentPage{
+    max-width: fit-content;
+  }
+}
+
 
 
 @media screen and (max-height: 540px) {
@@ -909,6 +923,30 @@ div.contentColumnLeftRowFourthTh {
     margin: 0;
     width: 60px;
   }
+  .metasHojeTable .row h2 {
+    font-size: 15px !important;
+  }
+  .metasHojeTable .row h3 {
+    font-size: 8px !important;
+  }
+  .metasHojeText1 {
+    font-size: 8px !important;
+    margin: 8px 0 0 10px !important;
+  }
+  .metasHojeText2 {
+    font-size: 8px !important;
+    font-weight: 300 !important;
+    margin: 8px 0 0 0 !important;
+  }
+  .alavancagemTable1Div2 p {
+    font-size: 14px !important;
+  }
+  .alavancagemTable1Div1 h3 {
+    font-size: 11px !important;
+  }
+  .alavancagemTable1Div1 h2 {
+    font-size: 16px !important;
+  }
 }
 
 
@@ -921,6 +959,10 @@ div.contentColumnLeftRowFourthTh {
 }
 
 @media screen and (max-width: 576px) {
+  .bdcNaoCadastrado .contentPage, .proximos .contentPage, .index .contentPage, .odds .contentPage{
+    margin-left: 0 !important;
+  }
+
   .contentSession{
     margin-left: 25px !important;
   }
@@ -1049,6 +1091,8 @@ div.contentColumnLeftRowFourthTh {
   .dashboardConquistas .col-sm-11 {
     flex: 0 0 100% !important;
     max-width: 100%;
+    margin-left: 0 !important;
+    margin-top: 3em;
   }
 
   .dashboardConquistas {
@@ -1058,10 +1102,17 @@ div.contentColumnLeftRowFourthTh {
   .dashboardBanca .col-sm-11 {
     flex: 0 0 100% !important;
     max-width: 100%;
+    margin-left: 0 !important;
+    margin-top: 3em;
   }
 
   .dashboardBanca {
     overflow: hidden;
+  }
+
+  .dashboardCTAoVivoTitle, .dashboardCTASeguirTitle{
+    margin: 0 auto 2em auto !important;
+    padding-right: 2.3em;
   }
 
   .contentMain {
@@ -1100,6 +1151,12 @@ div.contentColumnLeftRowFourthTh {
     float: right;
     margin-top: 0.7em;
   }
+
+  #proximasPartidas, #partidasEncerradas, #partidasAoVivo {
+    margin-left: 187px !important;
+    margin-top: 60px !important;
+  }
+
 }
 
 
@@ -2523,7 +2580,6 @@ div.contentColumnLeftRowFourthTh {
   /*background-position: center; !* Center the image *!*/
   /*background-repeat: no-repeat; !* Do not repeat the image *!*/
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 100vh !important;
 }
 
 .dropleftDropdown1 .row .row{
@@ -2837,7 +2893,7 @@ div.contentColumnLeftRowFourthTh {
   font-weight: 300;
   font-family: "Bahnschrift", sans-serif !important;
   color: #fff;
-  margin: 35px auto 15px auto;
+  margin: 30px auto 10px auto;
   width: 100%;
   text-align: center;
 }
@@ -2845,9 +2901,9 @@ div.contentColumnLeftRowFourthTh {
 .alavancagemTitle p:first-child{
   font-size: 13px;
   font-weight: 300;
+  margin: 10px auto 10px auto;
   font-family: "Bahnschrift", sans-serif !important;
   color: #fff;
-  margin: 35px auto 15px auto;
 }
 
 .alavancagemTable1{
@@ -2911,7 +2967,7 @@ div.contentColumnLeftRowFourthTh {
 .alavancagemTable1Div1 h3{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   color: #7FC1F5;
   margin-left: 5px;
   margin-bottom: -16px;
@@ -2920,7 +2976,7 @@ div.contentColumnLeftRowFourthTh {
 .alavancagemTable1Div1 h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   color: #7FC1F5;
   text-align: center;
 }
@@ -2951,7 +3007,7 @@ div.contentColumnLeftRowFourthTh {
 .alavancagemTable2Div1 h3{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   color: #66BE87;
   margin-left: 5px;
   margin-bottom: -16px;
@@ -2960,7 +3016,7 @@ div.contentColumnLeftRowFourthTh {
 .alavancagemTable2Div1 h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   color: #66BE87;
   text-align: center;
 }
@@ -2986,7 +3042,7 @@ div.contentColumnLeftRowFourthTh {
 
 .alavancagemTable2Div2Row1 h2{
   color: #7FC1F5;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
@@ -3010,7 +3066,7 @@ div.contentColumnLeftRowFourthTh {
 
 .alavancagemTable2Div2Row2 h2{
   color: #66BE87;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
@@ -3034,7 +3090,7 @@ div.contentColumnLeftRowFourthTh {
 
 .alavancagemTable2Div2Row3 h2{
   color: #DC8630;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
@@ -3554,10 +3610,6 @@ div.contentColumnLeftRowFourthTh {
   font-family: 'Montserrat', sans-serif;
 }
 
-.dashboardConquistas{
-  margin-top: -16px !important;
-}
-
 .dashboardConquistas .topMenu {
   background-color: #1D3A54;
   height: 74px;
@@ -3997,10 +4049,10 @@ div.contentColumnLeftRowFourthTh {
 
 #proximasPartidas, #partidasEncerradas, #partidasAoVivo{
   position: fixed;
-  width: 152px;
-  margin-left: 227px;
+  width: 150px;
+  margin-left: 224px;
   height: 93%;
-  margin-top: 51px;
+  margin-top: 50px;
   z-index: 1;
   background-color: white;
 }

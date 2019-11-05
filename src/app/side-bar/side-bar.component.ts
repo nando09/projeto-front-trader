@@ -15,6 +15,6 @@ export class SideBarComponent implements OnInit {
   }
   toggleMenu(id) { $(id + 'Menu').toggleClass('d-none'); }
   togglePartidasAoVivo(id) { $(id).toggleClass('d-none'); }
-
-
+  togglePpartidasEncerradas(id) { $(id).toggleClass('d-none'); }
+  togglePproximasPartidas(id) { $(id).toggleClass('d-none'); }
 }

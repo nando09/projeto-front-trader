@@ -12,20 +12,20 @@
             </a>
           </li>
 
-          <li class="menuSelected" id="academiaIcon" (mouseenter)="toggleMenu('#academia')" (mouseleave)="toggleMenu('#academia')">
-            <a href="academia">
+          <li class="menuSelected" id="academiaIcon" (mouseup)="toggleMenu('#academia')">
+            <a>
               <i class="fas fa-graduation-cap"></i>
             </a>
           </li>
 
-          <li class="menuSelected" id="listaJogosIcon" (mouseover)="toggleMenu('#jogos')" (mouseout)="toggleMenu('#jogos')">
-            <a href="partidas/proximas">
+          <li class="menuSelected" id="listaJogosIcon" (mouseup)="toggleMenu('#jogos')">
+            <a>
               <i class="far fa-futbol"></i>
             </a>
           </li>
 
-          <li class="menuSelected" id="jogosIcon" (mouseover)="toggleMenu('#lista')" (mouseout)="toggleMenu('#lista')">
-            <a href="bdc/ao-vivo">
+          <li class="menuSelected" id="jogosIcon" (mouseup)="toggleMenu('#lista')">
+            <a>
               <i class="fas fa-user"></i>
             </a>
           </li>
@@ -98,7 +98,7 @@
         </ul>
     </div>
 
-    <div class="menu" id="jogosMenu">
+    <div class="menu d-none" id="jogosMenu">
         <ul>
           <li>
             <a>
@@ -112,8 +112,8 @@
           </li>
 
           <li>
-            <a href="listagem-jogos-hoje.html">
-              <div class="sideMenuRightButton">
+            <a>
+              <div class="sideMenuRightButton"  (mouseup)="togglePpartidasEncerradas('#partidasEncerradas')">
                 <div class="iconNav redIcon">
                   <i class="fas fa-play-circle"></i>
                 </div>
@@ -123,8 +123,8 @@
           </li>
 
           <li>
-            <a href="listagem-jogos-proximos.html">
-              <div class="sideMenuRightButton">
+            <a>
+              <div class="sideMenuRightButton"  (mouseup)="togglePproximasPartidas('#proximasPartidas')">
                 <div class="iconNav">
                   <i class="fas fa-forward"></i>
                 </div>
