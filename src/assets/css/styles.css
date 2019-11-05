@@ -877,12 +877,10 @@ div.contentColumnLeftRowFourthTh {
 }
 
 @media screen and (max-width: 930px) {
-  .odds .contentPage{
+  .odds .contentPage, .dashboardCarreira .contentPage, .dashboardBanca .contentPage{
     max-width: fit-content;
   }
 }
-
-
 
 @media screen and (max-height: 540px) {
   .loginPage{

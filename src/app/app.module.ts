@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -21,6 +20,11 @@ import { DashboardBancaComponent } from './dashboard-banca/dashboard-banca.compo
 import { ProximosComponent } from './proximos/proximos.component';
 import { OddsComponent } from './odds/odds.component';
 import { HojeComponent } from './hoje/hoje.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { AuthService } from "./core/auth/auth.service";
+
 
 @NgModule({
   declarations: [
@@ -42,13 +46,16 @@ import { HojeComponent } from './hoje/hoje.component';
     DashboardBancaComponent,
     ProximosComponent,
     OddsComponent,
-    HojeComponent
+    HojeComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

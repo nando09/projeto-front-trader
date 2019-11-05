@@ -14,6 +14,7 @@ import {PartidasAoVivoComponent} from './partidas-ao-vivo/partidas-ao-vivo.compo
 import {PartidasEncerradasComponent} from './partidas-encerradas/partidas-encerradas.component';
 import {PartidasProximasComponent} from './partidas-proximas/partidas-proximas.component';
 import {ProximosComponent} from './proximos/proximos.component';
+import {CadastroComponent} from './cadastro/cadastro.component';
 
 
 const routes: Routes = [
@@ -72,6 +73,10 @@ const routes: Routes = [
   {
     path: 'proximos',
     component: ProximosComponent,
+  },
+  {
+    path: 'cadastro',
+    component: CadastroComponent,
   }
 
 ];

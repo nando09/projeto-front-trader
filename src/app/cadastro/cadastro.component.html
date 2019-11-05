@@ -1,0 +1,51 @@
+<div class="loginPage">
+
+  <!--Start container-->
+
+  <div class="divEspaco">
+  </div>
+  <div class="loginForm">
+
+    <div class="imgForm">
+      <img src="/assets/images/logo-trader.png" alt="">
+      <p>CADASTRAR</p>
+    </div>
+
+
+    <!--            Start form-->
+    <form (submit)="register()">
+      <div class="formulario">
+
+        <div class="form-group m-0">
+          <label class="mt-0" for="inputName">nome</label>
+          <input class="form-control" type="text" v-model="name" id="inputName" required placeholder="Seu nome">
+        </div>
+
+        <div class="form-group m-0">
+          <label class="mt-0" for="inputEmail">e-mail</label>
+          <input class="form-control" type="email" v-model="email" id="inputEmail" required placeholder="Seu email">
+        </div>
+
+        <div class="form-group m-0">
+          <label class="mt-0" for="inputSenha">senha</label>
+          <input class="form-control" type="password" v-model="password" required id="inputSenha" placeholder="Sua senha">
+        </div>
+
+        <div class="form-group m-0">
+          <label class="mt-0" for="inputConfirmarSenha">confirmar senha</label>
+          <input class="form-control" type="password" v-model="password_confirmation" required id="inputConfirmarSenha" placeholder="Confirmar senha">
+        </div>
+
+        <button class="btn btn-primary btnLoginForm">CADASTRAR</button>
+
+        <a href=""><small id="email" class="form-text text-muted">Recuperar Senha</small></a>
+
+      </div>
+    </form>
+      <!--            End form-->
+
+  </div>
+  <div class="divEspaco">
+  </div>
+
+</div>
