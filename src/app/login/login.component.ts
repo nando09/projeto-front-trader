@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../core/auth/auth.service';
+import {AuthService} from '../core/auth/auth.service';
 import {Router} from '@angular/router';
+import {FormBuilder, FormGroup} from "@angular/forms";
 
 
 @Component({
@@ -8,35 +9,35 @@ import {Router} from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit{
 
-  emailError = '';
-  passwordError = '';
+  loginForm: FormGroup;
 
   constructor(
+    private formBuilder: FormBuilder,
     private router: Router,
-    private authService: AuthService
+    private auth: AuthService
   ) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.loginForm = this.formBuilder.group({
+      email: [''],
+      senha: ['']
+    })
   }
 
+  login(){
+    const email = this.loginForm.get('email').value;
+    const senha = this.loginForm.get('senha').value;
 
-  login(data){
-    this.emailError = '';
-    this.passwordError = '';
-    this.authService.authenticate(data.form.value)
-      .then(response => {
-        if (response.status) {
-          this.emailError = response.email;
-          this.passwordError = response.password;
-        } else {
-          window.sessionStorage.setItem('user', JSON.stringify(response));
-          this.router.navigateByUrl('/home');
-          // console.log(response)
-        }
-      })
-  };
-
+    this.auth.authenticate(email, senha).subscribe(
+      () => this.router.navigateByUrl('/academia'),
+      err => {
+        console.log(err);
+        this.loginForm.reset();
+        alert('Login inválido')
+      }
+    )
+  }
 }

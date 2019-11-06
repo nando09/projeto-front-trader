@@ -21,9 +21,10 @@ import { ProximosComponent } from './proximos/proximos.component';
 import { OddsComponent } from './odds/odds.component';
 import { HojeComponent } from './hoje/hoje.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { FormsModule } from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./core/auth/auth.service";
+import { VmessageComponent } from './vmessage/vmessage.component';
 
 
 @NgModule({
@@ -47,13 +48,15 @@ import { AuthService } from "./core/auth/auth.service";
     ProximosComponent,
     OddsComponent,
     HojeComponent,
-    CadastroComponent
+    CadastroComponent,
+    VmessageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -12,26 +12,20 @@
     </div>
 
     <!--            Start form-->
-    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+    <form (submit)="login()">
       <div class="formulario">
 
         <div class="form-group">
           <label for="email">e-mail</label>
-          <input class="form-control" type="email" id="inputEmail" ngModel name="email" required placeholder="Seu email">
-          <span *ngIf="emailError" class="invalid-feedback" role="alert">
-            <strong>{{emailError}}</strong>
-          </span>
+          <input class="form-control" type="email" id="inputEmail" name="email" required placeholder="Seu email" [(ngModel)]="credentials.email">
         </div>
 
         <div class="form-group">
           <label for="inputSenha">senha</label>
-          <input class="form-control" type="password" ngModel name="password" required id="inputSenha" placeholder="Sua senha">
-          <span *ngIf="passwordError" class="invalid-feedback" role="alert">
-            <strong>{{passwordError}}</strong>
-          </span>
+          <input class="form-control" type="password" name="senha" required id="inputSenha" placeholder="Sua senha" [(ngModel)]="credentials.senha">
         </div>
 
-        <button class="btn btn-primary btnLoginForm">ENTRAR</button>
+        <button type="submit" class="btn btn-primary btnLoginForm">ENTRAR</button>
 
         <a href=""><small id="email" class="form-text text-muted">Recuperar Senha</small></a>
       </div>

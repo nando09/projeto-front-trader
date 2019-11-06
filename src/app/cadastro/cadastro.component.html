@@ -13,30 +13,30 @@
 
 
     <!--            Start form-->
-    <form (submit)="register()">
+    <form [formGroup]="cadastroForm">
       <div class="formulario">
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputName">nome</label>
-          <input class="form-control" type="text" v-model="name" id="inputName" required placeholder="Seu nome">
+          <input class="form-control" type="text" id="inputName" formControlName="nome" required placeholder="Seu nome">
         </div>
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputEmail">e-mail</label>
-          <input class="form-control" type="email" v-model="email" id="inputEmail" required placeholder="Seu email">
+          <input class="form-control" type="email" id="inputEmail" formControlName="email" required placeholder="Seu email">
         </div>
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputSenha">senha</label>
-          <input class="form-control" type="password" v-model="password" required id="inputSenha" placeholder="Sua senha">
+          <input class="form-control" type="password" formControlName="senha" required id="inputSenha" placeholder="Sua senha">
         </div>
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputConfirmarSenha">confirmar senha</label>
-          <input class="form-control" type="password" v-model="password_confirmation" required id="inputConfirmarSenha" placeholder="Confirmar senha">
+          <input class="form-control" type="password" formControlName="senhaConfirmacao" required id="inputConfirmarSenha" placeholder="Confirmar senha">
         </div>
 
-        <button class="btn btn-primary btnLoginForm">CADASTRAR</button>
+        <button type="submit" class="btn btn-primary btnLoginForm">CADASTRAR</button>
 
         <a href=""><small id="email" class="form-text text-muted">Recuperar Senha</small></a>
 
