@@ -18,11 +18,17 @@
         <div class="form-group">
           <label for="email">e-mail</label>
           <input class="form-control" type="email" id="Email" name="email" required placeholder="Seu email" ngModel>
+          <span *ngIf="emailError" class="invalid-feedback" role="alert">
+            <strong>{{emailError}}</strong>
+          </span>
         </div>
 
         <div class="form-group">
           <label for="Senha">senha</label>
           <input class="form-control" type="password" name="password" required id="Senha" placeholder="Sua senha" ngModel>
+          <span *ngIf="passwordError" class="invalid-feedback" role="alert">
+            <strong>{{passwordError}}</strong>
+          </span>
         </div>
 
         <button type="submit" class="btn btn-primary btnLoginForm">ENTRAR</button>
