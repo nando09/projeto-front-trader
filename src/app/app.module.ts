@@ -25,6 +25,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./core/auth/auth.service";
 import { VmessageComponent } from './vmessage/vmessage.component';
+import { BetfairLoginComponent } from './betfair-login/betfair-login.component';
 
 
 @NgModule({
@@ -49,14 +50,15 @@ import { VmessageComponent } from './vmessage/vmessage.component';
     OddsComponent,
     HojeComponent,
     CadastroComponent,
-    VmessageComponent
+    VmessageComponent,
+    BetfairLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
