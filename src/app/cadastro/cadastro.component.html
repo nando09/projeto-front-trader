@@ -13,27 +13,27 @@
 
 
     <!--            Start form-->
-    <form [formGroup]="cadastroForm">
+    <form #cadasterForm="ngForm" (ngSubmit)="register(cadasterForm)">
       <div class="formulario">
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputName">nome</label>
-          <input class="form-control" type="text" id="inputName" formControlName="nome" required placeholder="Seu nome">
+          <input class="form-control" type="text" id="inputName" required placeholder="Seu nome" ngModel name="name">
         </div>
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputEmail">e-mail</label>
-          <input class="form-control" type="email" id="inputEmail" formControlName="email" required placeholder="Seu email">
+          <input class="form-control" type="email" id="inputEmail" required placeholder="Seu email" ngModel name="email">
         </div>
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputSenha">senha</label>
-          <input class="form-control" type="password" formControlName="senha" required id="inputSenha" placeholder="Sua senha">
+          <input class="form-control" type="password" required id="inputSenha" placeholder="Sua senha" ngModel name="password">
         </div>
 
         <div class="form-group m-0">
           <label class="mt-0" for="inputConfirmarSenha">confirmar senha</label>
-          <input class="form-control" type="password" formControlName="senhaConfirmacao" required id="inputConfirmarSenha" placeholder="Confirmar senha">
+          <input class="form-control" type="password" required id="inputConfirmarSenha" placeholder="Confirmar senha" ngModel name="password_confirmation">
         </div>
 
         <button type="submit" class="btn btn-primary btnLoginForm">CADASTRAR</button>

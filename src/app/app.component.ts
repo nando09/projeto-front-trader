@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AuthService} from "./core/auth/auth.service";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,15 @@ import {AuthService} from "./core/auth/auth.service";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor(public auth: AuthService){}
+
+  constructor(
+    private router: Router){
+    if(!sessionStorage.getItem('user') && window.location.pathname !=='/cadastro'){
+      this.router.navigateByUrl('/login')
+    }
+    if(sessionStorage.getItem('user') && window.location.pathname =='/login'){
+      this.router.navigateByUrl('/proximos')
+    }
+  }
   title = 'NewTraderClient';
 }

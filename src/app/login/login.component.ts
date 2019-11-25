@@ -11,33 +11,36 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 })
 export class LoginComponent implements OnInit{
 
-  loginForm: FormGroup;
+  data = {};
+  emailError: any ='';
+  passwordError: any = '';
 
   constructor(
-    private formBuilder: FormBuilder,
     private router: Router,
     private auth: AuthService
   ) {
   }
 
-  ngOnInit(): void {
-    this.loginForm = this.formBuilder.group({
-      email: [''],
-      senha: ['']
-    })
+  ngOnInit(){
+
   }
 
-  login(){
-    const email = this.loginForm.get('email').value;
-    const senha = this.loginForm.get('senha').value;
-
-    this.auth.authenticate(email, senha).subscribe(
-      () => this.router.navigateByUrl('/academia'),
-      err => {
-        console.log(err);
-        this.loginForm.reset();
-        alert('Login inválido')
-      }
-    )
+  login(data){
+    // console.log(data.form.value)
+    this.emailError = '';
+    this.passwordError = '';
+    this.auth.authenticate(data.form.value)
+      .then(response => {
+        this.data = response;
+        // console.log(this.data);
+        if (data.status == false) {
+          this.emailError = data.email;
+          this.passwordError = data.password;
+        } else {
+          window.sessionStorage.setItem('user', JSON.stringify(response));
+          this.router.navigateByUrl('/proximos');
+          // console.log(response)
+        }
+      })
   }
 }
