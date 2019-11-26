@@ -1,371 +1,367 @@
 <body class="dashboardBanca">
-<div class="container-fluid">
-  <div class="row content">
+  <div class="container-fluid">
+    <div class="row content">
 
-    <app-side-bar></app-side-bar>
+      <app-side-bar></app-side-bar>
 
 
-    <div class="col-sm-11 col-xs-12 contentPage" style="margin-left: 4.7em;">
+      <div class="col-sm-11 col-xs-12 contentPage" style="margin-left: 4.7em;">
 
-      <!--    Start top menu-->
-      <div class="topMenu" style="margin:0">
-        <div class="col-12 d-flex pr-0">
-          <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 d-flex topMenuLeftDashboard">
-            <div class="userImageDashboard">
+        <!--    Start top menu-->
+        <div class="topMenu" style="margin:0">
+          <div class="col-12 d-flex pr-0">
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 d-flex topMenuLeftDashboard">
+              <div class="userImageDashboard">
+              </div>
+              <div>
+                <h3>PETER MARKS</h3>
+                <p class="dashboardData">AGOSTO DE 2019</p>
+              </div>
             </div>
-            <div>
-              <h3>PETER MARKS</h3>
-              <p class="dashboardData">AGOSTO DE 2019</p>
+            <div class="topMenuData">
+              <p>Ter, 27 de Agosto de 2019</p>
             </div>
-          </div>
-          <div class="topMenuData">
-            <p>Ter, 27 de Agosto de 2019</p>
-          </div>
 
-          <div class="col-xl-8 col-lg-8 col-md-7 col-sm-6 d-flex dashboardTopMenuRight">
-            <ul>
+            <div class="col-xl-8 col-lg-8 col-md-7 col-sm-6 d-flex dashboardTopMenuRight">
+              <ul>
 
-              <li>
-                  <a style="margin-left: -95px; margin-top: 9px" href="dashboard/ct" class="menuItem">CENTRO DE TREINAMENTO</a>
-              </li>
+                <li>
+                  <a style="margin-left: -95px; margin-top: 9px" href="dashboard/ct" class="menuItem">CENTRO DE
+                    TREINAMENTO</a>
+                </li>
 
-              <li>
+                <li>
                   <a style="margin-left: -28px;" href="dashboard/banca" class="menuItem">BANCA</a>
-              </li>
+                </li>
 
-              <li>
+                <li>
                   <a style="margin-left: -38px;" href="dashboard/carreira" class="menuItem">CARREIRA</a>
-              </li>
-              <li>
+                </li>
+                <li>
                   <a style="margin-left: -45px;" href="dashboard/conquistas" class="menuItem">CONQUISTAS</a>
-              </li>
+                </li>
 
 
-              <!--          <li class="active"><a href="dashboard-ct.html" class="menuItem">CENTRO DE TREINAMENTO</a></li>-->
-              <!--          <li><a href="dashboard-banca.html" class="menuItem">BANCA</a></li>-->
-              <!--          <li><a href="dashboard-carreira.html" class="menuItem">CARREIRA</a></li>-->
-              <!--          <li><a href="dashboard-conquistas.html" class="menuItem">CONQUISTAS</a></li>-->
-            </ul>
+                <!--          <li class="active"><a href="dashboard-ct.html" class="menuItem">CENTRO DE TREINAMENTO</a></li>-->
+                <!--          <li><a href="dashboard-banca.html" class="menuItem">BANCA</a></li>-->
+                <!--          <li><a href="dashboard-carreira.html" class="menuItem">CARREIRA</a></li>-->
+                <!--          <li><a href="dashboard-conquistas.html" class="menuItem">CONQUISTAS</a></li>-->
+              </ul>
+            </div>
           </div>
         </div>
+        <!--                End top menu-->
+
+        <!--                Start content dashboard banca-->
+        <div class="container-fluid contentDashboardBanca">
+          <!--                    Start content menu-->
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 contentMenu contentMenuDB">
+            <div class="metas">
+              <div class="metasAzul">
+                <h3>R$</h3>
+                <h2>250,00</h2>
+                <p>META MÁXIMA</p>
+              </div>
+              <div class="metasVerde">
+                <h3>R$</h3>
+                <h2>220,00</h2>
+                <p>CENTRO DA META</p>
+              </div>
+              <div class="metasVermelho">
+                <h3>R$</h3>
+                <h2>280,00</h2>
+                <p>META MÍNIMA</p>
+              </div>
+            </div>
+
+            <app-betfair-login></app-betfair-login>
+
+          </div>
+          <!--                    Start content main-->
+          <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 contentMain">
+            <!--                        Start dashboard content-->
+            <div class="dashboardContent">
+              <div class="row">
+                <div class="col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                  <div class="bancas1">
+                    <div class="meta1 metasAzul">
+                      <h3>R$</h3>
+                      <h2>20500,00</h2>
+                      <p>BANCA 30 DIAS MÁX</p>
+                    </div>
+                    <div class="meta1 metasVerde">
+                      <h3>R$</h3>
+                      <h2>18500,00</h2>
+                      <p>BANCA 30 DIAS CENTRO</p>
+                    </div>
+                    <div class="meta1 metasLaranja">
+                      <h3>R$</h3>
+                      <h2>16500,00</h2>
+                      <p>BANCA 30 DIAS MIN</p>
+                    </div>
+                  </div>
+                  <div class="lucroTotal metasVerde">
+                    <h3>R$</h3>
+                    <h2>11000,00</h2>
+                    <p style="margin-left: 25%;">LUCRO TOTAL</p>
+                    <p style="float: right">+225%</p>
+                  </div>
+                  <div class="prejuizoTotal metasLaranja">
+                    <h3>R$</h3>
+                    <h2>1500,00</h2>
+                    <p style="margin-left: 25%;">PREJUÍZO TOTAL</p>
+                    <p style="float: right">-25%</p>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                  <div class="bancaAtual metasAzul">
+                    <h3>R$</h3>
+                    <h2>15580,00</h2>
+                    <p>BANCA ATUAL</p>
+                  </div>
+
+                  <div class="bancaInicial metasVerde">
+                    <h3>R$</h3>
+                    <h2>4200,00</h2>
+                    <p>BANCA INICIAL</p>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                  <div class="bancas2">
+                    <div class="meta1">
+                      <h3>R$</h3>
+                      <h2>60500,00</h2>
+                      <p>BANCA 180 DIAS MÁX</p>
+                    </div>
+                    <div class="meta1">
+                      <h3>R$</h3>
+                      <h2>57500,00</h2>
+                      <p>BANCA 180 DIAS CENTRO</p>
+                    </div>
+                    <div class="meta1">
+                      <h3>R$</h3>
+                      <h2>54000,00</h2>
+                      <p>BANCA 180 DIAS MIN</p>
+                    </div>
+                  </div>
+
+                  <!--                                    Start bloco comparacoes-->
+                  <div class="blocoComparacoes">
+                    <div class="reds">
+                      <div class="row titleComparacoes">
+                        <p>REDS</p>
+                      </div>
+                      <div class="row contentComparacoes">
+                        <div class="width50">
+                          <p style="color: #DC8630 !important; font-family: 'Montserrat', sans-serif !important;">8</p>
+                          <p>VOCÊ</p>
+                        </div>
+                        <div class="box linha-vertical width502">
+                          <p>10</p>
+                          <p>TURMA</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="greens">
+                      <div class="row titleComparacoes">
+                        <p>GREENS</p>
+                      </div>
+                      <div class="row contentComparacoes">
+                        <div class="width50">
+                          <p style="color: #66BE87 !important; font-family: 'Montserrat', sans-serif !important;">27</p>
+                          <p>VOCÊ</p>
+                        </div>
+                        <div class="box linha-vertical width502">
+                          <p>18</p>
+                          <p>TURMA</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="entradasDia">
+                      <div class="row titleComparacoes">
+                        <p>ENTRADAS/DIA</p>
+                      </div>
+                      <div class="row contentComparacoes">
+                        <div class="width50 metasAzul">
+                          <p style="color: #7FC1F5 !important; font-family: 'Montserrat', sans-serif !important;">3</p>
+                          <p>VOCÊ</p>
+                        </div>
+                        <div class="box linha-vertical width502">
+                          <p>2</p>
+                          <p>TURMA</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="entradas">
+                      <div class="row titleComparacoes">
+                        <p>ENTRADAS</p>
+                      </div>
+                      <div class="row contentComparacoes">
+                        <div class="width50 metasAzul">
+                          <p style="color: #7FC1F5 !important; font-family: 'Montserrat', sans-serif !important;">32</p>
+                          <p>VOCÊ</p>
+                        </div>
+                        <div class="box linha-vertical width502">
+                          <p>29</p>
+                          <p>TURMA</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                                    End bloco comparacoes-->
+                </div>
+              </div>
+
+              <!--                            Start table lista jogos-->
+              <div class="listaJogos">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Mercado</th>
+                      <th scope="col">Hora de início</th>
+                      <th scope="col">Data da última resolução</th>
+                      <th scope="col">Lucro/prejuízo ($)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Futebol / Flamengo x SE Palmeiras : Golos na 1.ª Parte 0.5</td>
+                      <td>01-Set-19 16:00</td>
+                      <td>01-Set-19 16:12</td>
+                      <td>2,39</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Atletico Madrid x Eibar : Probabilidades</td>
+                      <td>01-Set-19 14:00</td>
+                      <td>01-Set-19 16:01</td>
+                      <td>2,85</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Atletico Madrid x Eibar : Mais/Menos de 4.5 Golos </td>
+                      <td>01-Set-19 14:00</td>
+                      <td>01-Set-19 15:54</td>
+                      <td>-1,94</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / APOEL x Ajax : Golos na 1.ª Parte 0.5</td>
+                      <td>20-Ago-19 16:00</td>
+                      <td>20-Ago-19 16:46</td>
+                      <td>-4,00</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Wolves x Man Utd : Probabilidades</td>
+                      <td>19-Ago-19 16:00</td>
+                      <td>19-Ago-19 17:52</td>
+                      <td>1,08</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Wolves x Man Utd : Mais/Menos de 2.5 golos</td>
+                      <td>19-Ago-19 16:00</td>
+                      <td>19-Ago-19 17:52</td>
+                      <td>0,37</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Wolves x Man Utd : Mais/Menos de 1.5 golos</td>
+                      <td>19-Ago-19 16:00</td>
+                      <td>19-Ago-19 17:15</td>
+                      <td>-0,81</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Athletic Bilbao x Barcelona : Resultado Correto</td>
+                      <td>16-Ago-19 16:00</td>
+                      <td>16-Ago-19 17:53</td>
+                      <td>0,20</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Athletic Bilbao x Barcelona : Mais/Menos de 1.5 golos</td>
+                      <td>16-Ago-19 16:00</td>
+                      <td>16-Ago-19 17:53</td>
+                      <td>0,67</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Athletic Bilbao x Barcelona : Probabilidades</td>
+                      <td>16-Ago-19 16:00</td>
+                      <td>16-Ago-19 17:53</td>
+                      <td>-5,38</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Bayern Munich x Heartha Berlin : Mais/Menos de .5 golos</td>
+                      <td>16-Ago-19 15:35</td>
+                      <td>16-Ago-19 17:28</td>
+                      <td>0,60</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Liverpool x Chelsea : 1st Goal</td>
+                      <td>14-Ago-19 16:00</td>
+                      <td>14-Ago-19 16:37</td>
+                      <td>3,80</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Viking x Sarpsborg : Resultado Correto</td>
+                      <td>14-Ago-19 14:00</td>
+                      <td>14-Ago-19 15:52</td>
+                      <td>0,05</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Viking x Sarpsborg : Provavilidades</td>
+                      <td>14-Ago-19 14:00</td>
+                      <td>14-Ago-19 15:51</td>
+                      <td>0,60</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Viking x Sarpsborg : Mais/Menos de 3.5 golos</td>
+                      <td>14-Ago-19 14:00</td>
+                      <td>14-Ago-19 15:51</td>
+                      <td>0,22</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Viking x Sarpsborg : Mais/Menos de 2.5 golos</td>
+                      <td>14-Ago-19 14:00</td>
+                      <td>14-Ago-19 15:43</td>
+                      <td>0,67</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Viking x Sarpsborg : Mais/Menos de 1.5 golos</td>
+                      <td>14-Ago-19 14:00</td>
+                      <td>14-Ago-19 15:28</td>
+                      <td>0,45</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Porto x FK Krasnodar : Mais/Menos de 6.5 golos</td>
+                      <td>13-Ago-19 16:00</td>
+                      <td>13-Ago-19 17:53</td>
+                      <td>0,07</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Porto x FK Krasnodar : Resultado Correto</td>
+                      <td>13-Ago-19 16:00</td>
+                      <td>13-Ago-19 17:53</td>
+                      <td>0,53</td>
+                    </tr>
+                    <tr>
+                      <td>Futebol / Celtic x CFR Cluj : Resultado Correto</td>
+                      <td>13-Ago-19 15:45</td>
+                      <td>13-Ago-19 17:41</td>
+                      <td>0,03</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!--                            End table lista jogos-->
+            </div>
+            <!--                        End dashboard content-->
+          </div>
+          <!--                    End content main-->
+        </div>
+        <!--                End content dashboard banca-->
       </div>
-      <!--                End top menu-->
 
-      <!--                Start content dashboard banca-->
-      <div class="container-fluid contentDashboardBanca">
-        <!--                    Start content menu-->
-        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 contentMenu contentMenuDB">
-          <div class="metas">
-            <div class="metasAzul">
-              <h3>R$</h3>
-              <h2>250,00</h2>
-              <p>META MÁXIMA</p>
-            </div>
-            <div class="metasVerde">
-              <h3>R$</h3>
-              <h2>220,00</h2>
-              <p>CENTRO DA META</p>
-            </div>
-            <div class="metasVermelho">
-              <h3>R$</h3>
-              <h2>280,00</h2>
-              <p>META MÍNIMA</p>
-            </div>
-          </div>
-
-          <div class="betfairAccount">
-            <p>Betfair</p>
-            <hr>
-            <p>CONTA CONECTADA</p>
-            <i class="fas fa-exchange-alt"></i>
-          </div>
-
-        </div>
-        <!--                    Start content main-->
-        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 contentMain">
-          <!--                        Start dashboard content-->
-          <div class="dashboardContent">
-            <div class="row">
-              <div class="col-xl-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="bancas1">
-                  <div class="meta1 metasAzul">
-                    <h3>R$</h3>
-                    <h2>20500,00</h2>
-                    <p>BANCA 30 DIAS MÁX</p>
-                  </div>
-                  <div class="meta1 metasVerde">
-                    <h3>R$</h3>
-                    <h2>18500,00</h2>
-                    <p>BANCA 30 DIAS CENTRO</p>
-                  </div>
-                  <div class="meta1 metasLaranja">
-                    <h3>R$</h3>
-                    <h2>16500,00</h2>
-                    <p>BANCA 30 DIAS MIN</p>
-                  </div>
-                </div>
-                <div class="lucroTotal metasVerde">
-                  <h3>R$</h3>
-                  <h2>11000,00</h2>
-                  <p style="margin-left: 25%;">LUCRO TOTAL</p>
-                  <p style="float: right">+225%</p>
-                </div>
-                <div class="prejuizoTotal metasLaranja">
-                  <h3>R$</h3>
-                  <h2>1500,00</h2>
-                  <p style="margin-left: 25%;">PREJUÍZO TOTAL</p>
-                  <p style="float: right">-25%</p>
-                </div>
-              </div>
-
-              <div class="col-xl-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="bancaAtual metasAzul">
-                  <h3>R$</h3>
-                  <h2>15580,00</h2>
-                  <p>BANCA ATUAL</p>
-                </div>
-
-                <div class="bancaInicial metasVerde">
-                  <h3>R$</h3>
-                  <h2>4200,00</h2>
-                  <p>BANCA INICIAL</p>
-                </div>
-              </div>
-
-              <div class="col-xl-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="bancas2">
-                  <div class="meta1">
-                    <h3>R$</h3>
-                    <h2>60500,00</h2>
-                    <p>BANCA 180 DIAS MÁX</p>
-                  </div>
-                  <div class="meta1">
-                    <h3>R$</h3>
-                    <h2>57500,00</h2>
-                    <p>BANCA 180 DIAS CENTRO</p>
-                  </div>
-                  <div class="meta1">
-                    <h3>R$</h3>
-                    <h2>54000,00</h2>
-                    <p>BANCA 180 DIAS MIN</p>
-                  </div>
-                </div>
-
-                <!--                                    Start bloco comparacoes-->
-                <div class="blocoComparacoes">
-                  <div class="reds">
-                    <div class="row titleComparacoes">
-                      <p>REDS</p>
-                    </div>
-                    <div class="row contentComparacoes">
-                      <div class="width50">
-                        <p style="color: #DC8630 !important; font-family: 'Montserrat', sans-serif !important;">8</p>
-                        <p>VOCÊ</p>
-                      </div>
-                      <div class="box linha-vertical width502">
-                        <p>10</p>
-                        <p>TURMA</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="greens">
-                    <div class="row titleComparacoes">
-                      <p>GREENS</p>
-                    </div>
-                    <div class="row contentComparacoes">
-                      <div class="width50">
-                        <p style="color: #66BE87 !important; font-family: 'Montserrat', sans-serif !important;">27</p>
-                        <p>VOCÊ</p>
-                      </div>
-                      <div class="box linha-vertical width502">
-                        <p>18</p>
-                        <p>TURMA</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="entradasDia">
-                    <div class="row titleComparacoes">
-                      <p>ENTRADAS/DIA</p>
-                    </div>
-                    <div class="row contentComparacoes">
-                      <div class="width50 metasAzul">
-                        <p style="color: #7FC1F5 !important; font-family: 'Montserrat', sans-serif !important;">3</p>
-                        <p>VOCÊ</p>
-                      </div>
-                      <div class="box linha-vertical width502">
-                        <p>2</p>
-                        <p>TURMA</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="entradas">
-                    <div class="row titleComparacoes">
-                      <p>ENTRADAS</p>
-                    </div>
-                    <div class="row contentComparacoes">
-                      <div class="width50 metasAzul">
-                        <p style="color: #7FC1F5 !important; font-family: 'Montserrat', sans-serif !important;">32</p>
-                        <p>VOCÊ</p>
-                      </div>
-                      <div class="box linha-vertical width502">
-                        <p>29</p>
-                        <p>TURMA</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--                                    End bloco comparacoes-->
-              </div>
-            </div>
-
-            <!--                            Start table lista jogos-->
-            <div class="listaJogos">
-              <table class="table">
-                <thead>
-                <tr>
-                  <th scope="col">Mercado</th>
-                  <th scope="col">Hora de início</th>
-                  <th scope="col">Data da última resolução</th>
-                  <th scope="col">Lucro/prejuízo ($)</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Futebol / Flamengo x SE Palmeiras : Golos na 1.ª Parte 0.5</td>
-                  <td>01-Set-19 16:00</td>
-                  <td>01-Set-19 16:12</td>
-                  <td>2,39</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Atletico Madrid x Eibar : Probabilidades</td>
-                  <td>01-Set-19 14:00</td>
-                  <td>01-Set-19 16:01</td>
-                  <td>2,85</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Atletico Madrid x Eibar : Mais/Menos de 4.5 Golos </td>
-                  <td>01-Set-19 14:00</td>
-                  <td>01-Set-19 15:54</td>
-                  <td>-1,94</td>
-                </tr>
-                <tr>
-                  <td>Futebol / APOEL x Ajax : Golos na 1.ª Parte 0.5</td>
-                  <td>20-Ago-19 16:00</td>
-                  <td>20-Ago-19 16:46</td>
-                  <td>-4,00</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Wolves x Man Utd : Probabilidades</td>
-                  <td>19-Ago-19 16:00</td>
-                  <td>19-Ago-19 17:52</td>
-                  <td>1,08</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Wolves x Man Utd : Mais/Menos de 2.5 golos</td>
-                  <td>19-Ago-19 16:00</td>
-                  <td>19-Ago-19 17:52</td>
-                  <td>0,37</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Wolves x Man Utd : Mais/Menos de 1.5 golos</td>
-                  <td>19-Ago-19 16:00</td>
-                  <td>19-Ago-19 17:15</td>
-                  <td>-0,81</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Athletic Bilbao x Barcelona : Resultado Correto</td>
-                  <td>16-Ago-19 16:00</td>
-                  <td>16-Ago-19 17:53</td>
-                  <td>0,20</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Athletic Bilbao x Barcelona : Mais/Menos de 1.5 golos</td>
-                  <td>16-Ago-19 16:00</td>
-                  <td>16-Ago-19 17:53</td>
-                  <td>0,67</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Athletic Bilbao x Barcelona : Probabilidades</td>
-                  <td>16-Ago-19 16:00</td>
-                  <td>16-Ago-19 17:53</td>
-                  <td>-5,38</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Bayern Munich x Heartha Berlin : Mais/Menos de .5 golos</td>
-                  <td>16-Ago-19 15:35</td>
-                  <td>16-Ago-19 17:28</td>
-                  <td>0,60</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Liverpool x Chelsea : 1st Goal</td>
-                  <td>14-Ago-19 16:00</td>
-                  <td>14-Ago-19 16:37</td>
-                  <td>3,80</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Viking x Sarpsborg : Resultado Correto</td>
-                  <td>14-Ago-19 14:00</td>
-                  <td>14-Ago-19 15:52</td>
-                  <td>0,05</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Viking x Sarpsborg : Provavilidades</td>
-                  <td>14-Ago-19 14:00</td>
-                  <td>14-Ago-19 15:51</td>
-                  <td>0,60</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Viking x Sarpsborg : Mais/Menos de 3.5 golos</td>
-                  <td>14-Ago-19 14:00</td>
-                  <td>14-Ago-19 15:51</td>
-                  <td>0,22</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Viking x Sarpsborg : Mais/Menos de 2.5 golos</td>
-                  <td>14-Ago-19 14:00</td>
-                  <td>14-Ago-19 15:43</td>
-                  <td>0,67</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Viking x Sarpsborg : Mais/Menos de 1.5 golos</td>
-                  <td>14-Ago-19 14:00</td>
-                  <td>14-Ago-19 15:28</td>
-                  <td>0,45</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Porto x FK Krasnodar : Mais/Menos de 6.5 golos</td>
-                  <td>13-Ago-19 16:00</td>
-                  <td>13-Ago-19 17:53</td>
-                  <td>0,07</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Porto x FK Krasnodar : Resultado Correto</td>
-                  <td>13-Ago-19 16:00</td>
-                  <td>13-Ago-19 17:53</td>
-                  <td>0,53</td>
-                </tr>
-                <tr>
-                  <td>Futebol / Celtic x CFR Cluj : Resultado Correto</td>
-                  <td>13-Ago-19 15:45</td>
-                  <td>13-Ago-19 17:41</td>
-                  <td>0,03</td>
-                </tr>
-
-                </tbody>
-              </table>
-            </div>
-            <!--                            End table lista jogos-->
-          </div>
-          <!--                        End dashboard content-->
-        </div>
-        <!--                    End content main-->
-      </div>
-      <!--                End content dashboard banca-->
     </div>
-
   </div>
-</div>
 </body>

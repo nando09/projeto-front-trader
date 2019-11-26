@@ -1,22 +1,28 @@
-<div class="betfairAccount p-2">
+<div class="betfairAccount p-2" *ngIf="!betfair">
   <p>Betfair</p>
   <hr>
   <div class="text-center">
     <form #loginForm="ngForm" (ngSubmit)="loginBet(loginForm)">
       <input class="betFairInput mb-3 p-1" type="text" ngModel name="username" placeholder="Login">
-      <input class="betFairInput mb-1 p-1" type="text" ngModel name="password" placeholder="Senha">
+      <input class="betFairInput mb-1 p-1" type="password" ngModel name="password" placeholder="Senha">
 
-    <br/>
-    <div class="row">
-      <button class="ml-1 btn btn-outline-light">Login</button>
-    </div>
+      <br />
+      <div class="row">
+        <button class="ml-1 btn btn-outline-light">Login</button>
+      </div>
 
-    <div class="row justify-content-center">
-      <input type="checkbox">
-      <span>Lembrar Senha</span>
-    </div>
+      <div class="row justify-content-center">
+        <input type="checkbox" ngModel name="remember">
+        <span>Lembrar Senha</span>
+      </div>
     </form>
     <!--            <p>CONTA CONECTADA</p>-->
     <!--            <i class="fas f"></i>-->
   </div>
+</div>
+<div class="betfairAccount" *ngIf="betfair">
+  <p>Betfair</p>
+  <hr>
+  <p>CONTA CONECTADA</p>
+  <i class="fas fa-exchange-alt"></i>
 </div>

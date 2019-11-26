@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../core/auth/auth.service';
-import {Router} from '@angular/router';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import { AuthService } from '../core/auth/auth.service';
+import { Router } from '@angular/router';
+import { FormBuilder, FormGroup } from "@angular/forms";
 
 
 @Component({
@@ -9,10 +9,10 @@ import {FormBuilder, FormGroup} from "@angular/forms";
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
 
-  data = {};
-  emailError: any ='';
+  data: any = {};
+  emailError: any = '';
   passwordError: any = '';
 
   constructor(
@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit{
   ) {
   }
 
-  ngOnInit(){
+  ngOnInit() {
 
   }
 
-  login(data){
+  login(data) {
     // console.log(data.form.value)
     this.emailError = '';
     this.passwordError = '';
@@ -33,12 +33,13 @@ export class LoginComponent implements OnInit{
       .then(response => {
         this.data = response;
         // console.log(this.data);
-        if (data.status == false) {
-          this.emailError = data.email;
-          this.passwordError = data.password;
-        } else {
+        if (this.data.token) {
           window.sessionStorage.setItem('user', JSON.stringify(response));
           this.router.navigateByUrl('/proximos');
+
+        } else {
+          this.emailError = data.email;
+          this.passwordError = data.password;
           // console.log(response)
         }
       })
