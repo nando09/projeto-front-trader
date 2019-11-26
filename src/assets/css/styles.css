@@ -1566,7 +1566,7 @@ div.contentColumnLeftRowFourthTh {
   background-color: #FFDE00;
   border-radius: 10px;
   color: black;
-  height: 105px;
+  height: 105px !important;
   width: 100%;
 }
 
@@ -2943,9 +2943,9 @@ div.contentColumnLeftRowFourthTh {
 }
 
 .metasHojeText1{
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 300;
-  margin: 8px 0 0 20px;
+  margin: 8px 0 0 10px;
   letter-spacing: 2px;
 }
 
@@ -2985,7 +2985,7 @@ div.contentColumnLeftRowFourthTh {
 }
 
 .alavancagemTable1Div2{
-  background-image: url("/static/images/Componente 5 – 1.png");
+  background-image: url("/assets/images/Componente 5 – 1.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -3488,7 +3488,7 @@ div.contentColumnLeftRowFourthTh {
   color:#fff;
   text-decoration: none !important;
   margin-left: -25px;
-  margin-top: 13px;
+  margin-top: 9px;
   position: absolute;
 }
 
@@ -3499,7 +3499,7 @@ div.contentColumnLeftRowFourthTh {
   text-decoration: none !important;
   position: fixed;
   margin-left: -25px;
-  margin-top: 13px;
+  margin-top: 9px;
 }
 
 .dashboardTopMenuRight li a:link{
@@ -4066,7 +4066,7 @@ div.contentColumnLeftRowFourthTh {
 #academiaMenu, #jogosMenu, #listaMenu{
   z-index: 1;
   background-color: white;
-  height: 42em;
+  height: 52em;
   margin-top: 3.6em;
   position: fixed;
   margin-left: 4.7em;

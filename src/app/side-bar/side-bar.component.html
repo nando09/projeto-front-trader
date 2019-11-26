@@ -1,13 +1,13 @@
 
 <div class="row">
     <div class="sideMenuLeft">
-        <a href="index.html">
+        <a [routerLink]="'/hoje'">
           <img src="../../assets/images/logo-trader.png" alt="Logo Trader Club">
         </a>
 
         <ul class="sideList">
           <li class="menuSelected" id="dashboardIcon">
-            <a href="dashboard/ct">
+            <a [routerLink]="'/dashboard/ct'">
               <i class="fas fa-trophy"></i>
             </a>
           </li>
@@ -48,7 +48,7 @@
           </li>
 
           <li>
-            <a href="" class="side-nav-link">
+            <a class="side-nav-link">
               <div style="height: 38px" class="sideMenuRightButton">
                 <div class="iconNav">
                   <i style="margin-top: 0.8em;" class="fas fa-check"></i>
@@ -62,7 +62,7 @@
           </li>
 
           <li>
-            <a href="" class="side-nav-link">
+            <a class="side-nav-link">
               <div class="sideMenuRightButton" style="height: 3.6em;">
                 <div class="iconNav">
                   <i style="margin-top: 1.2em;" class="fas fa-check"></i>
@@ -74,7 +74,7 @@
           </li>
 
           <li>
-            <a href="" class="side-nav-link">
+            <a class="side-nav-link">
               <div class="sideMenuRightButton" style="height: 3.6em;">
                 <div class="iconNav">
                   <i style="margin-top: 1.2em;" class="fas fa-check"></i>
@@ -86,7 +86,7 @@
           </li>
 
           <li class="side-nav-item">
-            <a href="" class="side-nav-link">
+            <a class="side-nav-link">
               <div class="sideMenuRightButton" style="height: 3.6em; margin-top: 2em">
                 <div class="iconNav redIcon">
                 </div>
@@ -134,7 +134,7 @@
           </li>
 
           <li>
-            <a href="listagem-jogos-odds.html">
+            <a [routerLink]="'/odds'">
               <div class="sideMenuRightButton">
                 <div class="iconNav redIcon">
                   <i class="fas fa-fire-alt"></i>
@@ -164,7 +164,7 @@
       </li>
 
       <li>
-        <a class="side-nav-link" >
+        <a [routerLink]="'/bdc-aovivo'" class="side-nav-link" >
           <div class="sideMenuRightButton" id="aoVivoCard">
             <div class="iconNav redIcon">
               <i class="fas fa-circle"></i>
@@ -175,7 +175,7 @@
       </li>
 
       <li>
-        <a class="side-nav-link" >
+        <a [routerLink]="'/bdc-nao-cadastrado'">
           <div class="sideMenuRightButton" id="aSeguirCard">
             <div class="iconNav">
               <i class="fas fa-play"></i>
@@ -186,7 +186,7 @@
       </li>
 
       <li>
-        <a class="side-nav-link" >
+        <a [routerLink]="'/proximos'" class="side-nav-link" >
           <div class="sideMenuRightButton" id="proximosCard">
             <div class="iconNav">
               <i class="fas fa-forward"></i>
@@ -197,7 +197,7 @@
       </li>
 
       <li>
-        <a href="bdc-nao-cadastrado.html">
+        <a [routerLink]="'/odds'">
           <div class="sideMenuRightButton">
             <div class="iconNav redIcon">
               <i class="fas fa-fire-alt"></i>
