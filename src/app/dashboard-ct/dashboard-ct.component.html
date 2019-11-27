@@ -1,1074 +1,228 @@
 <body class="dashboardBanca dashboardCT">
-<div class="container-fluid">
-  <div class="row content">
+  <div class="container-fluid">
+    <div class="row content">
 
-    <app-side-bar></app-side-bar>
+      <app-side-bar></app-side-bar>
 
 
-    <div class="col-sm-11 col-xs-12 contentPage" style="margin-left: 4.7em; max-width: fit-content;">
+      <div class="col-sm-11 col-xs-12 contentPage" style="margin-left: 4.7em; max-width: fit-content;">
 
-      <!--                Start top menu-->
-      <div class="topMenu" style="margin:0">
-        <div class="col-12 d-flex pr-0">
-          <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 d-flex topMenuLeftDashboard">
-            <div class="userImageDashboard">
+        <!--                Start top menu-->
+        <div class="topMenu" style="margin:0">
+          <div class="col-12 d-flex pr-0">
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 d-flex topMenuLeftDashboard">
+              <div class="userImageDashboard">
+              </div>
+              <div>
+                <h3>PETER MARKS</h3>
+                <p class="dashboardData">AGOSTO DE 2019</p>
+              </div>
             </div>
-            <div>
-              <h3>PETER MARKS</h3>
-              <p class="dashboardData">AGOSTO DE 2019</p>
+            <div class="topMenuData">
+              <p>Ter, 27 de Agosto de 2019</p>
             </div>
-          </div>
-          <div class="topMenuData">
-            <p>Ter, 27 de Agosto de 2019</p>
-          </div>
 
-          <div class="col-xl-8 col-lg-8 col-md-7 col-sm-6 d-flex dashboardTopMenuRight">
-            <ul>
+            <div class="col-xl-8 col-lg-8 col-md-7 col-sm-6 d-flex dashboardTopMenuRight">
+              <ul>
 
-              <li>
-                <a style="margin-left: -95px; margin-top: 9px" [routerLink]="'/dashboard/ct'" class="menuItem">CENTRO DE
-                  TREINAMENTO</a>
-              </li>
+                <li>
+                  <a style="margin-left: -95px; margin-top: 9px" [routerLink]="'/dashboard/ct'" class="menuItem">CENTRO
+                    DE
+                    TREINAMENTO</a>
+                </li>
 
-              <li>
-                <a style="margin-left: -28px;" [routerLink]="'/dashboard/banca'" class="menuItem">BANCA</a>
-              </li>
+                <li>
+                  <a style="margin-left: -28px;" [routerLink]="'/dashboard/banca'" class="menuItem">BANCA</a>
+                </li>
 
-              <li>
-                <a style="margin-left: -38px;" [routerLink]="'/dashboard/carreira'" class="menuItem">CARREIRA</a>
-              </li>
-              <li>
-                <a style="margin-left: -45px;" [routerLink]="'/dashboard/conquistas'" class="menuItem">CONQUISTAS</a>
-              </li>
+                <li>
+                  <a style="margin-left: -38px;" [routerLink]="'/dashboard/carreira'" class="menuItem">CARREIRA</a>
+                </li>
+                <li>
+                  <a style="margin-left: -45px;" [routerLink]="'/dashboard/conquistas'" class="menuItem">CONQUISTAS</a>
+                </li>
 
 
-              <!--          <li class="active"><a href="dashboard-ct.html" class="menuItem">CENTRO DE TREINAMENTO</a></li>-->
-              <!--          <li><a href="dashboard-banca.html" class="menuItem">BANCA</a></li>-->
-              <!--          <li><a href="dashboard-carreira.html" class="menuItem">CARREIRA</a></li>-->
-              <!--          <li><a href="dashboard-conquistas.html" class="menuItem">CONQUISTAS</a></li>-->
-            </ul>
+                <!--          <li class="active"><a href="dashboard-ct.html" class="menuItem">CENTRO DE TREINAMENTO</a></li>-->
+                <!--          <li><a href="dashboard-banca.html" class="menuItem">BANCA</a></li>-->
+                <!--          <li><a href="dashboard-carreira.html" class="menuItem">CARREIRA</a></li>-->
+                <!--          <li><a href="dashboard-conquistas.html" class="menuItem">CONQUISTAS</a></li>-->
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <!--                End top menu-->
+        <!--                End top menu-->
 
-      <!--                Start content dashboard banca-->
-      <div class="container-fluid contentDashboardBanca">
-        <!--                    Start content menu-->
-        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 contentMenu">
-          <div class="metas">
-            <div class="sideDashboardCTCard">
-              <img src="/assets/images/icons/betting-gray.png" alt="">
-              <p>Banca</p>
-              <p>R$ 45000,00</p>
+        <!--                Start content dashboard banca-->
+        <div class="container-fluid contentDashboardBanca">
+          <!--                    Start content menu-->
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 contentMenu">
+            <div class="metas">
+              <div class="sideDashboardCTCard">
+                <img src="/assets/images/icons/betting-gray.png" alt="">
+                <p>Banca</p>
+                <p>R$ 45000,00</p>
+              </div>
+              <div class="sideDashboardCTCard">
+                <img src="/assets/images/icons/football-badge-gray.png" alt="">
+                <p>Nível</p>
+                <p>2º DIVISÃO</p>
+              </div>
+              <div class="sideDashboardCTCard">
+                <img src="/assets/images/icons/podium-gray.png" alt="">
+                <p>Engajamento</p>
+                <p>2º RANKING</p>
+              </div>
+              <div class="sideDashboardCTCard">
+                <img src="/assets/images/icons/goal-gray.png" alt="">
+                <p>Pontuação</p>
+                <p>2387 XS</p>
+              </div>
             </div>
-            <div class="sideDashboardCTCard">
-              <img src="/assets/images/icons/football-badge-gray.png" alt="">
-              <p>Nível</p>
-              <p>2º DIVISÃO</p>
-            </div>
-            <div class="sideDashboardCTCard">
-              <img src="/assets/images/icons/podium-gray.png" alt="">
-              <p>Engajamento</p>
-              <p>2º RANKING</p>
-            </div>
-            <div class="sideDashboardCTCard">
-              <img src="/assets/images/icons/goal-gray.png" alt="">
-              <p>Pontuação</p>
-              <p>2387 XS</p>
-            </div>
+            <button (click)="getNextEvents()"></button>
+
+            <app-betfair-login></app-betfair-login>
+
           </div>
-
-          <app-betfair-login></app-betfair-login>
-
-        </div>
-        <!--                    End content menu-->
-
-        <!--                    Start content main-->
-        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 contentMain"
-             style="padding: 25px; border: 1px solid #ccc; border-radius: 25px; margin: 30px 0;">
-          <div class="col-xl-8 col-lg-12 col-md-12" style="float: left; text-align: -webkit-center;">
-            <div class="row">
-              <div class="row CTContentTitle">
-                Partidas Hoje
-              </div>
-              <div class="row dashboardCTAoVivoTitle">
-                <i class="fas fa-circle"></i>
-                <h5 style="padding-top: 0.5em !important;">AO VIVO</h5>
-              </div>
-              <div class="row dashboardCTAoVivo" style="width: 100%">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell7">81'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell scoreboard">2</div>
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell scoreboard">3</div>
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" style="width: 100%">
-              <div class="row dashboardCTASeguirTitle">
-                <i class="fas fa-caret-right"></i>
-                <h5 style="padding-top: 0.3em !important;">A SEGUIR</h5>
-              </div>
-              <div class="row dashboardCTASeguir" style="width: 100%">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contentColumnLeftRow">
-                    <div class="divTable contentColumnLeftRowFirstTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="divTable contentColumnLeftRowSecondTh">
-                      <div class="divTableBody">
-                        <div class="divTableRow contentColumnLeftRowSecondTd">
-                          <div class="divTableCell clubName">Barcelona</div>
-                        </div>
-                        <div class="divTableRow contentColumnLeftRowThirdTd">
-                          <div class="divTableCell clubName">Real Madrid</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <button type="button" class="btn btn-primary btnPartidasHoje">VER TODAS</button>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12" style="float: right">
-            <div class="ctMetasHoje">
+          <!--                    End content menu-->
+
+          <!--                    Start content main-->
+          <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 contentMain"
+            style="padding: 25px; border: 1px solid #ccc; border-radius: 25px; margin: 30px 0;">
+            <div class="col-xl-8 col-lg-12 col-md-12" style="float: left; text-align: -webkit-center;">
               <div class="row">
-                <div class="row metasHojeTitle">
-                  <p>Metas De Hoje</p>
-                  <div>
-                    <div class="metasHojeTable">
-                      <div class="row">
-                        <h3>R$</h3>
-                        <h2>250,00</h2>
-                        <p class="metasHojeText1">META MÁXIMA</p>
-                        <p class="metasHojeText2">0,9%</p>
+                <div class="row CTContentTitle">
+                  Partidas Hoje
+                </div>
+                <div class="row dashboardCTAoVivoTitle">
+                  <i class="fas fa-circle"></i>
+                  <h5 style="padding-top: 0.5em !important;">AO VIVO</h5>
+                </div>
+                <div class="row dashboardCTAoVivo" style="width: 100%">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6" *ngFor="let game of livegames">
+                    <div class="row contentColumnLeftRow">
+                      <div class="contentColumnLeftRowFirstTh">
+                        <div class="divTableCell tableCell7">{{game.info[0].timeElapsed}}'</div>
                       </div>
-                      <div class="row">
-                        <h3>R$</h3>
-                        <h2>220,00</h2>
-                        <p class="metasHojeText1">CENTRO DA META</p>
-                        <p class="metasHojeText2">0,75%</p>
-                      </div>
-                      <div class="row">
-                        <h3>R$</h3>
-                        <h2>280,00</h2>
-                        <p class="metasHojeText1">META MÍNIMA</p>
-                        <p class="metasHojeText2">0,6%</p>
+
+                      <div class="divTable contentColumnLeftRowSecondTh">
+                        <div class="divTableBody">
+                          <div class="divTableRow contentColumnLeftRowSecondTd">
+                            <div class="divTableCell scoreboard">{{game.info[0].score.home.score}}</div>
+                            <div class="divTableCell clubName">{{game.event.name.split(' v ')[0]}}</div>
+                          </div>
+                          <div class="divTableRow contentColumnLeftRowThirdTd">
+                            <div class="divTableCell scoreboard">{{game.info[0].score.away.score}}</div>
+                            <div class="divTableCell clubName">{{game.event.name.split(' v ')[1]}}</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+
+
                 </div>
-                <div class="row alavancagemTitle">
-                  <p>Alavancagem</p>
-                  <div>
-                    <div class="row alavancagemTable1">
-                      <div class="alavancagemTable1Div1" style="width: 50%">
-                        <h3>R$</h3>
-                        <h2>15580,00</h2>
-                        <p>META MÍNIMA</p>
+              </div>
+              <div class="row" style="width: 100%">
+                <div class="row dashboardCTASeguirTitle">
+                  <i class="fas fa-caret-right"></i>
+                  <h5 style="padding-top: 0.3em !important;">A SEGUIR</h5>
+                </div>
+                <div class="row dashboardCTASeguir" style="width: 100%">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12" *ngFor="let game of nextgames; index as i">
+                    <ng-container *ngIf="i<=19">
+
+                      <div class="row contentColumnLeftRow">
+                        <div class="divTable contentColumnLeftRowFirstTh">
+                          <div class="divTableBody">
+                            <div class="divTableRow">
+                              <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="divTable contentColumnLeftRowSecondTh">
+                          <div class="divTableRow contentColumnLeftRowSecondTd">
+                            <div class="divTableCell clubName">{{game.event.name.split(' v ')[0]}}</div>
+                          </div>
+                          <div class="divTableRow contentColumnLeftRowThirdTd">
+                            <div class="divTableCell clubName">{{game.event.name.split(' v ')[1]}}</div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="alavancagemTable1Div2 linha-vertical2" style="width: 50%">
-                        <p>+255%</p>
+                    </ng-container>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary btnPartidasHoje">VER TODAS</button>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12" style="float: right">
+              <div class="ctMetasHoje">
+                <div class="row">
+                  <div class="row metasHojeTitle">
+                    <p>Metas De Hoje</p>
+                    <div>
+                      <div class="metasHojeTable">
+                        <div class="row">
+                          <h3>R$</h3>
+                          <h2>250,00</h2>
+                          <p class="metasHojeText1">META MÁXIMA</p>
+                          <p class="metasHojeText2">0,9%</p>
+                        </div>
+                        <div class="row">
+                          <h3>R$</h3>
+                          <h2>220,00</h2>
+                          <p class="metasHojeText1">CENTRO DA META</p>
+                          <p class="metasHojeText2">0,75%</p>
+                        </div>
+                        <div class="row">
+                          <h3>R$</h3>
+                          <h2>280,00</h2>
+                          <p class="metasHojeText1">META MÍNIMA</p>
+                          <p class="metasHojeText2">0,6%</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="row alavancagemTable2">
-                      <div class="alavancagemTable2Div1">
-                        <h3>R$</h3>
-                        <h2>4200,00</h2>
-                        <p>BANCA INICIAL</p>
+                  </div>
+                  <div class="row alavancagemTitle">
+                    <p>Alavancagem</p>
+                    <div>
+                      <div class="row alavancagemTable1">
+                        <div class="alavancagemTable1Div1" style="width: 50%">
+                          <h3>R$</h3>
+                          <h2>15580,00</h2>
+                          <p>META MÍNIMA</p>
+                        </div>
+                        <div class="alavancagemTable1Div2 linha-vertical2" style="width: 50%">
+                          <p>+255%</p>
+                        </div>
                       </div>
-                      <div class="alavancagemTable2Div2 linha-vertical2" style="width: 50%">
-                        <div class="row col-12 alavancagemTable2Div2Row1">
+                      <div class="row alavancagemTable2">
+                        <div class="alavancagemTable2Div1">
                           <h3>R$</h3>
-                          <h2>20500,00</h2>
-                          <p>BANCA 30 DIAS MÁX</p>
+                          <h2>4200,00</h2>
+                          <p>BANCA INICIAL</p>
                         </div>
-                        <div class="row col-12 alavancagemTable2Div2Row2">
-                          <h3>R$</h3>
-                          <h2>18500,00</h2>
-                          <p>BANCA 30 DIAS CENTRO</p>
-                        </div>
-                        <div class="row col-12 alavancagemTable2Div2Row3">
-                          <h3>R$</h3>
-                          <h2>16500,00</h2>
-                          <p>BANCA 30 DIAS MIN</p>
+                        <div class="alavancagemTable2Div2 linha-vertical2" style="width: 50%">
+                          <div class="row col-12 alavancagemTable2Div2Row1">
+                            <h3>R$</h3>
+                            <h2>20500,00</h2>
+                            <p>BANCA 30 DIAS MÁX</p>
+                          </div>
+                          <div class="row col-12 alavancagemTable2Div2Row2">
+                            <h3>R$</h3>
+                            <h2>18500,00</h2>
+                            <p>BANCA 30 DIAS CENTRO</p>
+                          </div>
+                          <div class="row col-12 alavancagemTable2Div2Row3">
+                            <h3>R$</h3>
+                            <h2>16500,00</h2>
+                            <p>BANCA 30 DIAS MIN</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1076,16 +230,15 @@
                 </div>
               </div>
             </div>
+
           </div>
+          <!--                    End content main-->
 
         </div>
-        <!--                    End content main-->
+        <!--                End content dashboard banca-->
 
       </div>
-      <!--                End content dashboard banca-->
 
     </div>
-
   </div>
-</div>
 </body>

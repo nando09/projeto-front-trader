@@ -1566,7 +1566,7 @@ div.contentColumnLeftRowFourthTh {
   background-color: #FFDE00;
   border-radius: 10px;
   color: black;
-  height: 105px !important;
+  /* height: 105px !important; */
   width: 100%;
 }
 
