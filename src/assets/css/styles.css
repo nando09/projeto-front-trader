@@ -321,7 +321,7 @@ div.contentColumnLeftRowSecondTh {
 
 .contentColumnLeftRowSecondTd {
   padding: 3px 10px;
-  height: 20px;
+  height: 19px;
   background-color: #6CBA8C;
 }
 
@@ -445,10 +445,13 @@ div.contentColumnLeftRowFourthTh {
   font-weight: 600;
   font-family: "Bahnschrift", sans-serif !important;
   font-size: 11px;
+  max-width: 62px;
+  min-width: 62px;
 }
 
 .scoreboard{
   padding-left: 5px;
+  padding-right: 5px;
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;
   vertical-align: middle;
@@ -480,7 +483,7 @@ div.contentColumnLeftRowFourthTh {
   border: 1px solid #fff;
   border-radius: 7px 0 0 7px;
   font-size: 14px !important;
-  padding: 5px 7px;
+  padding: 12px 7px 5px 7px;
   height: 40px;
   width: 36px;
   background-color: #6CBA8C;
@@ -1418,7 +1421,7 @@ div.contentColumnLeftRowFourthTh {
 .formulario input{
   width: 70%;
   border-radius: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .formulario button{

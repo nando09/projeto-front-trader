@@ -20,10 +20,10 @@ export class DashboardCTComponent implements OnInit {
   async ngOnInit() {
     this.getLiveEvents()
     this.getNextEvents()
-    this.timeLoop = setInterval(() => {
-      this.getLiveEvents()
-      this.getNextEvents()
-    }, 30000)
+    // this.timeLoop = setInterval(() => {
+    //   this.getLiveEvents()
+    //   this.getNextEvents()
+    // }, 30000)
   }
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.
