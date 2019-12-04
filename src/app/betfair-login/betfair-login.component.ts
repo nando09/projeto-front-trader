@@ -24,7 +24,7 @@ export class BetfairLoginComponent implements OnInit {
       }
     };
     data.form.value = this.betfairAccount
-    if (data) {
+    if (!data) {
       this.loginBet(data)
     }
   }
