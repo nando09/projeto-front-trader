@@ -26,6 +26,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./core/auth/auth.service";
 import { VmessageComponent } from './vmessage/vmessage.component';
 import { BetfairLoginComponent } from './betfair-login/betfair-login.component';
+import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { BetfairLoginComponent } from './betfair-login/betfair-login.component';
     HojeComponent,
     CadastroComponent,
     VmessageComponent,
-    BetfairLoginComponent
+    BetfairLoginComponent,
+    MeusDadosComponent
   ],
   imports: [
     BrowserModule,

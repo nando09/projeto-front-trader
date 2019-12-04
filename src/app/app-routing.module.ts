@@ -15,6 +15,7 @@ import {PartidasEncerradasComponent} from './partidas-encerradas/partidas-encerr
 import {PartidasProximasComponent} from './partidas-proximas/partidas-proximas.component';
 import {ProximosComponent} from './proximos/proximos.component';
 import {CadastroComponent} from './cadastro/cadastro.component';
+import {MeusDadosComponent} from "./meus-dados/meus-dados.component";
 
 
 const routes: Routes = [
@@ -77,6 +78,10 @@ const routes: Routes = [
   {
     path: 'cadastro',
     component: CadastroComponent,
+  },
+  {
+    path: 'meus-dados',
+    component: MeusDadosComponent,
   }
 
 ];

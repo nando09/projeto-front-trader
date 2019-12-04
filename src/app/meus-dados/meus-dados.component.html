@@ -1,0 +1,167 @@
+<body class="index">
+<div class="container-fluid">
+  <div class="row content">
+
+    <app-side-bar></app-side-bar>
+
+
+    <div class="col-sm-11 col-xs-12 contentPage" style="margin-left: 4.7em;">
+
+      <!--        Start top menu-->
+      <div class="topMenu">
+        <div class="col-12 d-flex pr-0">
+          <div class="col-xl-6 col-lg-4 col-md-4 col-sm-3 d-flex topMenuLeft">
+            <div class="verticalLine"></div>
+            <h3>TRADE ESPORTIVO</h3>
+          </div>
+
+          <div class="col-xl-6 col-lg-8 col-md-8 col-sm-9 d-flex topMenuRight">
+            <div class="d-flex">
+              <img src="/assets/images/icons/football-badge.png" alt="">
+              <p>2º DIVISÃO</p>
+            </div>
+
+            <div class="d-flex">
+              <img src="/assets/images/icons/betting.png" alt="">
+              <p>R$ 45000,00</p>
+            </div>
+
+            <div class="d-flex">
+              <img src="/assets/images/icons/podium.png" alt="">
+              <p>2386 XS</p>
+            </div>
+
+            <div class="d-flex">
+              <img src="/assets/images/icons/goal.png" alt="">
+              <p>2º RANKING</p>
+            </div>
+
+            <div class="topMenuUser">
+              <p>
+                PETER MARKS
+              </p>
+              <div class="userImage">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--        End top menu-->
+
+
+      <!--        Start content-->
+      <div class="container-fluid contentSession">
+        <div class="row col-12 m-2" style="place-content: center">
+          <h1 style="font-size: 24px">Meus Dados</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <!-- p class="text-muted font-14 mb-3">
+                    Paragrafo pos titulo.
+                </p-->
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label style="margin: 2px 0">Nome</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                      <label style="margin: 2px 0">Celular</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        data-toggle="input-mask"
+                        data-mask-format="(00) 00000-0000"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label style="margin: 2px 0">Senha</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label style="margin: 2px 0">Email</label>
+                      <input class="form-control" type="email" required/>
+                    </div>
+
+                    <div class="form-group">
+                      <label style="margin: 2px 0">CPF</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        data-toggle="input-mask"
+                        data-mask-format="000.000.000-00"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label style="margin: 2px 0">Confirmar Senha</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-4">
+                    <label>Imagem</label>
+                    <p class="text-center">
+                      <img
+                        id="photo"
+                        src="data:image/png;base64,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"
+                        width="132"
+                      />
+                    </p>
+                    <br />
+
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="inputGroupFile04"
+                          ref="files"
+                          accept="image"
+                        />
+                        <label class="custom-file-label" for="inputGroupFile04">Selecionar Arquivo</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row col-12" style="justify-content: center">
+                  <button type="button" class="btn btn-primary">
+                    <i class="mdi mdi-content-save-outline mr-1"></i>
+                    <span>Alterar dados</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!--        End content-->
+    </div>
+
+  </div>
+</div>
+</body>
