@@ -25,7 +25,7 @@
           </li>
 
           <li class="menuSelected" id="jogosIcon" (mouseup)="toggleMenu('#lista')">
-            <a>
+            <a [routerLink]="'/meus-dados'">
               <i class="fas fa-user"></i>
             </a>
           </li>
@@ -101,7 +101,7 @@
     <div class="menu d-none" id="jogosMenu">
         <ul>
           <li>
-            <a>
+            <a [routerLink]="'/encerrados'">
               <div class="sideMenuRightButton" (mouseup)="togglePartidasAoVivo('#partidasAoVivo')">
                 <div class="iconNav">
                   <i class="fas fa-backward"></i>
@@ -112,8 +112,8 @@
           </li>
 
           <li>
-            <a>
-              <div class="sideMenuRightButton"  (mouseup)="togglePpartidasEncerradas('#partidasEncerradas')">
+            <a [routerLink]="'/hoje'">
+              <div class="sideMenuRightButton" (mouseup)="togglePpartidasEncerradas('#partidasEncerradas')">
                 <div class="iconNav redIcon">
                   <i class="fas fa-play-circle"></i>
                 </div>
@@ -123,8 +123,8 @@
           </li>
 
           <li>
-            <a>
-              <div class="sideMenuRightButton"  (mouseup)="togglePproximasPartidas('#proximasPartidas')">
+            <a [routerLink]="'/proximos'">
+              <div class="sideMenuRightButton" (mouseup)="togglePproximasPartidas('#proximasPartidas')">
                 <div class="iconNav">
                   <i class="fas fa-forward"></i>
                 </div>
@@ -150,63 +150,63 @@
 
 
 
-    <ul>
+<!--    <ul>-->
 
-      <li>
-        <a class="side-nav-link" >
-          <div class="sideMenuRightButton" id="encerradosCard">
-            <div class="iconNav">
-              <i class="fas fa-backward"></i>
-            </div>
-            <p>ENCERRADOS</p>
-          </div>
-        </a>
-      </li>
+<!--      <li>-->
+<!--        <a class="side-nav-link" >-->
+<!--          <div class="sideMenuRightButton" id="encerradosCard">-->
+<!--            <div class="iconNav">-->
+<!--              <i class="fas fa-backward"></i>-->
+<!--            </div>-->
+<!--            <p>ENCERRADOS</p>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
 
-      <li>
-        <a [routerLink]="'/bdc-aovivo'" class="side-nav-link" >
-          <div class="sideMenuRightButton" id="aoVivoCard">
-            <div class="iconNav redIcon">
-              <i class="fas fa-circle"></i>
-            </div>
-            <p>AO VIVO</p>
-          </div>
-        </a>
-      </li>
+<!--      <li>-->
+<!--        <a [routerLink]="'/bdc-aovivo'" class="side-nav-link" >-->
+<!--          <div class="sideMenuRightButton" id="aoVivoCard">-->
+<!--            <div class="iconNav redIcon">-->
+<!--              <i class="fas fa-circle"></i>-->
+<!--            </div>-->
+<!--            <p>AO VIVO</p>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
 
-      <li>
-        <a [routerLink]="'/bdc-nao-cadastrado'">
-          <div class="sideMenuRightButton" id="aSeguirCard">
-            <div class="iconNav">
-              <i class="fas fa-play"></i>
-            </div>
-            <p>A SEGUIR</p>
-          </div>
-        </a>
-      </li>
+<!--      <li>-->
+<!--        <a [routerLink]="'/bdc-nao-cadastrado'">-->
+<!--          <div class="sideMenuRightButton" id="aSeguirCard">-->
+<!--            <div class="iconNav">-->
+<!--              <i class="fas fa-play"></i>-->
+<!--            </div>-->
+<!--            <p>A SEGUIR</p>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
 
-      <li>
-        <a [routerLink]="'/proximos'" class="side-nav-link" >
-          <div class="sideMenuRightButton" id="proximosCard">
-            <div class="iconNav">
-              <i class="fas fa-forward"></i>
-            </div>
-            <p>PRÓXIMOS</p>
-          </div>
-        </a>
-      </li>
+<!--      <li>-->
+<!--        <a [routerLink]="'/proximos'" class="side-nav-link" >-->
+<!--          <div class="sideMenuRightButton" id="proximosCard">-->
+<!--            <div class="iconNav">-->
+<!--              <i class="fas fa-forward"></i>-->
+<!--            </div>-->
+<!--            <p>PRÓXIMOS</p>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
 
-      <li>
-        <a [routerLink]="'/odds'">
-          <div class="sideMenuRightButton">
-            <div class="iconNav redIcon">
-              <i class="fas fa-fire-alt"></i>
-            </div>
-            <p>ODDS DE VALOR</p>
-          </div>
-        </a>
-      </li>
-    </ul>
+<!--      <li>-->
+<!--        <a [routerLink]="'/odds'">-->
+<!--          <div class="sideMenuRightButton">-->
+<!--            <div class="iconNav redIcon">-->
+<!--              <i class="fas fa-fire-alt"></i>-->
+<!--            </div>-->
+<!--            <p>ODDS DE VALOR</p>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
 
 </div>
 
@@ -215,928 +215,928 @@
 
 
 
-  <div id="partidasAoVivo" class="encerrados1 d-none" style="background-image: none !important;">
-    <div class="container-fluid">
-      <div class="row content">
-        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">
-          <div class="contentColumnRight">
-            <div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">81'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">2</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="partidasEncerradas" class="encerrados2 d-none" style="background-image: none !important; background-color: #f5f5f5;">
-    <div class="container-fluid">
-      <div class="row content">
-        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">
-          <div class="contentColumnRight">
-            <div>
-
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">FIM</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">
-                      <div class="divTableCell scoreboard">3</div>
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">
-                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="proximasPartidas" class="proximasPartidas d-none" style="background-image: none !important; background-color: #f5f5f5;">
-
-    <div class="container-fluid">
-      <div class="row content">
-        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">
-          <div class="contentColumnRight">
-            <div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row contentColumnLeftRow">
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow" >
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">BARCELONA</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">REAL MADRID</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--  <div id="partidasAoVivo" class="encerrados1 d-none" style="background-image: none !important;">-->
+<!--    <div class="container-fluid">-->
+<!--      <div class="row content">-->
+<!--        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">-->
+<!--          <div class="contentColumnRight">-->
+<!--            <div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow">-->
+<!--                      <div class="divTableCell tableCell7">81'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell scoreboard">2</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+<!--  <div id="partidasEncerradas" class="encerrados2 d-none" style="background-image: none !important; background-color: #f5f5f5;">-->
+<!--    <div class="container-fluid">-->
+<!--      <div class="row content">-->
+<!--        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">-->
+<!--          <div class="contentColumnRight">-->
+<!--            <div>-->
+
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">FIM</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd" style="color: #6CBA8C">-->
+<!--                      <div class="divTableCell scoreboard">3</div>-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd" style="color: #eb0000">-->
+<!--                      <div class="divTableCell scoreboard" style="background-color: #eb0000">1</div>-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+<!--  <div id="proximasPartidas" class="proximasPartidas d-none" style="background-image: none !important; background-color: #f5f5f5;">-->
+
+<!--    <div class="container-fluid">-->
+<!--      <div class="row content">-->
+<!--        <div class="" style="margin-left: auto; margin-right: auto; display: grid; margin: 23px 0px;">-->
+<!--          <div class="contentColumnRight">-->
+<!--            <div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="row contentColumnLeftRow">-->
+<!--                <div class="divTable contentColumnLeftRowFirstTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow" >-->
+<!--                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="divTable contentColumnLeftRowSecondTh">-->
+<!--                  <div class="divTableBody">-->
+<!--                    <div class="divTableRow contentColumnLeftRowSecondTd">-->
+<!--                      <div class="divTableCell clubName">BARCELONA</div>-->
+<!--                    </div>-->
+<!--                    <div class="divTableRow contentColumnLeftRowThirdTd">-->
+<!--                      <div class="divTableCell clubName">REAL MADRID</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
 
 

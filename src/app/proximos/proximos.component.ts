@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiUrlService } from '../core/api-url.service';
-import { userInfo } from 'os';
+// import { userInfo } from 'os';
 
 @Component({
   selector: 'app-proximos',
