@@ -23,6 +23,7 @@
 .index, .odds, .proximos, .hoje{
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.0), rgba(0, 67, 142, 0.9)), url("../images/background.png") no-repeat center;
   background-size: cover;
+  height: 100vh;
 }
 
 
@@ -104,7 +105,7 @@
 
 .sideMenuRightButton:hover{
   background-color: #0061AC;
-  width: 140px;
+  width: 130px;
   /*height: 70px;*/
   margin-left: auto;
   margin-right: auto;
@@ -2359,11 +2360,11 @@ div.contentColumnLeftRowFourthTh {
   background-color: #192833;
 }
 
-.contentSession::-webkit-scrollbar {
+.contentSession::-webkit-scrollbar, .contentColumnLeft::-webkit-scrollbar, .contentColumnRight::-webkit-scrollbar , .contentColumnRight div:first-child::-webkit-scrollbar {
   width: 10px;
 }
 
-.contentSession::-webkit-scrollbar-thumb {
+.contentSession::-webkit-scrollbar-thumb, .contentColumnLeft::-webkit-scrollbar-thumb, .contentColumnRight::-webkit-scrollbar-thumb, .contentColumnRight div:first-child::-webkit-scrollbar-thumb  {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.8);
@@ -4069,10 +4070,12 @@ div.contentColumnLeftRowFourthTh {
 #academiaMenu, #jogosMenu, #listaMenu{
   z-index: 1;
   background-color: white;
-  height: 52em;
+  height: 100%;
   margin-top: 3.6em;
   position: fixed;
   margin-left: 4.7em;
+  border-radius: 0 10px 0 0;
+  box-shadow: 5px 7px 14px rgba(0,0,0,0.5);
 }
 
 

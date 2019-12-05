@@ -27,6 +27,7 @@ import { AuthService } from "./core/auth/auth.service";
 import { VmessageComponent } from './vmessage/vmessage.component';
 import { BetfairLoginComponent } from './betfair-login/betfair-login.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
+import { EncerradosComponent } from './encerrados/encerrados.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { MeusDadosComponent } from './meus-dados/meus-dados.component';
     CadastroComponent,
     VmessageComponent,
     BetfairLoginComponent,
-    MeusDadosComponent
+    MeusDadosComponent,
+    EncerradosComponent
   ],
   imports: [
     BrowserModule,
