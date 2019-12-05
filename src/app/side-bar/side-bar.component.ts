@@ -13,7 +13,10 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit() {
   }
-  toggleMenu(id) { $(id + 'Menu').toggleClass('d-none'); }
+  toggleMenu(id, id2) {
+    $(id + 'Menu').toggleClass('d-none');
+    $(id2 + 'Menu').addClass('d-none');
+  }
   togglePartidasAoVivo(id) { $(id).toggleClass('d-none'); }
   togglePpartidasEncerradas(id) { $(id).toggleClass('d-none'); }
   togglePproximasPartidas(id) { $(id).toggleClass('d-none'); }
