@@ -21,13 +21,15 @@ import { ProximosComponent } from './proximos/proximos.component';
 import { OddsComponent } from './odds/odds.component';
 import { HojeComponent } from './hoje/hoje.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./core/auth/auth.service";
 import { VmessageComponent } from './vmessage/vmessage.component';
 import { BetfairLoginComponent } from './betfair-login/betfair-login.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { EncerradosComponent } from './encerrados/encerrados.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from "./material-module";
 
 
 @NgModule({
@@ -63,6 +65,8 @@ import { EncerradosComponent } from './encerrados/encerrados.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
