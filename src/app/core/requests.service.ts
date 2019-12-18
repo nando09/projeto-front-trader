@@ -17,6 +17,14 @@ export class RequestsService {
     private http: HttpClient,
   ) { }
 
+  getLiveOdds() {
+    return this.http.post(this.url.api_url() + '/betfair/liveOdds', { token: this.betFair.token }, this.options)
+  }
+
+  getNextOdds() {
+    return this.http.post(this.url.api_url() + '/betfair/liveNextOdds', { token: this.betFair.token }, this.options)
+  }
+
   getTodayGames() {
     return this.http.post(this.url.api_url() + '/betfair/todayOdds', { token: this.betFair.token }, this.options)
   }

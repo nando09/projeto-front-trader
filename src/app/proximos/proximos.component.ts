@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiUrlService } from '../core/api-url.service';
 import { RequestsService } from '../core/requests.service';
-import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-proximos',
@@ -10,15 +9,12 @@ import { stringify } from 'querystring';
   styleUrls: ['./proximos.component.css']
 })
 export class ProximosComponent implements OnInit {
-  user: any = JSON.parse(window.sessionStorage.getItem('user'))
   tomorrowGames: any
   filteredTomorrow: any
   filteredNext: any
   nextGames: any
 
   constructor(
-    private http: HttpClient,
-    private url: ApiUrlService,
     private requests: RequestsService
   ) { }
 
