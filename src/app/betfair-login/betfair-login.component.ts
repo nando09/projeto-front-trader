@@ -18,19 +18,28 @@ export class BetfairLoginComponent implements OnInit {
     private http: HttpClient,
     private url: ApiUrlService
   ) {
+    this.localCheck()
+
+  }
+
+  ngOnInit() {
+
+  }
+
+  localCheck() {
     let data: any = {
       form: {
         value: {}
       }
     };
     data.form.value = this.betfairAccount
-    if (!data) {
+    if (data.form.value && !this.betfair) {
       this.loginBet(data)
+    } else if (data.form.value && this.betfair.expires < new Date()) {
+      this.loginBet(data)
+    } else if (!data.form.value && this.betfair.expires < new Date()) {
+      alert('Acesse sua conta da betfair para acessar as informações!')
     }
-  }
-
-  ngOnInit() {
-
   }
 
   loginBet(data: any) {
@@ -46,7 +55,14 @@ export class BetfairLoginComponent implements OnInit {
       if (this.response.status == 'FAIL') {
         alert('Login Incorreto!')
       } else {
-        if (data.form.value.remember) { window.localStorage.setItem('betfair', JSON.stringify(data.form.value)) }
+        if (data.form.value.remember) {
+          window.localStorage.setItem('betfair', JSON.stringify(data.form.value))
+        }
+        let expires = new Date()
+        expires.setDate(expires.getDate() + 1)
+        expires.setHours(6)
+        expires.setMinutes(0)
+        this.response.expires = expires
         window.sessionStorage.setItem('betfair', JSON.stringify(this.response))
         this.betfair = JSON.parse(window.sessionStorage.getItem('betfair'))
       }

@@ -33,6 +33,9 @@ export class ProximosComponent implements OnInit {
     } else {
       this.nextGames = JSON.parse(sessionStorage.getItem('nextGames'))
     }
+    if (this.tomorrowGames && this.nextGames) {
+      this.filter('Match Odds')
+    }
   }
 
   filter(type: any) {

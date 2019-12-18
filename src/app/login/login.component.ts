@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         // console.log(this.data);
         if (this.data.token) {
           window.sessionStorage.setItem('user', JSON.stringify(response));
-          this.router.navigateByUrl('/proximos');
+          this.router.navigateByUrl('/dashboard/ct');
 
         } else {
           this.emailError = data.email;

@@ -51,14 +51,6 @@
         <!--        Start button filters session-->
         <div class="filterSession">
           <div class="dropdown">
-            <p>ORDENAR POR:</p>
-            <select id="inputData" class="form-control">
-              <option value="">Data</option>
-              <option value="1">Competição</option>
-              <option value="2">Odds De Valor</option>
-            </select>
-          </div>
-          <div class="dropdown">
             <p>MERCADO:</p>
             <select id="inputProbabilidade" class="form-control" (change)="filter($event.target.value)">
               <option value="Match Odds">Probabilidades</option>
@@ -219,7 +211,7 @@
             <div style="overflow: auto; width: 100%; height: 600px; text-align: -webkit-center;">
               <div class="row rowTable" style="margin-left: 20px;">
                 <div class="contentColumnLeftTop">
-                  <h5 style="margin-right: 20px !important; margin-left: -20px;">AMANHÃ, 10/09</h5>
+                  <h5 style="margin-right: 20px !important; margin-left: -20px;">AMANHÃ</h5>
                 </div>
                 <table class="contentColumnLeftTopTable">
                   <tbody>
