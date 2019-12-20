@@ -1,115 +1,124 @@
+<div class="row content">
+  <div class="container-fluid">
+    <app-side-bar>
+      <div class="topMenu" style="margin: 0">
+        <div class="col-12 d-flex pr-0">
+          <div class="col-xl-6 col-lg-4 col-md-4 col-sm-3 d-flex topMenuLeft">
+            <div class="verticalLine"></div>
+            <h3>TRADE ESPORTIVO</h3>
+          </div>
 
-  <div class="row content">
-    <div class="container-fluid">
-      <app-side-bar>
-        <div class="topMenu" style="margin: 0">
-          <div class="col-12 d-flex pr-0">
-            <div class="col-xl-6 col-lg-4 col-md-4 col-sm-3 d-flex topMenuLeft">
-              <div class="verticalLine"></div>
-              <h3>TRADE ESPORTIVO</h3>
+          <div class="col-xl-6 col-lg-8 col-md-8 col-sm-9 d-flex topMenuRight">
+            <div class="d-flex">
+              <img src="../../assets/images/icons/football-badge.png" alt="">
+              <p>2º DIVISÃO</p>
             </div>
 
-            <div class="col-xl-6 col-lg-8 col-md-8 col-sm-9 d-flex topMenuRight">
-              <div class="d-flex">
-                <img src="../../assets/images/icons/football-badge.png" alt="">
-                <p>2º DIVISÃO</p>
+            <div class="d-flex">
+              <img src="../../assets/images/icons/betting.png" alt="">
+              <p>R$ 45000,00</p>
+            </div>
+
+            <div class="d-flex">
+              <img src="../../assets/images/icons/podium.png" alt="">
+              <p>2386 XS</p>
+            </div>
+
+            <div class="d-flex">
+              <img src="../../assets/images/icons/goal.png" alt="">
+              <p>2º RANKING</p>
+            </div>
+
+            <div class="topMenuUser">
+              <p>
+                PETER MARKS
+              </p>
+              <div class="userImage">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <!--                Start video session-->
+        <div class="videoSession">
+          <div class="row">
+
+            <div class="col-lg-7 col-md-12 col-sm-12 video">
+              <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" [src]="aula.video"></iframe>
               </div>
 
-              <div class="d-flex">
-                <img src="../../assets/images/icons/betting.png" alt="">
-                <p>R$ 45000,00</p>
+            </div>
+
+            <div class="col-lg-5 col-md-12 col-sm-12 videoInfos">
+              <div class="videoInfo1">
+                <button type="button" class="btn btn-outline-light btnAula"><i
+                    class="fas fa-chevron-circle-left"></i>AULA ANTERIOR</button>
+                <button type="button" class="btn btn-outline-light btnAula">PRÓXIMA AULA<i
+                    class="fas fa-chevron-circle-right"></i></button>
               </div>
 
-              <div class="d-flex">
-                <img src="../../assets/images/icons/podium.png" alt="">
-                <p>2386 XS</p>
+              <div class="videoInfo1">
+                <button type="button" class="btn btn-outline-light btnConcluirAvancar"><i
+                    class="far fa-check-circle"></i>CONCLUIR E AVANÇAR</button>
+                <div class="divAvaliacao">
+                  <p>Avaliar Esta Aula</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                </div>
               </div>
 
-              <div class="d-flex">
-                <img src="../../assets/images/icons/goal.png" alt="">
-                <p>2º RANKING</p>
-              </div>
-
-              <div class="topMenuUser">
-                <p>
-                  PETER MARKS
-                </p>
-                <div class="userImage">
+              <div class="anotation">
+                <p>Anotações</p>
+                <div class="anotationField">
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="container-fluid">
-          <!--                Start video session-->
-          <div class="videoSession">
+        <!--                End video session-->
+        <div class="videoTitle">
+          <div class="col-12">
             <div class="row">
-
-              <div class="col-lg-7 col-md-12 col-sm-12 video">
-                <img src="../../assets/images/video.png" alt="Video">
+              <div class="">
+                <h3>{{aula.name}} - {{aula.description}}</h3>
               </div>
-
-              <div class="col-lg-5 col-md-12 col-sm-12 videoInfos">
-                <div class="videoInfo1">
-                  <button type="button" class="btn btn-outline-light btnAula"><i class="fas fa-chevron-circle-left"></i>AULA ANTERIOR</button>
-                  <button type="button" class="btn btn-outline-light btnAula">PRÓXIMA AULA<i class="fas fa-chevron-circle-right"></i></button>
-                </div>
-
-                <div class="videoInfo1">
-                  <button type="button" class="btn btn-outline-light btnConcluirAvancar"><i class="far fa-check-circle"></i>CONCLUIR E AVANÇAR</button>
-                  <div class="divAvaliacao">
-                    <p>Avaliar Esta Aula</p>
-                    <div class="stars">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="anotation">
-                  <p>Anotações</p>
-                  <div class="anotationField">
-                  </div>
-                </div>
+              <div class="videoTime">
+                <p> <i class="far fa-clock"></i> 00:05:53</p>
               </div>
             </div>
           </div>
-          <!--                End video session-->
-          <div class="videoTitle">
-            <div class="col-12">
+        </div>
+        <div class="videoDescription">
+          <div class="row">
+            <div class="description">
+              <p>{{aula.content}}</p>
+            </div>
+            <div class="discussion" style="overflow: auto !important;">
+              <h4>COMENTÁRIOS</h4>
               <div class="row">
-                <div class="">
-                  <h3>M3 - AULA 3 - VISÃO GERAL</h3>
-                </div>
-                <div class="videoTime">
-                  <p> <i class="far fa-clock"></i> 00:05:53</p>
-                </div>
+                <input class="col-10 form-control" type="text" [(ngModel)]="comment" #ctrl="ngModel">
+                <button class="form-control col-2" (click)="comentar(comment)">Comentar</button>
               </div>
-            </div>
-          </div>
-          <div class="videoDescription">
-            <div class="row">
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, impedit odit! Accusamus alias at debitis delectus dolorem enim ipsam labore laboriosam laborum libero mollitia nostrum placeat quam reiciendis, sequi tempora.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, impedit odit! Accusamus alias at debitis delectus dolorem enim ipsam labore laboriosam laborum libero mollitia nostrum placeat quam reiciendis, sequi tempora.</p>
+              <div class="comentario1" *ngFor="let comentario of aula.comments">
+                <h5>{{comentario.user_name}}</h5>
+                <p>{{comentario.content}}</p>
               </div>
-              <div class="discussion">
-                <h4>DISCUSSÃO</h4>
-                <div class="comentario1">
-                  <h5>ALUNO 1</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur beatae cumque dignissimos</p>
-                </div>
-                <div class="comentario2">
-                  <h5>ALUNO 2</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur beatae cumque dignissimos</p>
-                </div>
-              </div>
+              <!-- <div class="comentario2">
+                <h5>ALUNO 2</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur beatae cumque dignissimos</p>
+              </div> -->
+
             </div>
           </div>
         </div>
-      </app-side-bar>
-    </div>
+      </div>
+    </app-side-bar>
+  </div>
 
 
-    </div>
-
+</div>

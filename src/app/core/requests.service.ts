@@ -35,5 +35,21 @@ export class RequestsService {
     return this.http.post(this.url.api_url() + '/betfair/nextOdds', { token: this.betFair.token }, this.options)
   }
 
+  getCourse() {
+    return this.http.get(this.url.api_url() + '/course/activated', this.options)
+  }
+
+  getModuloAula(aula) {
+    return this.http.get(this.url.api_url() + '/lesson/' + aula, this.options)
+  }
+
+  getAulasModulo(modulo) {
+    return this.http.get(this.url.api_url() + '/module/' + modulo, this.options)
+  }
+
+  comentar(data) {
+    return this.http.post(this.url.api_url() + '/lesson/comment', data, this.options)
+  }
+
 
 }

@@ -46,52 +46,17 @@
         </div>
       </li>
 
-      <li>
-        <a class="side-nav-link">
+      <li *ngFor="let modulo of curso.modules; index as i">
+        <a class="side-nav-link" *ngIf="modulo.lessons[0]"
+          [routerLink]="['/academia/'+modulo.id+'/aula/'+modulo.lessons[0].id]">
           <div style="height: 38px" class="sideMenuRightButton">
             <div class="iconNav">
               <i style="margin-top: 0.8em;" class="fas fa-check"></i>
             </div>
             <div>
-              <p style="margin-top: -2.0em; font-size: 10px; margin-bottom: 0.5em">Módulo 1</p>
-              <p style="margin-top: 0em;">INTRODUÇÃO</p>
+              <p style="margin-top: -2.0em; font-size: 10px; margin-bottom: 0.5em">Módulo {{i+1}}</p>
+              <p style="margin-top: 0em;">{{modulo.name}}</p>
             </div>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="side-nav-link">
-          <div class="sideMenuRightButton" style="height: 3.6em;">
-            <div class="iconNav">
-              <i style="margin-top: 1.2em;" class="fas fa-check"></i>
-            </div>
-            <p style="margin-top: -2.6em; font-size: 10px; margin-bottom: 0.5em">Módulo 2</p>
-            <p style="margin-top: 0em;">FUNDAMENTOS BÁSICOS</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="side-nav-link">
-          <div class="sideMenuRightButton" style="height: 3.6em;">
-            <div class="iconNav">
-              <i style="margin-top: 1.2em;" class="fas fa-check"></i>
-            </div>
-            <p style="margin-top: -2.6em; font-size: 10px; margin-bottom: 0.5em">Módulo 3</p>
-            <p style="margin-top: 0em;">FUNDAMENTOS BÁSICOS</p>
-          </div>
-        </a>
-      </li>
-
-      <li class="side-nav-item">
-        <a class="side-nav-link">
-          <div class="sideMenuRightButton" style="height: 3.6em; margin-top: 2em">
-            <div class="iconNav redIcon">
-            </div>
-            <p style="margin-top: -2.6em; font-size: 10px; margin-bottom: 0.5em; padding-top: 0.5em; margin-left: 0">
-              Módulo</p>
-            <p style="margin-top: 0.5em; margin-left: 0">TÉCNICAS INICIANTES</p>
           </div>
         </a>
       </li>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { RequestsService } from '../core/requests.service';
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',
@@ -7,8 +8,11 @@ import * as $ from 'jquery';
 })
 
 export class SideBarComponent implements OnInit {
-
-  constructor() {
+  curso: any = JSON.parse(sessionStorage.getItem('curso'))
+  constructor(
+    private requests: RequestsService
+  ) {
+    this.getCurso()
   }
 
   ngOnInit() {
@@ -20,4 +24,16 @@ export class SideBarComponent implements OnInit {
   togglePartidasAoVivo(id) { $(id).toggleClass('d-none'); }
   togglePpartidasEncerradas(id) { $(id).toggleClass('d-none'); }
   togglePproximasPartidas(id) { $(id).toggleClass('d-none'); }
+
+  getCurso() {
+    this.requests.getCourse().subscribe(response => {
+      let res: any = response
+      if (res.id) {
+        this.curso = res
+        sessionStorage.setItem('curso', JSON.stringify(res))
+      } else {
+        alert('erro!')
+      }
+    })
+  }
 }
