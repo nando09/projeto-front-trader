@@ -29,7 +29,7 @@ const routes: Routes = [
     component: AcademiaComponent,
   },
   {
-    path: 'bdc-aovivo',
+    path: 'bdc-aovivo/:id',
     component: BdcAoVivoComponent,
   },
   {

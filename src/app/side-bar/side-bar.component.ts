@@ -12,7 +12,10 @@ export class SideBarComponent implements OnInit {
   constructor(
     private requests: RequestsService
   ) {
-    this.getCurso()
+    if (!JSON.parse(sessionStorage.getItem('curso'))) {
+
+      this.getCurso()
+    }
   }
 
   ngOnInit() {

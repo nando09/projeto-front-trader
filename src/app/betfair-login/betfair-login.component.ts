@@ -35,9 +35,9 @@ export class BetfairLoginComponent implements OnInit {
     data.form.value = this.betfairAccount
     if (data.form.value && !this.betfair) {
       this.loginBet(data)
-    } else if (data.form.value && this.betfair.expires < new Date()) {
+    } else if (data.form.value && this.betfair && this.betfair.expires < new Date()) {
       this.loginBet(data)
-    } else if (!data.form.value && this.betfair.expires < new Date()) {
+    } else if (!data.form.value && !this.betfair) {
       alert('Acesse sua conta da betfair para acessar as informações!')
     }
   }

@@ -51,5 +51,9 @@ export class RequestsService {
     return this.http.post(this.url.api_url() + '/lesson/comment', data, this.options)
   }
 
+  analisar(data) {
+    return this.http.post(this.url.api_url() + '/analise', data, this.options)
+  }
+
 
 }

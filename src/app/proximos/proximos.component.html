@@ -114,7 +114,7 @@
               <mat-progress-spinner mode="indeterminate" *ngIf="!nextGames">
               </mat-progress-spinner>
 
-              <div class="row contentColumnLeftRow" *ngFor="let game of filteredNext">
+              <div class="row contentColumnLeftRow" *ngFor="let game of filteredNext" (click)="analisar(game)">
                 <div class="divTable contentColumnRightRowFirstTh">
                   <div class="divTableBody">
                     <div class="divTableRow">
@@ -250,7 +250,7 @@
               </div>
               <mat-progress-spinner mode="indeterminate" *ngIf="!tomorrowGames">
               </mat-progress-spinner>
-              <div class="row contentColumnLeftRow" *ngFor="let game of filteredTomorrow">
+              <div class="row contentColumnLeftRow" *ngFor="let game of filteredTomorrow" (click)="analisar(game)">
                 <div class="divTable contentColumnRightRowFirstTh">
                   <div class="divTableBody">
                     <div class="divTableRow">

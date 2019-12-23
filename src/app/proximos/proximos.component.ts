@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiUrlService } from '../core/api-url.service';
 import { RequestsService } from '../core/requests.service';
+import { AnaliseService } from '../core/analise.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-proximos',
@@ -15,7 +17,9 @@ export class ProximosComponent implements OnInit {
   nextGames: any
 
   constructor(
-    private requests: RequestsService
+    private router: Router,
+    private requests: RequestsService,
+    private analise: AnaliseService
   ) { }
 
   ngOnInit() {
@@ -77,5 +81,12 @@ export class ProximosComponent implements OnInit {
       }
 
     })
+  }
+
+  analisar(jogo: any) {
+    this.analise.escolherJogo(jogo)
+    this.router.navigateByUrl('/bdc-aovivo/' + jogo.event.id);
+    // let game = this.analise.getJogo()
+    // console.log(game)
   }
 }
