@@ -4097,7 +4097,34 @@ div.contentColumnLeftRowFourthTh {
   width: 100%;
 }
 
-.cardPartida:hover{
-  border: 1px solid #abc9ff !important;
-  border-radius: 7px;
+.clubName:hover{
+  color: #000 !important;
+  font-weight: 900;
+  pointer-events: auto !important;
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 5s; /* Safari */
+  transition-property: width;
+  transition-duration: 5s;
+}
+
+.cardPartida *:hover{
+  color: #000 !important;
+  font-weight: 900;
+  pointer-events: auto !important;
+  cursor: pointer;
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 5s; /* Safari */
+  transition-property: width;
+  transition-duration: 5s;
+}
+
+.overflowOdds{
+  overflow: auto;
+  max-height: 100vh;
+  padding: 25px !important;
+  margin: 0 !important;
+}
+
+.overflowOdds::-webkit-scrollbar {
+	display: none;
 }
