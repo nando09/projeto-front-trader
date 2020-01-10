@@ -448,6 +448,7 @@ div.contentColumnLeftRowFourthTh {
   font-size: 11px;
   max-width: 62px;
   min-width: 62px;
+  text-align: center;
 }
 
 .scoreboard{
@@ -4084,4 +4085,9 @@ div.contentColumnLeftRowFourthTh {
   width: 88% !important;
   margin-left: 4.7em;
   min-width: fit-content;
+}
+
+.cardPartida:hover{
+  border: 1px solid #abc9ff !important;
+  border-radius: 7px;
 }

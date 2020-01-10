@@ -23,7 +23,7 @@ export class DashboardCTComponent implements OnInit {
     this.timeLoop = setInterval(() => {
       this.getLiveEvents()
       this.getNextEvents()
-    }, 30000)
+    }, 50000)
   }
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.

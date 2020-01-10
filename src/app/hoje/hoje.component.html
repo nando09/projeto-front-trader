@@ -50,31 +50,6 @@
 
 
         <!--        Start button filters session-->
-        <div class="filterSession">
-          <div class="dropdown">
-            <p>ORDENAR POR:</p>
-            <select id="inputData" class="form-control">
-              <option value="">Data</option>
-              <option value="1">Competição</option>
-              <option value="2">Odds De Valor</option>
-            </select>
-          </div>
-          <div class="dropdown">
-            <p>MERCADO:</p>
-
-            <select id="inputProbabilidade" class="form-control" (change)="filter($event.target.value)">
-              <option value="Match Odds">Probabilidades</option>
-              <option value="First Half Goals 0.5">0.5 HT</option>
-              <option value="First Half Goals 1.5">1.5 HT</option>
-              <option value="First Half Goals 2.5">2.5 HT</option>
-              <option value="Over/Under 0.5 Goals">0.5</option>
-              <option value="Over/Under 1.5 Goals">1.5</option>
-              <option value="Over/Under 2.5 Goals">2.5</option>
-              <option value="Over/Under 3.5 Goals">3.5</option>
-              <option value="Both teams to Score?">BTS</option>
-            </select>
-          </div>
-        </div>
         <!--        End button filters session-->
 
 
@@ -88,134 +63,38 @@
                 <i class="fas fa-circle"></i>
                 <h5>AO VIVO</h5>
               </div>
-              <table class="contentColumnLeftTopTable">
-                <tbody>
-                  <tr>
-                    <td class="contentColumnLeftTopTableTd" colspan="2">Casa</td>
-                  </tr>
-                  <tr>
-                    <td class="contentColumnLeftTopTableTd">Back</td>
-                    <td class="contentColumnLeftTopTableTd">Lay</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="contentColumnLeftTopTable">
-                <tbody>
-                  <tr>
-                    <td class="contentColumnLeftTopTableTd" colspan="2">Fora</td>
-                  </tr>
-                  <tr>
-                    <td class="contentColumnLeftTopTableTd">Back</td>
-                    <td class="contentColumnLeftTopTableTd">Lay</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="contentColumnLeftTopTable">
-                <tbody>
-                  <tr>
-                    <td class="contentColumnLeftTopTableTd" colspan="2">Draw</td>
-                  </tr>
-                  <tr>
-                    <td class="contentColumnLeftTopTableTd">Back</td>
-                    <td class="contentColumnLeftTopTableTd">Lay</td>
-                  </tr>
-                </tbody>
-              </table>
 
             </div>
             <mat-progress-spinner mode="indeterminate" *ngIf="!liveGames">
             </mat-progress-spinner>
-            <div class="row contentColumnLeftRow" *ngFor="let game of filteredLive">
-              <span *ngIf="game.info.length > 0 && game.market.length > 0" class="row">
-
-                <div class="divTable contentColumnLeftRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell7">{{game.info[0].timeElapsed}}'</div>
-                    </div>
-                  </div>
+            <div class="col-md-6 float-left" *ngFor="let game of liveGames">
+              <div class="row contentColumnLeftRow">
+                <div class="contentColumnLeftRowFirstTh">
+                  <div class="divTableCell tableCell7" *ngIf="game.info.length > 0">{{game.info[0].timeElapsed}}'</div>
+                  <div class="divTableCell tableCell7" *ngIf="!game.info.length > 0">-</div>
                 </div>
 
                 <div class="divTable contentColumnLeftRowSecondTh">
                   <div class="divTableBody">
                     <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell scoreboard">{{game.info[0].score.home.score}}</div>
-                      <div class="divTableCell clubName">{{game.event.name.split(' v ')[0]}}</div>
+                      <div class="divTableCell scoreboard" *ngIf="game.info.length > 0">
+                        {{game.info[0].score.home.score}}</div>
+                      <div class="divTableCell scoreboard" *ngIf="!game.info.length > 0">-</div>
+                      <div class="divTableCell clubName"
+                        style="max-width: 190px !important; min-width: 160px !important;">
+                        {{game.event.name.split(' v ')[0]}}</div>
                     </div>
                     <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell scoreboard">{{game.info[0].score.away.score}}</div>
-                      <div class="divTableCell clubName">{{game.event.name.split(' v ')[1]}}</div>
+                      <div class="divTableCell scoreboard" *ngIf="game.info.length > 0">
+                        {{game.info[0].score.away.score}}</div>
+                      <div class="divTableCell scoreboard" *ngIf="!game.info.length > 0">-</div>
+                      <div class="divTableCell clubName"
+                        style="max-width: 190px !important; min-width: 160px !important;">
+                        {{game.event.name.split(' v ')[1]}}</div>
                     </div>
                   </div>
                 </div>
-
-                <div class="divTable contentColumnLeftRowFourthTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell1"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 0 && game.market[0].odds.runners[0].ex.availableToBack.length > 0 && game.market[0].odds.runners[0].ex.availableToBack[0].price; else elseBlock">
-                        {{game.market[0].odds.runners[0].ex.availableToBack[0].price}}</div>
-                      <div class="divTableCell tableCell2"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners[0].ex.availableToLay.length > 0 && game.market[0].odds.runners[0].ex.availableToLay[0].price; else elseBlock2">
-                        {{game.market[0].odds.runners[0].ex.availableToLay[0].price}}
-                      </div>
-
-                      <ng-template #elseBlock>
-                        <div class="divTableCell tableCell1">
-                          0</div>
-                      </ng-template>
-                      <ng-template #elseBlock2>
-                        <div class="divTableCell tableCell2">
-                          0</div>
-                      </ng-template>
-
-
-                      <div class="divTableCell tableCell3"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[1].ex.availableToBack.length > 0; else elseBlock3">
-                        {{game.market[0].odds.runners[1].ex.availableToBack[0].price}}</div>
-                      <div class="divTableCell tableCell4"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[1].ex.availableToLay.length > 0; else elseBlock4">
-                        {{game.market[0].odds.runners[1].ex.availableToLay[0].price}}</div>
-
-                      <ng-template #elseBlock3>
-                        <div class="divTableCell tableCell3">
-                          NA</div>
-                      </ng-template>
-                      <ng-template #elseBlock4>
-                        <div class="divTableCell tableCell4">
-                          NA</div>
-                      </ng-template>
-
-                      <div class="divTableCell tableCell5"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[2].ex.availableToBack.length > 0; else elseBlock5">
-                        {{game.market[0].odds.runners[2].ex.availableToBack[0].price}}</div>
-                      <div class="divTableCell tableCell6"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[2].ex.availableToLay.length > 0; else elseBlock6">
-                        {{game.market[0].odds.runners[2].ex.availableToLay[0].price}}</div>
-
-                      <ng-template #elseBlock5>
-                        <div class="divTableCell tableCell5"
-                          *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 1 && game.market[0].odds.runners[1].ex.availableToBack.length > 0; else elseBlock7">
-                          {{game.market[0].odds.runners[1].ex.availableToBack[0].price}}</div>
-                      </ng-template>
-                      <ng-template #elseBlock6>
-                        <div class="divTableCell tableCell6"
-                          *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 1 && game.market[0].odds.runners[1].ex.availableToLay.length > 0; else elseBlock8">
-                          {{game.market[0].odds.runners[1].ex.availableToLay[0].price}}</div>
-                      </ng-template>
-
-                      <ng-template #elseBlock7>
-                        <div class="divTableCell tableCell5">
-                          0</div>
-                      </ng-template>
-                      <ng-template #elseBlock8>
-                        <div class="divTableCell tableCell6">
-                          0</div>
-                      </ng-template>
-                    </div>
-                  </div>
-                </div>
-              </span>
+              </div>
             </div>
           </div>
           <!--            End left content column-->
@@ -228,129 +107,36 @@
                   <i class="fas fa-caret-right"></i>
                   <h5>A SEGUIR</h5>
                 </div>
-                <table class="contentColumnLeftTopTable">
-                  <tbody>
-                    <tr>
-                      <td class="contentColumnLeftTopTableTd" colspan="2">Casa</td>
-                    </tr>
-                    <tr>
-                      <td class="contentColumnLeftTopTableTd">Back</td>
-                      <td class="contentColumnLeftTopTableTd">Lay</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table class="contentColumnLeftTopTable">
-                  <tbody>
-                    <tr>
-                      <td class="contentColumnLeftTopTableTd" colspan="2">Fora</td>
-                    </tr>
-                    <tr>
-                      <td class="contentColumnLeftTopTableTd">Back</td>
-                      <td class="contentColumnLeftTopTableTd">Lay</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table class="contentColumnLeftTopTable">
-                  <tbody>
-                    <tr>
-                      <td class="contentColumnLeftTopTableTd" colspan="2">Draw</td>
-                    </tr>
-                    <tr>
-                      <td class="contentColumnLeftTopTableTd">Back</td>
-                      <td class="contentColumnLeftTopTableTd">Lay</td>
-                    </tr>
-                  </tbody>
-                </table>
 
               </div>
               <mat-progress-spinner mode="indeterminate" *ngIf="!nextGames">
               </mat-progress-spinner>
-              <div class="row contentColumnLeftRow" *ngFor="let game of filteredNext">
-                <div class="divTable contentColumnRightRowFirstTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-6 float-left" *ngFor="let game of nextGames; index as i">
+                <ng-container *ngIf="i<=19">
 
-                <div class="divTable contentColumnLeftRowSecondTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow contentColumnLeftRowSecondTd">
-                      <div class="divTableCell clubName">{{game.event.name.split(' v ')[0]}}</div>
-                    </div>
-                    <div class="divTableRow contentColumnLeftRowThirdTd">
-                      <div class="divTableCell clubName">{{game.event.name.split(' v ')[1]}}</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divTable contentColumnLeftRowFourthTh">
-                  <div class="divTableBody">
-                    <div class="divTableRow">
-                      <div class="divTableCell tableCell1"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 0 && game.market[0].odds.runners[0].ex.availableToBack.length > 0 && game.market[0].odds.runners[0].ex.availableToBack[0].price; else elseBlock">
-                        {{game.market[0].odds.runners[0].ex.availableToBack[0].price}}</div>
-                      <div class="divTableCell tableCell2"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners[0].ex.availableToLay.length > 0 && game.market[0].odds.runners[0].ex.availableToLay[0].price; else elseBlock2">
-                        {{game.market[0].odds.runners[0].ex.availableToLay[0].price}}
+                  <div class="row contentColumnLeftRow">
+                    <div class="divTable contentColumnLeftRowFirstTh">
+                      <div class="divTableBody">
+                        <div class="divTableRow">
+                          <div class="divTableCell tableCell8">COMEÇA EM 31'</div>
+                        </div>
                       </div>
+                    </div>
 
-                      <ng-template #elseBlock>
-                        <div class="divTableCell tableCell1">
-                          0</div>
-                      </ng-template>
-                      <ng-template #elseBlock2>
-                        <div class="divTableCell tableCell2">
-                          0</div>
-                      </ng-template>
-
-
-                      <div class="divTableCell tableCell3"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[1].ex.availableToBack.length > 0; else elseBlock3">
-                        {{game.market[0].odds.runners[1].ex.availableToBack[0].price}}</div>
-                      <div class="divTableCell tableCell4"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[1].ex.availableToLay.length > 0; else elseBlock4">
-                        {{game.market[0].odds.runners[1].ex.availableToLay[0].price}}</div>
-
-                      <ng-template #elseBlock3>
-                        <div class="divTableCell tableCell3">
-                          NA</div>
-                      </ng-template>
-                      <ng-template #elseBlock4>
-                        <div class="divTableCell tableCell4">
-                          NA</div>
-                      </ng-template>
-
-                      <div class="divTableCell tableCell5"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[2].ex.availableToBack.length > 0; else elseBlock5">
-                        {{game.market[0].odds.runners[2].ex.availableToBack[0].price}}</div>
-                      <div class="divTableCell tableCell6"
-                        *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 2 && game.market[0].odds.runners[2].ex.availableToLay.length > 0; else elseBlock6">
-                        {{game.market[0].odds.runners[2].ex.availableToLay[0].price}}</div>
-
-                      <ng-template #elseBlock5>
-                        <div class="divTableCell tableCell5"
-                          *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 1 && game.market[0].odds.runners[1].ex.availableToBack.length > 0; else elseBlock7">
-                          {{game.market[0].odds.runners[1].ex.availableToBack[0].price}}</div>
-                      </ng-template>
-                      <ng-template #elseBlock6>
-                        <div class="divTableCell tableCell6"
-                          *ngIf="game.market.length > 0 && game.market[0].odds && game.market[0].odds.runners.length > 1 && game.market[0].odds.runners[1].ex.availableToLay.length > 0; else elseBlock8">
-                          {{game.market[0].odds.runners[1].ex.availableToLay[0].price}}</div>
-                      </ng-template>
-
-                      <ng-template #elseBlock7>
-                        <div class="divTableCell tableCell5">
-                          0</div>
-                      </ng-template>
-                      <ng-template #elseBlock8>
-                        <div class="divTableCell tableCell6">
-                          0</div>
-                      </ng-template>
+                    <div class="divTable contentColumnLeftRowSecondTh">
+                      <div class="divTableRow contentColumnLeftRowSecondTd">
+                        <div class="divTableCell clubName"
+                          style="max-width: 190px !important; min-width: 160px !important;">
+                          {{game.event.name.split(' v ')[0]}}</div>
+                      </div>
+                      <div class="divTableRow contentColumnLeftRowThirdTd">
+                        <div class="divTableCell clubName"
+                          style="max-width: 190px !important; min-width: 160px !important;">
+                          {{game.event.name.split(' v ')[1]}}</div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </ng-container>
               </div>
             </div>
 

@@ -23,38 +23,8 @@ export class ProximosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if (!JSON.parse(sessionStorage.getItem('tmGames'))) {
-      this.getTmGames()
-    } else {
-      this.tomorrowGames = JSON.parse(sessionStorage.getItem('tmGames'))
-    }
-    if (!JSON.parse(sessionStorage.getItem('nextGames'))) {
-      this.getNextGames()
-    } else {
-      this.nextGames = JSON.parse(sessionStorage.getItem('nextGames'))
-    }
-    if (this.tomorrowGames && this.nextGames) {
-      this.filter('Match Odds')
-    }
-  }
-
-  filter(type: any) {
-    let games = this.tomorrowGames
-    for (let game in games) {
-      let filtered = games[game].market.filter(function (market) { return market.marketName === type })
-      games[game].market = filtered
-    }
-    this.filteredTomorrow = games
-    this.tomorrowGames = JSON.parse(sessionStorage.getItem('tmGames'))
-    console.log(games)
-    let nextGames = this.nextGames
-    for (let game in nextGames) {
-      let filtered = nextGames[game].market.filter(function (market) { return market.marketName === type })
-      nextGames[game].market = filtered
-    }
-    this.filteredNext = nextGames
-    this.nextGames = JSON.parse(sessionStorage.getItem('nextGames'))
-    console.log(nextGames)
+    this.getTmGames()
+    this.getNextGames()
   }
 
   getTmGames() {
@@ -62,7 +32,6 @@ export class ProximosComponent implements OnInit {
       let res: any = response
       if (res[0] && res[0].event) {
         this.tomorrowGames = res
-        sessionStorage.setItem('tmGames', JSON.stringify(res))
       } else {
         alert('Erro!')
       }
@@ -75,7 +44,6 @@ export class ProximosComponent implements OnInit {
       let res: any = response
       if (res[0] && res[0].event) {
         this.nextGames = res
-        sessionStorage.setItem('nextGames', JSON.stringify(res))
       } else {
         alert('Erro!')
       }
