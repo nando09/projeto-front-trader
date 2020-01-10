@@ -4085,9 +4085,13 @@ div.contentColumnLeftRowFourthTh {
   position: absolute;
   width: 88% !important;
   margin-left: 4.7em;
-  min-width: fit-content;
+  min-width: -webkit-fill-available;
 }
 
 .contentPage{
   min-width: -webkit-fill-available;
+}
+
+.loginBetfair, .senhaBetfair{
+  width: 100%;
 }
