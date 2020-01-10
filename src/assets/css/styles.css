@@ -1542,6 +1542,7 @@ div.contentColumnLeftRowFourthTh {
 
 .dashboardBanca {
   background-image: none;
+  overflow: auto;
 }
 
 .topMenuLeftDashboard {
@@ -3620,6 +3621,7 @@ div.contentColumnLeftRowFourthTh {
 
 .dashboardConquistas {
   background-image: none;
+  overflow: auto;
 }
 
 .dashboardConquistas .dashboardContent{
@@ -4084,7 +4086,15 @@ div.contentColumnLeftRowFourthTh {
   position: absolute;
   width: 88% !important;
   margin-left: 4.7em;
-  min-width: fit-content;
+  min-width: -webkit-fill-available;
+}
+
+.contentPage{
+  min-width: -webkit-fill-available;
+}
+
+.loginBetfair, .senhaBetfair{
+  width: 100%;
 }
 
 .cardPartida:hover{
